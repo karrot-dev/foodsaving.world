@@ -23,6 +23,9 @@ form:
                 .role:
                   type: text
                   label: Role
+                .email:
+                  type: text
+                  label: Email Address
                 .image:
                   type: filepicker
                   label: Image

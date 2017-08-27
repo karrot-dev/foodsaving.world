@@ -8,8 +8,4 @@
    http://docs.gantry.org/gantry5/tutorials/adding-a-custom-style-sheet
  */
 
-/* line 2, user/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_nav.scss */
-/* line 12, user/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_nav.scss */
-/* line 2, user/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_utilities.scss */
-/* line 9, user/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_utilities.scss */
-/* line 1, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
+@import '../people.scss';

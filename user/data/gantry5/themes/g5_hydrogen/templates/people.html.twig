@@ -1,11 +1,12 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-<div class="people-template">
-    {% for person in page.header.people %}
-        <div>
-            {{ person.name }} // {{ person.role }}
+<div class="people g-grid">
+    {% for person in page.header.people | randomize %}
+        <div class="person g-block size-50">
             <img src="{{ page.media[person.image].url }}">
+            <div class="name">{{ person.name }}</div>
+            <div class="role">{{ person.role }}</div>
         </div>
     {% endfor %}
 </div>
