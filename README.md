@@ -185,3 +185,8 @@ First install the dev dependencies by running `composer update` from the Grav ro
 Then `composer test` will run the Unit Tests, which should be always executed successfully on any site.
 
 You can also run a single unit test file, e.g. `composer test tests/unit/Grav/Common/AssetsTest.php`
+
+# Useful resources
+
+https://www.sitepoint.com/building-faster-websites-with-grav-a-modern-flat-file-cms/
+https://learn.getgrav.org/forms/blueprints/fields-available
