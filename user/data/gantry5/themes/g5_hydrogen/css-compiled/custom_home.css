@@ -37,7 +37,11 @@
   background: rgba(255, 255, 255, 0.2);
   padding: 20px;
 }
-/* line 6, user/data/gantry5/themes/g5_hydrogen/scss/block-link.scss */
+/* line 5, user/data/gantry5/themes/g5_hydrogen/scss/block-link.scss */
+.block-link a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+/* line 9, user/data/gantry5/themes/g5_hydrogen/scss/block-link.scss */
 .block-link a h2 {
   text-align: center;
 }
