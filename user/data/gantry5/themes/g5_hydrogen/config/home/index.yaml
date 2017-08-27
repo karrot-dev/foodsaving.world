@@ -1,5 +1,5 @@
 name: home
-timestamp: 1503844777
+timestamp: 1503845036
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -20,7 +20,7 @@ particles:
   menu:
     menu-8820: Menu
   sample:
-    sample-1: 'Gantry 5'
+    sample-1: 'Foodsaving World'
     sample-2: 'Getting Started'
     sample-3: 'Key Features'
   messages:
