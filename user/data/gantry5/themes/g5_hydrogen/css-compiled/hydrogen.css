@@ -715,25 +715,30 @@ hr {
   color: #fff;
 }
 /* line 19, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
-#g-showcase h1, #g-showcase h2, #g-showcase h3, #g-showcase h4, #g-showcase h5, #g-showcase h6, #g-showcase strong {
+#g-showcase h1, #g-showcase h2, #g-showcase h3, #g-showcase h4, #g-showcase h5, #g-showcase h6 {
   color: #fff;
-  font-family: "roboto", sans-serif;
+  font-family: "Cabin Sketch";
+  font-weight: 500;
 }
-/* line 24, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
+/* line 25, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
+#g-showcase h1 {
+  font-size: 4rem;
+}
+/* line 29, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
 #g-showcase .button {
   background: #cf9d30;
   color: #fff;
 }
-/* line 27, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
+/* line 32, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
 #g-showcase .button:hover {
   background: #d4a745;
 }
-/* line 30, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
+/* line 35, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
 #g-showcase .button:active {
   background: #ba8d2b;
 }
-/* line 35, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
-/* line 36, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
+/* line 40, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
+/* line 41, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
 #g-showcase .g-social a {
   background: #2a3c46;
   border: none;
@@ -742,12 +747,12 @@ hr {
   -moz-transition: background 0.2s;
   transition: background 0.2s;
 }
-/* line 41, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
+/* line 46, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
 #g-showcase .g-social a:hover {
   background: #405e6c;
 }
 @media print {
-  /* line 49, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
+  /* line 54, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
   #g-showcase {
     background: #fff !important;
     color: #000 !important;
