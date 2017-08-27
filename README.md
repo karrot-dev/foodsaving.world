@@ -109,7 +109,7 @@ Support us with a monthly donation and help us continue our activities. [[Become
 <a href="https://opencollective.com/grav/backer/1/website" target="_blank"><img src="https://opencollective.com/grav/backer/1/avatar.svg"></a>
 <a href="https://opencollective.com/grav/backer/2/website" target="_blank"><img src="https://opencollective.com/grav/backer/2/avatar.svg"></a>
 <a href="https://opencollective.com/grav/backer/3/website" target="_blank"><img src="https://opencollective.com/grav/backer/3/avatar.svg"></a>
-<a href="https://opencollective.com/grav/backer/4/website" target="_blank"><img src="https://opencollective.com/grav/backer/4/avatar.svg"></a>
+<a href="https://opencollective.com/grab/backer/4/website" target="_blank"><img src="https://opencollective.com/grav/backer/4/avatar.svg"></a>
 <a href="https://opencollective.com/grav/backer/5/website" target="_blank"><img src="https://opencollective.com/grav/backer/5/avatar.svg"></a>
 <a href="https://opencollective.com/grav/backer/6/website" target="_blank"><img src="https://opencollective.com/grav/backer/6/avatar.svg"></a>
 <a href="https://opencollective.com/grav/backer/7/website" target="_blank"><img src="https://opencollective.com/grav/backer/7/avatar.svg"></a>
@@ -190,3 +190,4 @@ You can also run a single unit test file, e.g. `composer test tests/unit/Grav/Co
 
 https://www.sitepoint.com/building-faster-websites-with-grav-a-modern-flat-file-cms/
 https://learn.getgrav.org/forms/blueprints/fields-available
+http://docs.gantry.org/gantry5/advanced/particle-yaml-field-types

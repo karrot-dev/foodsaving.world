@@ -30,3 +30,20 @@
   text-align: center;
   font-size: 1.3rem;
 }
+/* line 1, user/data/gantry5/themes/g5_hydrogen/scss/block-link.scss */
+/* line 2, user/data/gantry5/themes/g5_hydrogen/scss/block-link.scss */
+.block-link a {
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+}
+/* line 6, user/data/gantry5/themes/g5_hydrogen/scss/block-link.scss */
+.block-link a h2 {
+  text-align: center;
+}
+/* line 4, user/data/gantry5/themes/g5_hydrogen/scss/custom.scss */
+/* line 5, user/data/gantry5/themes/g5_hydrogen/scss/custom.scss */
+/* line 6, user/data/gantry5/themes/g5_hydrogen/scss/custom.scss */
+#g-showcase .showcase-link .g-content .g-content {
+  background: rgba(255, 255, 255, 0.2);
+}

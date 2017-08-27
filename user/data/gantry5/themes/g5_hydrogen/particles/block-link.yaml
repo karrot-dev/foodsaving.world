@@ -1,0 +1,30 @@
+name: Block Link
+description: A BIG BLOCK LINK
+type: particle
+icon: fa-pencil-square-o
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+
+    image:
+      type: input.imagepicker
+      label: Image
+      description: Select the main image.
+      overridable: false
+
+    headline:
+      type: input.text
+      label: Headline
+      description: Customize the headline text.
+      placeholder: Enter headline
+      overridable: false
+
+    link:
+      type: input.text
+      label: Link
+      description: Specify the link address.
+      overridable: false

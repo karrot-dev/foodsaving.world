@@ -1,0 +1,16 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+	<div class="block-link">
+		<div class="g-grid">
+			<div class="g-block">
+				<div class="g-content">
+					<a href="{{ particle.link|e }}">
+						{% if particle.image %}<img src="{{ url(particle.image) }}" class="logo-large" alt="{{ particle.headline|e }}" />{% endif %}
+						{% if particle.headline %}<h2>{{ particle.headline|raw }}</h2>{% endif %}
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,1 +1,10 @@
 @import 'people.scss';
+@import 'block-link.scss';
+
+#g-showcase {
+    .showcase-link {
+        .g-content .g-content {
+            background: rgba(255,255,255,0.2);
+        }
+    }
+}

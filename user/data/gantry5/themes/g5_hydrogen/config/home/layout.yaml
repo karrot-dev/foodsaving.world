@@ -5,12 +5,14 @@ preset:
   timestamp: 1503843840
 layout:
   /header/: {  }
-  /navigation/:
-    -
-      - menu-8820
+  /navigation/: {  }
   /showcase/:
     -
       - sample-1
+    -
+      - 'block-link-5904 33.3'
+      - 'block-link-2547 33.3'
+      - 'block-link-9880 33.3'
   /feature/: {  }
   /main/:
     -
@@ -64,9 +66,27 @@ content:
       image: 'gantry-media://fsww2.svg'
       headline: 'Foodsaving World'
       description: '<p>Modern website for organization of foodsaving groups worldwide.</p>'
-      link: 'http://docs.gantry.org'
-      linktext: 'Read More'
+      link: ''
+      linktext: ''
       samples: {  }
+  block-link-5904:
+    title: 'Block Link'
+    attributes:
+      image: 'gantry-media://e23f9f71300f9eda57c6daddcc9b13bd.png'
+      headline: Blog
+      link: /blog
+  block-link-2547:
+    title: 'Block Link'
+    attributes:
+      image: 'gantry-media://b69dad0292bd0e6196b105992db6cacc.png'
+      headline: Login
+      link: 'https://foodsaving.world'
+  block-link-9880:
+    title: 'Block Link'
+    attributes:
+      image: 'gantry-media://094fdeb9b12ee62f481188b1fa47bf15.png'
+      headline: Team
+      link: /team
   sample-2:
     title: 'Getting Started'
     attributes:
