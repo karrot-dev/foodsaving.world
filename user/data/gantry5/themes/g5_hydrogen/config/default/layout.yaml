@@ -46,3 +46,6 @@ content:
   position-footer:
     attributes:
       key: footer
+  branding-7821:
+    attributes:
+      content: Foo

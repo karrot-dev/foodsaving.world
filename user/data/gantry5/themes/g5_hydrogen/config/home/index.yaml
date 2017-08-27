@@ -1,5 +1,5 @@
 name: home
-timestamp: 1503857550
+timestamp: 1503865126
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -35,4 +35,6 @@ particles:
     branding-7082: Branding
   mobile-menu:
     mobile-menu-3886: 'Mobile Menu'
-inherit: {  }
+inherit:
+  default:
+    branding-7082: branding-7821

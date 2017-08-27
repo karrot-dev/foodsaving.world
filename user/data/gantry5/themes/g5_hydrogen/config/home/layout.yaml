@@ -123,7 +123,11 @@ content:
     block:
       variations: center
   branding-7082:
-    block:
-      variations: align-right
+    inherit:
+      outline: default
+      particle: branding-7821
+      include:
+        - block
+        - attributes
   mobile-menu-3886:
     title: 'Mobile Menu'
