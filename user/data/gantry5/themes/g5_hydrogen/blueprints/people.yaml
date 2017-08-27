@@ -1,0 +1,32 @@
+title: FAQ
+@extends:
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        faq:
+          type: tab
+          title: People
+          fields:
+            header.people:
+              name: faq
+              type: list
+              label: People
+
+              fields:
+                .name:
+                  type: text
+                  label: Name
+                .role:
+                  type: text
+                  label: Role
+                .image:
+                  type: filepicker
+                  label: Image
+                  preview_images: true
+                  accept:
+                  - .png
+                  - .jpg

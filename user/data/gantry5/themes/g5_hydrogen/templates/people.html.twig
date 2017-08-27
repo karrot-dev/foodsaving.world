@@ -1,0 +1,12 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<div class="people-template">
+    {% for person in page.header.people %}
+        <div>
+            {{ person.name }} // {{ person.role }}
+            <img src="{{ page.media[person.image].url }}">
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
