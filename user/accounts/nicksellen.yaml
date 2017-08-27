@@ -1,0 +1,11 @@
+email: grav@nicksellen.co.uk
+fullname: 'Nick Sellen'
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$dZGNMDSdTVEOnMLMT4C.beNVX4A4iOSHOwWHhvt3AZKjeMGsj1r1q
