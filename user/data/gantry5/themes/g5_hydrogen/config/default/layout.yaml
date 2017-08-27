@@ -4,10 +4,7 @@ preset:
   name: default
   timestamp: 1503843840
 layout:
-  /header/:
-    -
-      - 'logo-3244 30'
-      - 'position-header 70'
+  /header/: {  }
   /navigation/:
     -
       - menu-4919
@@ -43,9 +40,6 @@ structure:
     attributes:
       boxed: ''
 content:
-  position-header:
-    attributes:
-      key: header
   position-breadcrumbs:
     attributes:
       key: breadcrumbs
