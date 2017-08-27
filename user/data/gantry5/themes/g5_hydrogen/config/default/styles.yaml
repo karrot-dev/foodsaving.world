@@ -16,8 +16,9 @@ navigation:
   overlay: 'rgba(0, 0, 0, 0.4)'
 showcase:
   background: '#354d59'
-  image: ''
+  image: 'gantry-media://fswwbackground.jpg'
   text-color: '#ffffff'
+  heading-font: family=Cabin+Sketch
 feature:
   background: '#ffffff'
   text-color: '#666666'
