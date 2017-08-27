@@ -18,15 +18,15 @@
   width: 260px;
 }
 /* line 9, user/data/gantry5/themes/g5_hydrogen/scss/people.scss */
-.people > div {
-  text-align: center;
-  font-size: 1.3rem;
-}
-/* line 13, user/data/gantry5/themes/g5_hydrogen/scss/people.scss */
 .people .role {
   font-style: italic;
 }
-/* line 16, user/data/gantry5/themes/g5_hydrogen/scss/people.scss */
+/* line 12, user/data/gantry5/themes/g5_hydrogen/scss/people.scss */
 .people .person {
   padding: 60px;
+}
+/* line 14, user/data/gantry5/themes/g5_hydrogen/scss/people.scss */
+.people .person > div {
+  text-align: center;
+  font-size: 1.3rem;
 }

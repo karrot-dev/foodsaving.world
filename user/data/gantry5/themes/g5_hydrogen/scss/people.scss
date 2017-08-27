@@ -6,14 +6,14 @@
         border-radius: 130px;
         width: 260px;
     }
-    > div {
-        text-align: center;
-        font-size: 1.3rem;
-    }
     .role {
         font-style: italic;
     }
     .person {
         padding: 60px;
+        > div {
+            text-align: center;
+            font-size: 1.3rem;
+        }
     }
 }
