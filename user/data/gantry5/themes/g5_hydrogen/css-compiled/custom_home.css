@@ -51,3 +51,9 @@
 #g-showcase .showcase-link .g-content .g-content {
   background: rgba(255, 255, 255, 0.2);
 }
+/* line 12, user/data/gantry5/themes/g5_hydrogen/scss/custom.scss */
+#g-navigation {
+  background-image: url('../../../../../images/g5_hydrogen/fswwbackground.jpg?59a2e219');
+  background-size: cover;
+  background-position: 0px 380px;
+}

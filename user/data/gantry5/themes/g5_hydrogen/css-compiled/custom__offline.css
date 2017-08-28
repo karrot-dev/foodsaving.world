@@ -8,8 +8,52 @@
    http://docs.gantry.org/gantry5/tutorials/adding-a-custom-style-sheet
  */
 
-/* line 2, user/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_nav.scss */
-/* line 12, user/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_nav.scss */
-/* line 2, user/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_utilities.scss */
-/* line 9, user/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_utilities.scss */
-/* line 1, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
+/* line 1, user/data/gantry5/themes/g5_hydrogen/scss/people.scss */
+/* line 2, user/data/gantry5/themes/g5_hydrogen/scss/people.scss */
+.people img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 130px;
+  width: 260px;
+}
+/* line 9, user/data/gantry5/themes/g5_hydrogen/scss/people.scss */
+.people .role {
+  font-style: italic;
+}
+/* line 12, user/data/gantry5/themes/g5_hydrogen/scss/people.scss */
+.people .person {
+  padding: 60px;
+}
+/* line 14, user/data/gantry5/themes/g5_hydrogen/scss/people.scss */
+.people .person > div {
+  text-align: center;
+  font-size: 1.3rem;
+}
+/* line 1, user/data/gantry5/themes/g5_hydrogen/scss/block-link.scss */
+/* line 2, user/data/gantry5/themes/g5_hydrogen/scss/block-link.scss */
+.block-link a {
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+}
+/* line 5, user/data/gantry5/themes/g5_hydrogen/scss/block-link.scss */
+.block-link a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+/* line 9, user/data/gantry5/themes/g5_hydrogen/scss/block-link.scss */
+.block-link a h2 {
+  text-align: center;
+}
+/* line 4, user/data/gantry5/themes/g5_hydrogen/scss/custom.scss */
+/* line 5, user/data/gantry5/themes/g5_hydrogen/scss/custom.scss */
+/* line 6, user/data/gantry5/themes/g5_hydrogen/scss/custom.scss */
+#g-showcase .showcase-link .g-content .g-content {
+  background: rgba(255, 255, 255, 0.2);
+}
+/* line 12, user/data/gantry5/themes/g5_hydrogen/scss/custom.scss */
+#g-navigation {
+  background-image: url('../../../../../images/g5_hydrogen/fswwbackground.jpg?59a2e219');
+  background-size: cover;
+  background-position: 0px -650px;
+}

@@ -1,0 +1,26 @@
+name: blog
+timestamp: 1503878915
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1503843840
+positions: {  }
+sections:
+  header: Header
+  navigation: Navigation
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  content:
+    system-content-9343: 'Page Content'
+  custom:
+    custom-5856: 'Custom HTML'
+  menu:
+    menu-9354: Menu
+inherit:
+  default:
+    navigation: navigation
+    custom-5856: custom-8348
+    menu-9354: menu-4919

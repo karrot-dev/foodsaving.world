@@ -7,6 +7,8 @@ layout:
   /header/: {  }
   /navigation/:
     -
+      - custom-8348
+    -
       - menu-4919
   /main/:
     -
@@ -40,6 +42,10 @@ structure:
     attributes:
       boxed: ''
 content:
+  custom-8348:
+    title: 'Custom HTML'
+    attributes:
+      html: 'Foodsaving World'
   position-breadcrumbs:
     attributes:
       key: breadcrumbs

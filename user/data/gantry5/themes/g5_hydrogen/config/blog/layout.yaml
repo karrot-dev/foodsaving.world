@@ -1,0 +1,30 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1503843840
+layout:
+  /header/: {  }
+  navigation: {  }
+  /main/:
+    -
+      - system-content-9343
+  /footer/: {  }
+  offcanvas: {  }
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''

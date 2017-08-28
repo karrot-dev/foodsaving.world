@@ -1,0 +1,22 @@
+settings:
+  title: Mainmenu
+ordering:
+  home: ''
+  team: ''
+  blog: ''
+  stories: ''
+items:
+  home:
+    enabled: '1'
+    dropdown_dir: right
+    dropdown_hide: '0'
+    width: auto
+  team:
+    enabled: true
+    anchor_class: ''
+  blog:
+    enabled: true
+    anchor_class: ''
+  stories:
+    enabled: true
+    anchor_class: ''

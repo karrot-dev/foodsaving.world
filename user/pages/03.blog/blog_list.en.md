@@ -14,3 +14,4 @@ content:
     url_taxonomy_filters: true
 child_type: blog_item
 ---
+

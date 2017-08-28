@@ -1,0 +1,7 @@
+enabled: '1'
+css:
+  class: social
+title: ''
+target: _blank
+display: both
+items: {  }

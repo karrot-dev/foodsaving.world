@@ -8,3 +8,11 @@
         }
     }
 }
+
+#g-navigation {
+    @if $navigation-image {
+      background-image: url($navigation-image);
+      background-size: cover;
+      background-position: 0px 380px;
+    }
+}

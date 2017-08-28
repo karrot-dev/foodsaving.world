@@ -12,6 +12,7 @@ header:
   text-color: '#ffffff'
 navigation:
   background: '#946b59'
+  image: 'gantry-media://fswwbackground.jpg'
   text-color: '#ffffff'
   overlay: 'rgba(0, 0, 0, 0.4)'
 showcase:
