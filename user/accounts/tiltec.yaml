@@ -1,0 +1,11 @@
+email: tilmann.becker@gmail.com
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: 'Tilmann Becker'
+title: null
+state: enabled
+hashed_password: $2y$10$.xQth/S9JCMQI0WRDgZu7.RI7acGDocNzA1GMDBymAwRtWS9GXM36
