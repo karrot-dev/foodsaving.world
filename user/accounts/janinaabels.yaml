@@ -1,0 +1,11 @@
+email: djahnie@disroot.org
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: 'Janina Abels'
+title: Administrator
+state: enabled
+hashed_password: $2y$10$SBuDeiBsVxkYc0rSwwjYBeIwPOY9kFmwFCPXjG2OZrTZAr6koxBhO

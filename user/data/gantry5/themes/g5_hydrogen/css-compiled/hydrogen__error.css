@@ -167,19 +167,19 @@ h1, h2, h3, h4, h5, h6, strong {
   font-family: "roboto";
   font-style: normal;
   font-weight: 400;
-  src: url('../../../../../themes/g5_hydrogen/fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?59b7eb20#iefix') format("embedded-opentype"), url('../../../../../themes/g5_hydrogen/fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff2?59b7eb20') format("woff2"), url('../../../../../themes/g5_hydrogen/fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff?59b7eb20') format("woff"), url('../../../../../themes/g5_hydrogen/fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf?59b7eb20') format("truetype"), url('../../../../../themes/g5_hydrogen/fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg?59b7eb20#roboto') format("svg");
+  src: url('../../../../../themes/g5_hydrogen/fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?59b69edb#iefix') format("embedded-opentype"), url('../../../../../themes/g5_hydrogen/fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff2?59b69edb') format("woff2"), url('../../../../../themes/g5_hydrogen/fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff?59b69edb') format("woff"), url('../../../../../themes/g5_hydrogen/fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf?59b69edb') format("truetype"), url('../../../../../themes/g5_hydrogen/fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg?59b69edb#roboto') format("svg");
 }
 @font-face {
   font-family: "roboto";
   font-style: normal;
   font-weight: 500;
-  src: url('../../../../../themes/g5_hydrogen/fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot?59b7eb20#iefix') format("embedded-opentype"), url('../../../../../themes/g5_hydrogen/fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff2?59b7eb20') format("woff2"), url('../../../../../themes/g5_hydrogen/fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff?59b7eb20') format("woff"), url('../../../../../themes/g5_hydrogen/fonts/roboto_medium_macroman/Roboto-Medium-webfont.ttf?59b7eb20') format("truetype"), url('../../../../../themes/g5_hydrogen/fonts/roboto_medium_macroman/Roboto-Medium-webfont.svg?59b7eb20#roboto') format("svg");
+  src: url('../../../../../themes/g5_hydrogen/fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot?59b69edb#iefix') format("embedded-opentype"), url('../../../../../themes/g5_hydrogen/fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff2?59b69edb') format("woff2"), url('../../../../../themes/g5_hydrogen/fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff?59b69edb') format("woff"), url('../../../../../themes/g5_hydrogen/fonts/roboto_medium_macroman/Roboto-Medium-webfont.ttf?59b69edb') format("truetype"), url('../../../../../themes/g5_hydrogen/fonts/roboto_medium_macroman/Roboto-Medium-webfont.svg?59b69edb#roboto') format("svg");
 }
 @font-face {
   font-family: "roboto";
   font-style: normal;
   font-weight: 700;
-  src: url('../../../../../themes/g5_hydrogen/fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot?59b7eb20#iefix') format("embedded-opentype"), url('../../../../../themes/g5_hydrogen/fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff2?59b7eb20') format("woff2"), url('../../../../../themes/g5_hydrogen/fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff?59b7eb20') format("woff"), url('../../../../../themes/g5_hydrogen/fonts/roboto_bold_macroman/Roboto-Bold-webfont.ttf?59b7eb20') format("truetype"), url('../../../../../themes/g5_hydrogen/fonts/roboto_bold_macroman/Roboto-Bold-webfont.svg?59b7eb20#roboto') format("svg");
+  src: url('../../../../../themes/g5_hydrogen/fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot?59b69edb#iefix') format("embedded-opentype"), url('../../../../../themes/g5_hydrogen/fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff2?59b69edb') format("woff2"), url('../../../../../themes/g5_hydrogen/fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff?59b69edb') format("woff"), url('../../../../../themes/g5_hydrogen/fonts/roboto_bold_macroman/Roboto-Bold-webfont.ttf?59b69edb') format("truetype"), url('../../../../../themes/g5_hydrogen/fonts/roboto_bold_macroman/Roboto-Bold-webfont.svg?59b69edb#roboto') format("svg");
 }
 /* line 5, user/themes/g5_hydrogen/scss/hydrogen/_typography.scss */
 body {
@@ -702,7 +702,7 @@ hr {
 #g-showcase {
   padding: 1.5rem 0;
   background-color: #354d59;
-  background-image: url('../../../../../images/g5_hydrogen/fswwbackground.jpg?59b7eb20');
+  background-image: url('../../../../../images/g5_hydrogen/fswwbackground.jpg?59b69edb');
   background-size: cover;
   color: #fff;
 }
@@ -1037,7 +1037,7 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
     height: 203px;
     position: absolute;
     z-index: 1;
-    background: url('../../../../../themes/g5_hydrogen/images/macbook.png?59b7eb20');
+    background: url('../../../../../themes/g5_hydrogen/images/macbook.png?59b69edb');
   }
   /* line 31, user/themes/g5_hydrogen/scss/hydrogen/_sample.scss */
   .sample-content .device-promo .macbook .macbook-color {
@@ -1054,7 +1054,7 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
     height: 203px;
     position: absolute;
     z-index: 2;
-    background: url('../../../../../themes/g5_hydrogen/images/ipad.png?59b7eb20');
+    background: url('../../../../../themes/g5_hydrogen/images/ipad.png?59b69edb');
   }
   /* line 46, user/themes/g5_hydrogen/scss/hydrogen/_sample.scss */
   .sample-content .device-promo .ipad .ipad-color {
@@ -1071,7 +1071,7 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
     height: 203px;
     position: absolute;
     z-index: 3;
-    background: url('../../../../../themes/g5_hydrogen/images/iphone.png?59b7eb20');
+    background: url('../../../../../themes/g5_hydrogen/images/iphone.png?59b69edb');
   }
   /* line 61, user/themes/g5_hydrogen/scss/hydrogen/_sample.scss */
   .sample-content .device-promo .iphone .iphone-color {
