@@ -1,5 +1,5 @@
 name: home
-timestamp: 1503878915
+timestamp: 1505303015
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -29,8 +29,6 @@ particles:
     system-messages-8032: 'System Messages'
   position:
     position-footer: Footer
-  copyright:
-    copyright-5496: Copyright
   social:
     social-8249: Social
   branding:

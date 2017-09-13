@@ -21,9 +21,8 @@ layout:
     -
       - position-footer
     -
-      - 'copyright-4551 40'
-      - 'spacer-6029 30'
-      - 'branding-7821 30'
+      - 'spacer-6029 60'
+      - 'branding-7821 40'
   offcanvas:
     -
       - mobile-menu-6142
@@ -54,4 +53,4 @@ content:
       key: footer
   branding-7821:
     attributes:
-      content: Foo
+      content: 'Foodsaving Worldwide'

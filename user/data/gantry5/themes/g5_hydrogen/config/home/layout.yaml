@@ -26,9 +26,8 @@ layout:
     -
       - position-footer
     -
-      - 'copyright-5496 33.3'
-      - 'social-8249 33.3'
-      - 'branding-7082 33.3'
+      - 'social-8249 70'
+      - 'branding-7082 30'
   offcanvas:
     -
       - mobile-menu-3886
@@ -121,24 +120,14 @@ content:
         class: social-items
       items:
         -
-          icon: 'fa fa-twitter'
-          text: Twitter
-          link: 'http://twitter.com/rockettheme'
-          name: Twitter
-        -
           icon: 'fa fa-facebook'
           text: Facebook
-          link: 'http://facebook.com/rockettheme'
+          link: 'https://www.facebook.com/groups/foodsaving.worldwide/'
           name: Facebook
-        -
-          icon: 'fa fa-google'
-          text: Google
-          link: 'http://plus.google.com/+rockettheme'
-          name: Google
         -
           icon: 'fa fa-rss'
           text: RSS
-          link: 'http://www.rockettheme.com/product-updates?rss'
+          link: blog.rss
           name: RSS
     block:
       variations: center
