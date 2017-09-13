@@ -242,7 +242,7 @@ hr {
 }
 /* line 1, user/themes/g5_hydrogen/scss/hydrogen/_nav.scss */
 #g-navigation {
-  background: #946b59;
+  background: #795548;
   color: #fff;
   text-align: center;
   position: relative;
@@ -254,7 +254,7 @@ hr {
 }
 /* line 12, user/themes/g5_hydrogen/scss/hydrogen/_nav.scss */
 #g-navigation a {
-  color: #e5d9d4;
+  color: #d5c0b8;
 }
 /* line 14, user/themes/g5_hydrogen/scss/hydrogen/_nav.scss */
 #g-navigation a:hover {
@@ -263,7 +263,7 @@ hr {
 /* line 19, user/themes/g5_hydrogen/scss/hydrogen/_nav.scss */
 /* line 20, user/themes/g5_hydrogen/scss/hydrogen/_nav.scss */
 #g-navigation .g-social a {
-  background: #815d4e;
+  background: #66483d;
   border: none;
   text-decoration: none;
   color: #fff;
@@ -273,7 +273,7 @@ hr {
 }
 /* line 26, user/themes/g5_hydrogen/scss/hydrogen/_nav.scss */
 #g-navigation .g-social a:hover {
-  background: #a47a68;
+  background: #8c6253;
 }
 /* line 32, user/themes/g5_hydrogen/scss/hydrogen/_nav.scss */
 #g-navigation .g-main-nav {
@@ -292,7 +292,7 @@ hr {
 /* line 17, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 /* line 18, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 #g-navigation .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):hover {
-  background: #815d4e;
+  background: #66483d;
 }
 /* line 22, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 #g-navigation .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active {
@@ -304,7 +304,7 @@ hr {
 }
 /* line 29, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 #g-navigation .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active.g-selected {
-  background: #815d4e;
+  background: #66483d;
 }
 /* line 32, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 #g-navigation .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active.g-selected > .g-menu-item-container {
@@ -312,7 +312,7 @@ hr {
 }
 /* line 41, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 #g-navigation .g-main-nav .g-dropdown {
-  background: #815d4e;
+  background: #66483d;
 }
 /* line 45, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 /* line 46, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
@@ -323,7 +323,7 @@ hr {
 /* line 51, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 /* line 52, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 #g-navigation .g-main-nav .g-sublevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):hover, #g-navigation .g-main-nav .g-sublevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active {
-  background: #745446;
+  background: #593f35;
 }
 /* line 35, user/themes/g5_hydrogen/scss/hydrogen/_nav.scss */
 #g-navigation .g-main-nav .g-toplevel {
@@ -347,15 +347,15 @@ hr {
 /* line 66, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 /* line 67, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 #g-navigation .g-menu-hastouch .g-toplevel > li.g-menu-item-link-parent > .g-menu-item-container > .g-menu-parent-indicator {
-  border: 1px solid #a47a68;
-  background: #876251;
+  border: 1px solid #8c6253;
+  background: #6c4c40;
   border-radius: 0.1875rem;
   margin: -0.2rem 0 -0.2rem 0.5rem;
   padding: 0.2rem;
 }
 /* line 70, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 #g-navigation .g-menu-hastouch .g-toplevel > li.g-menu-item-link-parent > .g-menu-item-container > .g-menu-parent-indicator:hover {
-  background: #7b594a;
+  background: #5f4339;
 }
 /* line 76, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 #g-navigation .g-menu-hastouch .g-toplevel > li.g-menu-item-link-parent > .g-menu-item-container > .g-menu-parent-indicator:after {
@@ -375,8 +375,8 @@ hr {
 /* line 98, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 /* line 99, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 #g-navigation .g-menu-hastouch .g-standard .g-sublevel > li.g-menu-item-link-parent > .g-menu-item-container > .g-menu-parent-indicator, #g-navigation .g-fullwidth .g-sublevel > li.g-menu-item-link-parent > .g-menu-item-container > .g-menu-parent-indicator {
-  border: 1px solid #a47a68;
-  background: #876251;
+  border: 1px solid #8c6253;
+  background: #6c4c40;
   border-radius: 0.1875rem;
   padding: 0.1rem;
   margin-top: -0.1rem;
@@ -384,7 +384,7 @@ hr {
 }
 /* line 102, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 #g-navigation .g-menu-hastouch .g-standard .g-sublevel > li.g-menu-item-link-parent > .g-menu-item-container > .g-menu-parent-indicator:hover, #g-navigation .g-fullwidth .g-sublevel > li.g-menu-item-link-parent > .g-menu-item-container > .g-menu-parent-indicator:hover {
-  background: #7b594a;
+  background: #5f4339;
 }
 /* line 109, user/themes/g5_hydrogen/scss/mixins/_nav.scss */
 #g-navigation .g-menu-hastouch .g-standard .g-sublevel > li.g-menu-item-link-parent > .g-menu-item-container > .g-menu-parent-indicator:after, #g-navigation .g-fullwidth .g-sublevel > li.g-menu-item-link-parent > .g-menu-item-container > .g-menu-parent-indicator:after {

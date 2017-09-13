@@ -53,7 +53,7 @@
 }
 /* line 12, user/data/gantry5/themes/g5_hydrogen/scss/custom.scss */
 #g-navigation {
-  background-image: url('../../../../../images/g5_hydrogen/fswwbackground.jpg?59a2e219');
+  background-image: url('');
   background-size: cover;
-  background-position: 0px -650px;
+  background-position: 0px 380px;
 }

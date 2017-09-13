@@ -7,8 +7,6 @@ layout:
   /header/: {  }
   /navigation/:
     -
-      - custom-8348
-    -
       - menu-4919
   /main/:
     -
@@ -21,8 +19,8 @@ layout:
     -
       - position-footer
     -
-      - 'spacer-6029 60'
-      - 'branding-7821 40'
+      - 'social-9580 70'
+      - 'branding-7821 30'
   offcanvas:
     -
       - mobile-menu-6142
@@ -41,16 +39,25 @@ structure:
     attributes:
       boxed: ''
 content:
-  custom-8348:
-    title: 'Custom HTML'
-    attributes:
-      html: 'Foodsaving World'
   position-breadcrumbs:
     attributes:
       key: breadcrumbs
   position-footer:
     attributes:
       key: footer
+  social-9580:
+    attributes:
+      items:
+        -
+          icon: 'fa fa-facebook'
+          text: Facebook
+          link: 'https://www.facebook.com/groups/foodsaving.worldwide/'
+          name: Facebook
+        -
+          icon: 'fa fa-rss'
+          text: RSS
+          link: blog.rss
+          name: RSS
   branding-7821:
     attributes:
       content: 'Foodsaving Worldwide'
