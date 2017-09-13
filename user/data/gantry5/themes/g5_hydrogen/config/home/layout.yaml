@@ -5,21 +5,21 @@ preset:
   timestamp: 1503843840
 layout:
   /header/: {  }
-  /navigation/: {  }
+  /navigation/:
+    -
+      - menu-7950
   /showcase/:
     -
       - sample-1
-  /feature/: {  }
+  /feature/:
+    -
+      - sample-2
   /main/:
     -
       - system-messages-8032
     -
-      - sample-2
-  /subfeature/:
-    -
       - sample-3
-    -
-      - spacer-spacer-5322
+  /subfeature/:
     -
       - sample-9452
     -
@@ -68,7 +68,7 @@ content:
     attributes:
       image: 'gantry-media://fsww2.svg'
       headline: 'Foodsaving World'
-      description: '<p>A modern website for organization of foodsaving groups worldwide.</p>'
+      description: 'A distributed, global grassroots movement against food waste.'
       link: ''
       linktext: ''
       samples: {  }
@@ -110,7 +110,7 @@ content:
     attributes:
       image: ''
       headline: ''
-      description: "<h1 class=\"center\">Getting Started</h1>\n<p align=\"left\">We support all initiatives, that want to join the fight against food waste! Depending on your needs there's different resources that could be of interest to you.</p>\n\n<div align=\"left\">In case you are:\n<ul><li><strong>an interested bypasser</strong>:<br>\nThere's general info about foodsaving, existing groups and what's going on.</li>\n<li><strong>an enthusiastic individual</strong>:<br>\nWe may have info about other potential foodsavers or foodsharing groups in your area.<br>\nWe put together a practical guide on how to start a foodsaving project.<br>\nYou could already have a look at our foodsaving tool <i>Karrot</i></li>\n<li><strong>a group that is just starting</strong>:<br>\nWe compiled several detailed how-tos that cover different aspects of foodsaving.<br>\nWe strongly suggest you try out <i>Karrot</i>! It's meant to make your life easier and bring structure to your pick-up management.</li>\n<li><strong>a group that is already going strong</strong>:<br>\nAre you tired of those spreadsheets and doodles to organize your pick-ups? Time to switch to <i>Karrot</i>!<br> \nMaybe you want to share your experiences in the form of a blog post? Get in contact and we'll make it possible!</li></ul></div>"
+      description: "<h1 class=\"center\">Getting Started</h1>\n<p align=\"left\">We support all initiatives, that want to join the fight against food waste! Depending on your needs there's different resources that could be of interest to you.</p>\n\n<div align=\"left\">In case you are:\n<ul><li><strong>an interested bypasser</strong>:<br>\nThere's general info about foodsaving, existing groups and what's going on.</li>\n<li><strong>an enthusiastic individual</strong>:<br>\nWe may have info about other potential foodsavers or foodsharing groups in your area.<br>\nWe put together <a href=../startcommunity>a practical guide on how to start a foodsaving project.</a><br>\nYou could already have a look at our foodsaving tool <i>Karrot</i></li>\n<li><strong>a group that is just starting</strong>:<br>\nWe compiled several detailed how-tos that cover different aspects of foodsaving.<br>\nWe strongly suggest you try out <i>Karrot</i>! It's meant to make your life easier and bring structure to your pick-up management.</li>\n<li><strong>a group that is already going strong</strong>:<br>\nAre you tired of those spreadsheets and doodles to organize your pick-ups? Time to switch to <i>Karrot</i>!<br> \nMaybe you want to share your experiences in the form of a blog post? Get in contact and we'll make it possible!</li></ul></div>"
       link: ''
       linktext: ''
       samples: {  }
@@ -119,7 +119,7 @@ content:
     attributes:
       image: ''
       headline: ''
-      description: "<h1 class=\"center\">Karrot</h1>\n<h3 class=\"center\"><i>the foodsaving tool</i></h3>\n<p align=\"left\">The core piece of our work is a tool, that is meant to enable you to run a successful, efficient and organized foodsaving project. It is a <strong>completely translatable, open source and free</strong> piece of software, that is developed by passionate volunteers only. <br>\nFeel free to <a href=https://github.com/yunity/karrot-frontend>visit our project on GitHub</a> if you want to have a closer look.</p>"
+      description: "<h1 class=\"center\">Karrot</h1>\n<h3 class=\"center\"><i>the foodsaving tool</i></h3>\n<p align=\"left\">The core piece of our work is a tool, that is meant to enable you to run a successful, efficient and organized foodsaving project. It is a <strong>completely translatable, open source and free</strong> piece of software, that is developed by passionate volunteers only. <br>\nWe host an instance of it right here on foodsaving.world and you can try it out as much as you like. The general idea for long-term use however is, that foodsaving groups host their own instances if possible. <br>\nYou're very welcome to <a href=https://github.com/yunity/karrot-frontend>visit our project on GitHub</a> if you want to have a closer look.</p>"
       link: ''
       linktext: ''
       samples: {  }
@@ -127,19 +127,19 @@ content:
     title: 'Block Link'
     attributes:
       image: 'gantry-media://e23f9f71300f9eda57c6daddcc9b13bd.png'
-      headline: 'Karrot dev-blog'
+      headline: Dev-blog
       link: /blog
   block-link-2547:
     title: 'Block Link'
     attributes:
       image: 'gantry-media://b69dad0292bd0e6196b105992db6cacc.png'
-      headline: 'Login to Karrot'
+      headline: Login
       link: 'https://foodsaving.world'
   block-link-9880:
     title: 'Block Link'
     attributes:
       image: 'gantry-media://094fdeb9b12ee62f481188b1fa47bf15.png'
-      headline: 'Karrot team'
+      headline: Team
       link: /team
   position-footer:
     attributes:
@@ -159,8 +159,6 @@ content:
           text: RSS
           link: blog.rss
           name: RSS
-    block:
-      variations: center
   branding-7082:
     inherit:
       outline: default

@@ -1,5 +1,5 @@
 name: home
-timestamp: 1505334448
+timestamp: 1505344217
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -17,6 +17,8 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
+  menu:
+    menu-7950: Menu
   sample:
     sample-1: 'Foodsaving World'
     sample-2: Welcome
@@ -24,8 +26,6 @@ particles:
     sample-9452: Karrot
   messages:
     system-messages-8032: 'System Messages'
-  spacer:
-    spacer-spacer-5322: Spacer
   block-link:
     block-link-5904: 'Block Link'
     block-link-2547: 'Block Link'

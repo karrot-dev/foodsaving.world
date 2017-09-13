@@ -1,5 +1,5 @@
 name: default
-timestamp: 1505303211
+timestamp: 1505342860
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -15,8 +15,6 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  custom:
-    custom-8348: 'Custom HTML'
   menu:
     menu-4919: Menu
   position:
@@ -26,8 +24,8 @@ particles:
     system-messages-1467: 'System Messages'
   content:
     system-content-7859: 'Page Content'
-  spacer:
-    spacer-6029: Spacer
+  social:
+    social-9580: Social
   branding:
     branding-7821: Branding
   mobile-menu:
