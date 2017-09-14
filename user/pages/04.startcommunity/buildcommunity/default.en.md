@@ -2,8 +2,9 @@
 title: 'Community Building'
 ---
 
-## Building a foodsharing community
-### _Come gather 'round, people_
+# Building a foodsharing community
+
+### <div class="fa fa-arrow-right"></div> _Come gather 'round, people_
 
 Remember that the most important part of a sharing community is a community! Before you can actually start with any foodsaving, you will need to build up a reliable network of foodsavers. There is a lot of food to be eaten! So gather your trustworthy, dedicated friends and then reach out to local strangers and invite them to save food. Start an awareness raising campaign to get them on board!
 
@@ -19,7 +20,7 @@ There are many activities that can be set up to get to know each other and creat
 
 Of course it is as important to keep the people around as gathering them, so be sure to be nice to each other! If there are some who don't get what this means, you may want to refer to more clearly formulated criteria. In that case have a look at our [guideline for positive cooperation](https://yunity.atlassian.net/wiki/spaces/FSINT/pages/43909164/Guideline+for+positive+cooperation) (among the team members, in this case).
 
-### _As big as possible while still managable_
+### <div class="fa fa-asterisk"></div> _As big as possible while still managable_
 
 Some sort of membership control can become useful if your initiative grows fast. There are many ways to implement this and how you organize your rising network is completely up to you. For example, foodsharing.de has reached 17,000 volunteer members after 4 years of existence. Such a rapid growth is certainly a sign of good health, but it also meant introducing a selection process for membership. All people who want to join the German platform must pass a 10 minutes quiz which evaluates if they have understood the basic internal guidelines. This is to ensure that members are serious about saving food, know that they will have to spend time in doing so and really understand what the foodsharing philosophy is all about.
 
