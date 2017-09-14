@@ -118,7 +118,7 @@ images:
   cache_all: false
   cache_perms: '0755'
   debug: false
-  auto_fix_orientation: false
+  auto_fix_orientation: true
 media:
   enable_media_timestamp: false
   upload_limit: 0
