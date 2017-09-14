@@ -97,7 +97,7 @@ body {
 }
 /* line 19, user/themes/g5_hydrogen/scss/hydrogen/_core.scss */
 a {
-  color: #795548;
+  color: #3068a8;
 }
 /* line 21, user/themes/g5_hydrogen/scss/hydrogen/_core.scss */
 a:hover {
@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6, strong {
   padding: 0.5rem 1rem;
   border-radius: 0.1875rem;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  background: #795548;
+  background: #3068a8;
   color: #fff;
   border: 0;
   line-height: 1.5;
@@ -126,12 +126,12 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 /* line 44, user/themes/g5_hydrogen/scss/hydrogen/_core.scss */
 .button:hover {
-  background: #896052;
+  background: #3674bc;
   color: #fff;
 }
 /* line 49, user/themes/g5_hydrogen/scss/hydrogen/_core.scss */
 .button:active, .button:focus {
-  background: #694a3e;
+  background: #2a5c94;
   box-shadow: inset -1px -1px 1px rgba(0, 0, 0, 0.15);
   color: #fff;
   outline: 0;
@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 /* line 60, user/themes/g5_hydrogen/scss/hydrogen/_core.scss */
 .button:disabled:hover {
-  background: #795548;
+  background: #3068a8;
 }
 /* line 66, user/themes/g5_hydrogen/scss/hydrogen/_core.scss */
 .gantry-logo {
@@ -479,16 +479,16 @@ hr {
 }
 /* line 16, user/themes/g5_hydrogen/scss/hydrogen/_offcanvas.scss */
 #g-offcanvas .button {
-  background: #cf9d30;
+  background: #fccb3f;
   color: #fff;
 }
 /* line 19, user/themes/g5_hydrogen/scss/hydrogen/_offcanvas.scss */
 #g-offcanvas .button:hover {
-  background: #d4a745;
+  background: #fcd258;
 }
 /* line 22, user/themes/g5_hydrogen/scss/hydrogen/_offcanvas.scss */
 #g-offcanvas .button:active {
-  background: #ba8d2b;
+  background: #fcc426;
 }
 /* line 28, user/themes/g5_hydrogen/scss/hydrogen/_offcanvas.scss */
 .g-offcanvas-toggle {
@@ -515,7 +515,7 @@ hr {
 /* line 50, user/themes/g5_hydrogen/scss/hydrogen/_offcanvas.scss */
 /* line 51, user/themes/g5_hydrogen/scss/hydrogen/_offcanvas.scss */
 #g-offcanvas #g-mobilemenu-container ul > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):hover, #g-offcanvas #g-mobilemenu-container ul > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active {
-  background: #6c4c40;
+  background: #2b5e98;
 }
 /* line 54, user/themes/g5_hydrogen/scss/hydrogen/_offcanvas.scss */
 #g-offcanvas #g-mobilemenu-container ul > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):hover > .g-menu-item-container, #g-offcanvas #g-mobilemenu-container ul > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active > .g-menu-item-container {
@@ -525,15 +525,15 @@ hr {
 /* line 60, user/themes/g5_hydrogen/scss/hydrogen/_offcanvas.scss */
 /* line 61, user/themes/g5_hydrogen/scss/hydrogen/_offcanvas.scss */
 #g-offcanvas #g-mobilemenu-container ul > li.g-menu-item-link-parent > .g-menu-item-container > .g-menu-parent-indicator {
-  border: 1px solid #8c6253;
-  background: #6c4c40;
+  border: 1px solid #3777c0;
+  background: #2b5e98;
   border-radius: 0.1875rem;
   margin: -0.2rem 0 -0.2rem 0.5rem;
   padding: 0.2rem;
 }
 /* line 64, user/themes/g5_hydrogen/scss/hydrogen/_offcanvas.scss */
 #g-offcanvas #g-mobilemenu-container ul > li.g-menu-item-link-parent > .g-menu-item-container > .g-menu-parent-indicator:hover {
-  background: #5f4339;
+  background: #275488;
 }
 /* line 74, user/themes/g5_hydrogen/scss/hydrogen/_offcanvas.scss */
 #g-offcanvas #g-mobilemenu-container ul .g-dropdown-column {
@@ -726,16 +726,16 @@ hr {
 }
 /* line 29, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
 #g-showcase .button {
-  background: #cf9d30;
+  background: #fccb3f;
   color: #fff;
 }
 /* line 32, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
 #g-showcase .button:hover {
-  background: #d4a745;
+  background: #fcd258;
 }
 /* line 35, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
 #g-showcase .button:active {
-  background: #ba8d2b;
+  background: #fcc426;
 }
 /* line 40, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
 /* line 41, user/data/gantry5/themes/g5_hydrogen/scss/hydrogen/_showcase.scss */
@@ -871,7 +871,7 @@ hr {
 /* line 43, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 /* line 44, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 .box3.moduletable, .box3.widget, .box3.g-outer-box, .box3 > .g-content {
-  background: #795548;
+  background: #3068a8;
 }
 /* line 48, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 /* line 49, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
@@ -880,7 +880,7 @@ hr {
 }
 /* line 52, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 .box3.moduletable a, .box3.widget a, .box3 > .g-content a {
-  color: #cbb1a8;
+  color: #a5c3e5;
 }
 /* line 54, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 .box3.moduletable a:hover, .box3.widget a:hover, .box3 > .g-content a:hover {
@@ -889,16 +889,16 @@ hr {
 /* line 58, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 .box3.moduletable .button, .box3.widget .button, .box3 > .g-content .button {
   color: #fff;
-  background: #996b5b;
+  background: #4281c9;
 }
 /* line 61, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 .box3.moduletable .button:hover, .box3.widget .button:hover, .box3 > .g-content .button:hover {
-  background: #a57868;
+  background: #568ecf;
 }
 /* line 68, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 /* line 69, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 .box4.moduletable, .box4.widget, .box4.g-outer-box, .box4 > .g-content {
-  background: #cf9d30;
+  background: #fccb3f;
 }
 /* line 72, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 /* line 73, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
@@ -907,7 +907,7 @@ hr {
 }
 /* line 76, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 .box4.moduletable a, .box4.widget a, .box4 > .g-content a {
-  color: #f1e2c1;
+  color: #fffbef;
 }
 /* line 78, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 .box4.moduletable a:hover, .box4.widget a:hover, .box4 > .g-content a:hover {
@@ -915,12 +915,12 @@ hr {
 }
 /* line 82, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 .box4.moduletable .button, .box4.widget .button, .box4 > .g-content .button {
-  color: #faf5ea;
-  background: #ddba6e;
+  color: #543f01;
+  background: #ebaf04;
 }
 /* line 85, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 .box4.moduletable .button:hover, .box4.widget .button:hover, .box4 > .g-content .button:hover {
-  background: #d9b159;
+  background: #fbbd0d;
 }
 /* line 92, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
 /* line 93, user/themes/g5_hydrogen/scss/hydrogen/_variations.scss */
@@ -973,7 +973,7 @@ textarea:hover, select[multiple=multiple]:hover {
 }
 /* line 10, user/themes/g5_hydrogen/scss/hydrogen/_forms.scss */
 textarea:focus, select[multiple=multiple]:focus {
-  border-color: #795548;
+  border-color: #3068a8;
 }
 /* line 15, user/themes/g5_hydrogen/scss/hydrogen/_forms.scss */
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea {
@@ -987,7 +987,7 @@ input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hove
 }
 /* line 25, user/themes/g5_hydrogen/scss/hydrogen/_forms.scss */
 input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus {
-  border-color: #795548;
+  border-color: #3068a8;
 }
 /* line 1, user/themes/g5_hydrogen/scss/hydrogen/_social.scss */
 /* line 2, user/themes/g5_hydrogen/scss/hydrogen/_social.scss */
@@ -1014,7 +1014,7 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
 /* line 9, user/themes/g5_hydrogen/scss/hydrogen/_sample.scss */
 .sample-content .sample-icons {
   font-size: 5rem;
-  color: #795548;
+  color: #3068a8;
   opacity: 0.6;
 }
 /* line 14, user/themes/g5_hydrogen/scss/hydrogen/_sample.scss */
@@ -1063,7 +1063,7 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
     height: 163px;
     right: 27px;
     top: 20px;
-    background: #795548;
+    background: #3068a8;
   }
   /* line 55, user/themes/g5_hydrogen/scss/hydrogen/_sample.scss */
   .sample-content .device-promo .iphone {
@@ -1080,7 +1080,7 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
     height: 75px;
     right: 4px;
     top: 112px;
-    background: #cf9d30;
+    background: #fccb3f;
   }
 }
 /* line 72, user/themes/g5_hydrogen/scss/hydrogen/_sample.scss */

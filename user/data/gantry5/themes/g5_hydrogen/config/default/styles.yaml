@@ -5,8 +5,8 @@ base:
   body-font: 'roboto, sans-serif'
   heading-font: 'roboto, sans-serif'
 accent:
-  color-1: '#795548'
-  color-2: '#cf9d30'
+  color-1: '#3068A8'
+  color-2: '#FCCB3F'
 header:
   background: '#795548'
   text-color: '#ffffff'
