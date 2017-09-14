@@ -1,0 +1,8 @@
+page:
+  -
+    startcommunity/awareness: true
+    startcommunity/buildcommunity: true
+    startcommunity/legal: true
+    startcommunity/organization: true
+language: {  }
+type: {  }
