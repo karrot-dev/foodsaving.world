@@ -4,7 +4,11 @@ ordering:
   home: ''
   team: ''
   blog: ''
-  startcommunity: {  }
+  startcommunity:
+    __particle-SQyp6: ''
+    __particle-5ccLI: ''
+    __particle-tKYZj: ''
+    __particle-b0DIC: ''
 items:
   home:
     enabled: '1'
@@ -35,7 +39,8 @@ items:
         filter: '0'
       block:
         extra: {  }
-    enabled: '1'
+    enabled: true
+    anchor_class: ''
   startcommunity/__particle-SQyp6:
     type: particle
     particle: custom
@@ -48,7 +53,8 @@ items:
         filter: '0'
       block:
         extra: {  }
-    enabled: '1'
+    enabled: true
+    anchor_class: ''
   startcommunity/__particle-5ccLI:
     type: particle
     particle: custom
@@ -59,7 +65,8 @@ items:
         html: '<a href="/startcommunity/organization">Organization</a>'
       block:
         extra: {  }
-    enabled: '1'
+    enabled: true
+    anchor_class: ''
   startcommunity/__particle-b0DIC:
     type: particle
     particle: custom
@@ -70,4 +77,5 @@ items:
         html: '<a href="/startcommunity/legal">Legal Circumstances</a>'
       block:
         extra: {  }
-    enabled: '1'
+    enabled: true
+    anchor_class: ''
