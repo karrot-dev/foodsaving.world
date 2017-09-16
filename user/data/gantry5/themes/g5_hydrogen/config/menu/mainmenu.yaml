@@ -4,19 +4,39 @@ ordering:
   home: ''
   team: ''
   blog: ''
-  stories: ''
+  startcommunity:
+    __particle-nUz9C: ''
 items:
   home:
     enabled: '1'
     dropdown_dir: right
     dropdown_hide: '0'
     width: auto
+    anchor_class: ''
   team:
     enabled: true
     anchor_class: ''
   blog:
     enabled: true
     anchor_class: ''
-  stories:
+  startcommunity:
+    columns:
+      - 100
     enabled: true
     anchor_class: ''
+  startcommunity/__particle-nUz9C:
+    type: particle
+    particle: sample
+    title: 'Raise Awareness'
+    options:
+      particle:
+        enabled: '1'
+        image: ''
+        headline: ''
+        description: ''
+        link: /awareness
+        linktext: ''
+        samples: {  }
+      block:
+        extra: {  }
+    enabled: '1'
