@@ -4,6 +4,9 @@ ordering:
   home: ''
   team: ''
   blog: ''
+  people: ''
+  software: ''
+  knowledge: ''
   startcommunity:
     __particle-SQyp6: ''
     __particle-5ccLI: ''
@@ -25,6 +28,15 @@ items:
   startcommunity:
     columns:
       - 100
+    enabled: true
+    anchor_class: ''
+  people:
+    enabled: true
+    anchor_class: ''
+  software:
+    enabled: true
+    anchor_class: ''
+  knowledge:
     enabled: true
     anchor_class: ''
   startcommunity/__particle-tKYZj:

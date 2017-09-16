@@ -16,6 +16,8 @@ layout:
       - sample-2
   /main/:
     -
+      - custom-6594
+    -
       - system-messages-8032
     -
       - sample-3
@@ -85,7 +87,7 @@ content:
         -
           icon: 'fa fa-group'
           subtitle: ''
-          description: '<p> Bridge the barriers of nationalities and bring together foodsaving enthusiasts from all over the world.</p>'
+          description: '<p><a href="/en/people">Bridge the barriers of nationalities and bring together foodsaving enthusiasts from all over the world.</a></p>'
           id: ''
           class: ''
           variations: ''
@@ -93,7 +95,7 @@ content:
         -
           icon: 'fa fa-file-code-o'
           subtitle: ''
-          description: '<p>Our very own pick-up management tool named <b>Karrot</b>! Completely translatable, open source and free to use forever!</p>'
+          description: '<p><a href="/en/software">Our very own pick-up management tool named <b>Karrot</b>! Completely translatable, open source and free to use forever!</a></p>'
           id: ''
           class: ''
           variations: ''
@@ -101,11 +103,15 @@ content:
         -
           icon: 'fa fa-folder-open'
           subtitle: ''
-          description: "<p>Collect experiences, problems and solutions for all the foodsaving groups out there to benefit from.\n</p>"
+          description: '<p><a href="/en/knowledge">Collect experiences, problems and solutions for all the foodsaving groups out there to benefit from.</a></p>'
           id: ''
           class: ''
           variations: ''
           title: 'Share knowledge'
+  custom-6594:
+    title: 'Custom HTML'
+    attributes:
+      html: '<img src="/user/images/g5_hydrogen/nieves.jpg" alt="Save food!" style="border-radius:20px">'
   sample-3:
     title: 'Getting Started'
     attributes:
