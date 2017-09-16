@@ -1,5 +1,5 @@
 name: home
-timestamp: 1505570945
+timestamp: 1505585386
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -24,6 +24,8 @@ particles:
     sample-2: Welcome
     sample-3: 'Getting Started'
     sample-9452: Karrot
+  custom:
+    custom-6594: 'Custom HTML'
   messages:
     system-messages-8032: 'System Messages'
   block-link:
