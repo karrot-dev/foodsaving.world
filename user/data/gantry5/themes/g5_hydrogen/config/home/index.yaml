@@ -1,5 +1,5 @@
 name: home
-timestamp: 1505424813
+timestamp: 1505570945
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -17,6 +17,8 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
+  menu:
+    menu-8665: Menu
   sample:
     sample-1: 'Foodsaving World'
     sample-2: Welcome
