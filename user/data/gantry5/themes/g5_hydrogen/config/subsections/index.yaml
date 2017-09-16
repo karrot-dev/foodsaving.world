@@ -1,12 +1,11 @@
 name: subsections
-timestamp: 1505421571
+timestamp: 1505423290
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/2-col-left.png'
   name: 2_column_-_left
   timestamp: 1505140443
 positions:
-  sidebar: Sidebar
   breadcrumbs: Breadcrumbs
   footer: Footer
 sections:
@@ -19,8 +18,8 @@ sections:
 particles:
   menu:
     menu-9597: Menu
+    menu-3743: Menu
   position:
-    position-sidebar: Sidebar
     position-breadcrumbs: Breadcrumbs
     position-footer: Footer
   messages:

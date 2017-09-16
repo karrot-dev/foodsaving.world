@@ -39,6 +39,12 @@ structure:
     attributes:
       boxed: ''
 content:
+  menu-4919:
+    attributes:
+      menu: ''
+      base: startcommunity
+      startLevel: '1'
+      maxLevels: '2'
   position-breadcrumbs:
     attributes:
       key: breadcrumbs

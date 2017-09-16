@@ -12,6 +12,8 @@ Remember that the most important part of a sharing community is a community! Bef
 * publish an article in a local newspaper or give an interview on local radio
 * get super active on social media to reach out even further
 
+### <div=class"fa fa-handshake-o"></div> _Together we are strong_
+
 There are many activities that can be set up to get to know each other and create bonds. Here are some ideas of events that we found relevant, fun, easy to organize and engaging:
 
 * [Food-Share Point](https://yunity.atlassian.net/wiki/spaces/FSINT/pages/43909145/Food-Share+Point+Mini+Manual) construction workshop: if you want to set up a location where people can share food unconditionally, this can be a wonderful activity for members to connect.
@@ -25,6 +27,8 @@ Of course it is as important to keep the people around as gathering them, so be 
 Some sort of membership control can become useful if your initiative grows fast. There are many ways to implement this and how you organize your rising network is completely up to you. For example, foodsharing.de has reached 17,000 volunteer members after 4 years of existence. Such a rapid growth is certainly a sign of good health, but it also meant introducing a selection process for membership. All people who want to join the German platform must pass a 10 minutes quiz which evaluates if they have understood the basic internal guidelines. This is to ensure that members are serious about saving food, know that they will have to spend time in doing so and really understand what the foodsharing philosophy is all about.
 
 The instance of Karrot hosted here on foodsaving.world lets you protect your group via password. This way you are free to implement whatever process you deem useful before giving out the password to new foodsavers. Really, we encourage you to be creative, to think outside the box and come up with the best solution for your specific group! Feel free to get inspiration from others or come up with a whole new system. In the latter case, please let us know how it's working!
+
+### <div class="fa fa-female"></div> _Friendly, connected and professional_
 
 For some behavioral standards example, please refer to the checklist 'Professionalism for foodsavers' within the [cooperation mini manual](https://yunity.atlassian.net/wiki/spaces/FSINT/pages/46203075/How+to+build+and+maintain+cooperations+with+stores).
 
