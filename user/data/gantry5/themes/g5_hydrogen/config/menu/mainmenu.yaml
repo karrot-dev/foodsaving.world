@@ -4,8 +4,7 @@ ordering:
   home: ''
   team: ''
   blog: ''
-  startcommunity:
-    __particle-nUz9C: ''
+  startcommunity: {  }
 items:
   home:
     enabled: '1'
@@ -24,19 +23,51 @@ items:
       - 100
     enabled: true
     anchor_class: ''
-  startcommunity/__particle-nUz9C:
+  startcommunity/__particle-tKYZj:
     type: particle
-    particle: sample
+    particle: custom
     title: 'Raise Awareness'
     options:
       particle:
         enabled: '1'
-        image: ''
-        headline: ''
-        description: ''
-        link: /awareness
-        linktext: ''
-        samples: {  }
+        html: '<a href="/startcommunity/awareness">Raise Awareness</a>'
+        twig: '0'
+        filter: '0'
+      block:
+        extra: {  }
+    enabled: '1'
+  startcommunity/__particle-SQyp6:
+    type: particle
+    particle: custom
+    title: 'Community Building'
+    options:
+      particle:
+        enabled: '1'
+        html: '<a href="/startcommunity/buildcommunity">Community Building</a>'
+        twig: '0'
+        filter: '0'
+      block:
+        extra: {  }
+    enabled: '1'
+  startcommunity/__particle-5ccLI:
+    type: particle
+    particle: custom
+    title: Organization
+    options:
+      particle:
+        enabled: '1'
+        html: '<a href="/startcommunity/organization">Organization</a>'
+      block:
+        extra: {  }
+    enabled: '1'
+  startcommunity/__particle-b0DIC:
+    type: particle
+    particle: custom
+    title: 'Legal Circumstances'
+    options:
+      particle:
+        enabled: '1'
+        html: '<a href="/startcommunity/legal">Legal Circumstances</a>'
       block:
         extra: {  }
     enabled: '1'
