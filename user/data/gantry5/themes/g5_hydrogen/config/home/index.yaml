@@ -1,5 +1,5 @@
 name: home
-timestamp: 1505585386
+timestamp: 1505595622
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -22,6 +22,7 @@ particles:
   sample:
     sample-1: 'Foodsaving World'
     sample-2: Welcome
+    sample-2825: 'Sample Content'
     sample-3: 'Getting Started'
     sample-9452: Karrot
   custom:
