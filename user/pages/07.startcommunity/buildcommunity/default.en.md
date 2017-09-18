@@ -12,15 +12,15 @@ Remember that the most important part of a sharing community is a community! Bef
 * publish an article in a local newspaper or give an interview on local radio
 * get super active on social media to reach out even further
 
-### <div=class"fa fa-handshake-o"></div> _Together we are strong_
+### <div class="fa fa-handshake-o"></div> _Together we are strong_
 
 There are many activities that can be set up to get to know each other and create bonds. Here are some ideas of events that we found relevant, fun, easy to organize and engaging:
 
-* [Food-Share Point](https://yunity.atlassian.net/wiki/spaces/FSINT/pages/43909145/Food-Share+Point+Mini+Manual) construction workshop: if you want to set up a location where people can share food unconditionally, this can be a wonderful activity for members to connect.
-* [Brunch with saved food](https://yunity.atlassian.net/wiki/spaces/FSINT/pages/89124714/Foodsharing+Brunch): if Sunday brunch is a thing in your town, there will surely be open-brunch cafés and restaurants who usually have a lot of yummy leftovers that can be saved. Get in touch with them, bring a lot of containers, from small to big, and save it! If you have access to a location nearby like a neighborhood center, a foodsaver's living room or a park in the warmer days, you can invite your whole community to join for a late and sustainable Sunday brunch :)
-* [Saving at festivals](https://yunity.atlassian.net/wiki/spaces/FSINT/pages/50069505/Foodsaving+at+festivals): Music festivals are a great saving opportunity, not only for food but for various items people leave behind there. It also is fun to go to a festival with your friends! So why not combine the two?
+* <a href="https://yunity.atlassian.net/wiki/spaces/FSINT/pages/43909145/Food-Share+Point+Mini+Manual" target="_blank">Food-Share Point</a> construction workshop: if you want to set up a location where people can share food unconditionally, this can be a wonderful activity for members to connect.
+* <a href="https://yunity.atlassian.net/wiki/spaces/FSINT/pages/89124714/Foodsharing+Brunch" target="_target">Brunch with saved food</a>: if Sunday brunch is a thing in your town, there will surely be open-brunch cafés and restaurants who usually have a lot of yummy leftovers that can be saved. Get in touch with them, bring a lot of containers, from small to big, and save it! If you have access to a location nearby like a neighborhood center, a foodsaver's living room or a park in the warmer days, you can invite your whole community to join for a late and sustainable Sunday brunch :)
+* <a href="https://yunity.atlassian.net/wiki/spaces/FSINT/pages/50069505/Foodsaving+at+festivals" target="_blank">Saving at festivals</a>: Music festivals are a great saving opportunity, not only for food but for various items people leave behind there. It also is fun to go to a festival with your friends! So why not combine the two?
 
-Of course it is as important to keep the people around as gathering them, so be sure to be nice to each other! If there are some who don't get what this means, you may want to refer to more clearly formulated criteria. In that case have a look at our [guideline for positive cooperation](https://yunity.atlassian.net/wiki/spaces/FSINT/pages/43909164/Guideline+for+positive+cooperation) (among the team members, in this case).
+Of course it is as important to keep the people around as gathering them, so be sure to be nice to each other! If there are some who don't get what this means, you may want to refer to more clearly formulated criteria. In that case have a look at our <a href="https://yunity.atlassian.net/wiki/spaces/FSINT/pages/43909164/Guideline+for+positive+cooperation" target="_blank">guideline for positive cooperation</a> (among the team members, in this case).
 
 ### <div class="fa fa-asterisk"></div> _As big as possible while still managable_
 
@@ -30,6 +30,6 @@ The instance of Karrot hosted here on foodsaving.world lets you protect your gro
 
 ### <div class="fa fa-female"></div> _Friendly, connected and professional_
 
-For some behavioral standards example, please refer to the checklist 'Professionalism for foodsavers' within the [cooperation mini manual](https://yunity.atlassian.net/wiki/spaces/FSINT/pages/46203075/How+to+build+and+maintain+cooperations+with+stores).
+For some behavioral standards example, please refer to the checklist 'Professionalism for foodsavers' within the <a href="https://yunity.atlassian.net/wiki/spaces/FSINT/pages/46203075/How+to+build+and+maintain+cooperations+with+stores" target="_blank">cooperation mini manual</a>.
 
 However you choose to work together, the most important thing is, that you _do_. To make that possible it's important to stay in contact and to know where the other foodsavers are located. Karrot provide's a map feature that gives a nice overview, if everybody signs up and enters their contact and location data. That way you have a nice overview of who can helo out where and in which parts of your area it makes sense to look for more cooperation partners. If for some reason Karrot doesn't work for you, you should still try to keep a secure database of your members with contacts and addresses, respectful of data privacy and protection laws.
