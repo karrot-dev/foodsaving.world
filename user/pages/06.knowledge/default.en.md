@@ -11,4 +11,4 @@ The German speaking countries have a history of foodsaving that goes back to 201
 
 * We compiled a **shortened and translated version of the German <a href="https://wiki.foodsharing.de/Hauptseite" target="_blank">foodsharing wiki</a>**, which is adapted to international audiences and free to use for everybody. <a href="https://yunity.atlassian.net/wiki/spaces/FSINT/pages/41812111/foodsharing+Wiki+for+International+Audiences" target="_blank">Access it here.</a>
 
-* We run a **blog full of stories from foodsaving groups**, where everybody can share their challenges and success. We are <a href="mailto:foodsaving@yunity.org" target="_blank">always hungry for more stories</a> (in any language) to include them on there! <a href="https://foodsaving.today" target="_blank">Acces here</a> what we already have.
+* We run a **blog full of stories from foodsaving groups**, where everybody can share their challenges and success. We are <a href="mailto:foodsaving@yunity.org" target="_blank">always hungry for more stories</a> (in any language) to include them on there! <a href="https://foodsaving.today" target="_blank">Access here</a> what we already have.
