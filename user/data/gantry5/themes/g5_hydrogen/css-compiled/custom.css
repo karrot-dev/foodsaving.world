@@ -64,8 +64,9 @@
   padding: ;
   border-radius: ;
   margin-bottom: 4rem;
+  text-align: left;
 }
-/* line 28, user/data/gantry5/themes/g5_hydrogen/scss/custom.scss */
+/* line 29, user/data/gantry5/themes/g5_hydrogen/scss/custom.scss */
 .fa-box {
   color: #d9d9d9;
   font-size: 4rem;
