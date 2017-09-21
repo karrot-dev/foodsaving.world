@@ -1,5 +1,5 @@
 name: home
-timestamp: 1505595622
+timestamp: 1506030703
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -22,17 +22,11 @@ particles:
   sample:
     sample-1: 'Foodsaving World'
     sample-2: Welcome
-    sample-2825: 'Sample Content'
     sample-3: 'Getting Started'
-    sample-9452: Karrot
-  custom:
-    custom-6594: 'Custom HTML'
   messages:
     system-messages-8032: 'System Messages'
-  block-link:
-    block-link-5904: 'Block Link'
-    block-link-2547: 'Block Link'
-    block-link-9880: 'Block Link'
+  custom:
+    custom-8757: Nieves.jpg
   position:
     position-footer: Footer
   social:

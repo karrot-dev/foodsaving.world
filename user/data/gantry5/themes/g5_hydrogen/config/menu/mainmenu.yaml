@@ -2,8 +2,6 @@ settings:
   title: Mainmenu
 ordering:
   home: ''
-  team: ''
-  blog: ''
   people: ''
   software: ''
   knowledge: ''
@@ -12,6 +10,8 @@ ordering:
     __particle-5ccLI: ''
     __particle-tKYZj: ''
     __particle-b0DIC: ''
+  blog: ''
+  team: ''
 items:
   home:
     enabled: '1'
@@ -25,11 +25,6 @@ items:
   blog:
     enabled: true
     anchor_class: ''
-  startcommunity:
-    columns:
-      - 100
-    enabled: true
-    anchor_class: ''
   people:
     enabled: true
     anchor_class: ''
@@ -37,6 +32,11 @@ items:
     enabled: true
     anchor_class: ''
   knowledge:
+    enabled: true
+    anchor_class: ''
+  startcommunity:
+    columns:
+      - 100
     enabled: true
     anchor_class: ''
   startcommunity/__particle-tKYZj:

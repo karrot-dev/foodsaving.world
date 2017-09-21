@@ -34,3 +34,7 @@ form:
 
     _inherit:
       type: gantry.inherit
+
+    background:
+      type: input.imagepicker
+      label: Background

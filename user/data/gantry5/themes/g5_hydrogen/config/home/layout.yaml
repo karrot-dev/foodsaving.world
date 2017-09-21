@@ -16,20 +16,12 @@ layout:
       - sample-2
   /main/:
     -
-      - sample-2825
-    -
-      - custom-6594
-    -
       - system-messages-8032
     -
-      - sample-3
+      - custom-8757
   /subfeature/:
     -
-      - sample-9452
-    -
-      - 'block-link-5904 33.3'
-      - 'block-link-2547 33.3'
-      - 'block-link-9880 33.3'
+      - sample-3
   /footer/:
     -
       - position-footer
@@ -82,7 +74,7 @@ content:
     attributes:
       image: ''
       headline: ''
-      description: "<h1 class=\"center\">Welcome!</h1>\n<p class=\"center\">You just arrived at the home of the <strong>global and distributed</strong> movement against food waste.<br> Our main method is to save food from being thrown away. This is done via <strong>cooperations with stores</strong>, restaurants and any kind of business, that handles food.</p>"
+      description: "<h1 class=\"center\">Welcome!</h1>\n<p class=\"center\">You just arrived at the home of the <strong>global and distributed</strong> movement against food waste.<br> Our main method is to save food from being thrown away. This is done via <strong>cooperations with stores</strong>, restaurants and any kind of business, that handles food.</p>\n<h1 class=\"center\" style=\"margin-bottom: 0\">Welcome!</h1>"
       link: ''
       linktext: ''
       samples:
@@ -110,55 +102,19 @@ content:
           class: ''
           variations: ''
           title: 'Share knowledge'
-  sample-2825:
-    title: 'Sample Content'
+  custom-8757:
+    title: Nieves.jpg
     attributes:
-      image: ''
-      headline: ''
-      description: "<h1 class=\"center\">Getting Started</h1>\n<p>Welcome to Gantry 5 featuring <strong>Hydrogen</strong>, the first theme built on the Gantry 5 framework. If you want to get started, the best way is to navigate to the Gantry Administrator via your platform's Administration panel.</p>\n\n<p>Once you are in the Gantry 5 Administrator, you will be able to edit virtually every aspect of your site from its <strong>Layout</strong> to its <strong>Style</strong>. You can even refine how the menus appear using Gantry 5’s new <strong>Menu Editor</strong>.</p>\n\n<p>You can set different style preferences for different pages, and have them assigned accordingly using the <strong>Assignments</strong> administrative panel.</p>\n\n<div class=\"info-box\"><div class=\"fa fa-graduation-cap float-left\"></div><p>Look for more information on Gantry 5 in our documentation, and stay tuned to the RocketTheme Blog for more information on new features and development updates as development continues.</p>\n\n<p><a href=\"http://docs.gantry.org\" class=\"button\">Learn More</a></p></div>\n\n<h1 class=\"center\">How to Contribute</h1>\n\n<div class=\"g-grid\">\n<div class=\"g-block size-37\"><p>Thank you for using Gantry 5 and the Hydrogen theme. We welcome you to contribute to the project by submitting bug reports through <strong>GitHub</strong>, and/or submit your own code changes to the <strong>Gantry 5 project</strong> for consideration.</p>\n<p><a href=\"https://github.com/gantry/gantry5\" class=\"button\">Gantry 5 on GitHub</a></p>\n</div>\n<div class=\"g-block size-26 middle\"><div class=\"fa fa-github-square\"></div></div>\n\n<div class=\"g-block size-37\"><p>If you would like to assist in creating documentation for Gantry 5, you can do so through the <strong>Gantry 5 Documentation</strong> project on <strong>GitHub</strong>.</p>\n<p><a href=\"https://github.com/gantry/docs\" class=\"button\">Gantry Docs on GitHub</a></p>\n</div>\n</div>\n\n<p>Once again, thank you for participating. We hope you enjoy testing Gantry 5 every bit as much as we have enjoyed creating it.</p>"
-      link: ''
-      linktext: ''
-      samples: {  }
-  custom-6594:
-    title: 'Custom HTML'
-    attributes:
-      html: '<img src="/user/images/g5_hydrogen/nieves.jpg" alt="Save food!" style="border-radius:20px">'
+      html: '<img src="user/images/g5_hydrogen/nieves.jpg" style="border-radius="15px">'
   sample-3:
     title: 'Getting Started'
     attributes:
-      image: ''
+      image: 'gantry-media://nieves.jpg'
       headline: ''
       description: "<h1 class=\"center\">Getting Started</h1>\n<p align=\"left\">We support all initiatives, that want to join the fight against food waste! Depending on your needs there's different resources that could be of interest to you.</p>\n\n<div align=\"left\">In case you are:\n<ul><li><strong>an interested passerby</strong>:<br>\nThere's general info about foodsaving, existing groups and what's going on.</li>\n<li><strong>an enthusiastic individual</strong>:<br>\nWe may have info about other potential foodsavers or foodsharing groups in your area.<br>\nWe put together <a href=../startcommunity>a practical guide on how to start a foodsaving project.</a><br>\nYou could already have a look at our foodsaving tool <i>Karrot</i></li>\n<li><strong>a group that is just starting</strong>:<br>\nWe compiled several detailed how-tos that cover different aspects of foodsaving.<br>\nWe strongly suggest you try out <i>Karrot</i>! It's meant to make your life easier and bring structure to your pick-up management.</li>\n<li><strong>a group that is already going strong</strong>:<br>\nAre you tired of those spreadsheets and doodles to organize your pick-ups? Time to switch to <i>Karrot</i>!<br> \nMaybe you want to share your experiences in the form of a blog post? Get in contact and we'll make it possible!</li></ul></div>"
       link: ''
       linktext: ''
       samples: {  }
-  sample-9452:
-    title: Karrot
-    attributes:
-      image: ''
-      headline: ''
-      description: "<h1 class=\"center\">Karrot</h1>\n<h3 class=\"center\"><i>the foodsaving tool</i></h3>\n<p align=\"left\">The core piece of our work is a tool, that is meant to enable you to run a successful, efficient and organized foodsaving project. It is a <strong>completely translatable, open source and free</strong> piece of software, that is developed by passionate volunteers only. <br>\nWe host an instance of it right here on foodsaving.world and you can try it out as much as you like. The general idea for long-term use however is, that foodsaving groups host their own instances if possible. <br>\nYou're very welcome to <a href=https://github.com/yunity/karrot-frontend>visit our project on GitHub</a> if you want to have a closer look.</p>"
-      link: ''
-      linktext: ''
-      samples: {  }
-  block-link-5904:
-    title: 'Block Link'
-    attributes:
-      image: 'gantry-media://e23f9f71300f9eda57c6daddcc9b13bd.png'
-      headline: Dev-blog
-      link: /blog
-  block-link-2547:
-    title: 'Block Link'
-    attributes:
-      image: 'gantry-media://b69dad0292bd0e6196b105992db6cacc.png'
-      headline: Login
-      link: 'https://foodsaving.world'
-  block-link-9880:
-    title: 'Block Link'
-    attributes:
-      image: 'gantry-media://094fdeb9b12ee62f481188b1fa47bf15.png'
-      headline: Team
-      link: /team
   position-footer:
     attributes:
       key: footer
