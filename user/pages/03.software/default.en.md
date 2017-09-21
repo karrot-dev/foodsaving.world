@@ -5,9 +5,11 @@ title: Software
 <div class="sample-content"><div class="info-box"><div class="fa fa-box fa-file-code-o float-left"></div><p>We provide free and open source software for you to organize your pick-ups!</p></div></div>
 
 ### Let's get organized!
-When you want to run a foodsaving initiative that scales, you'll need some kind of management system. Having an online platform was one of the major factors for German foodsharing to become so big.
+The core piece of our work is a tool, that is meant to enable you to run a successful, efficient and organized foodsaving project. It is a <strong>completely translatable, open source and free</strong> piece of software, that is developed by passionate volunteers only. <br>
+We host an instance of it right here on foodsaving.world and you can try it out as much as you like. The general idea for long-term use however is, that foodsaving groups host their own instances if possible. <br>
+_You're very welcome to <a href=https://github.com/yunity/karrot-frontend>visit our project on GitHub</a> if you want to have a closer look at the code._</p>
 
-Specifically for foodsaving groups we started developing Karrot to provide you with the features you need:
+These are just some of the benefits you'll experience when deciding to use Karrot for your foodsaving group:
 
 * **Less confusion** <br> All the relevant info of a store can be entered on the store page. General group info can be entered on the group page and every single foodsaver has a profile, in which info can be entered.
 
