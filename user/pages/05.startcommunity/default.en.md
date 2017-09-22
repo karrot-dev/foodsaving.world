@@ -11,4 +11,4 @@ Still, there are some aspects that should be considered and we want to help you 
 * [Raising Awareness](awareness)
 * [Legal Circumstances](legal)
 
-<img title="This could be you!" alt="People happily saving food" src="/user/pages/04.startcommunity/startYourCommunity.png" style="border-radius: 150px">
+<img title="This could be you!" alt="People happily saving food" src="/user/pages/05.startcommunity/startYourCommunity.png" style="border-radius: 150px">

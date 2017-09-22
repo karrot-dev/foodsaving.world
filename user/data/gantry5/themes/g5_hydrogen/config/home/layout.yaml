@@ -13,6 +13,8 @@ layout:
       - sample-1
   /feature/:
     -
+      - sample-4911
+    -
       - sample-2
   /main/:
     -
@@ -69,12 +71,21 @@ content:
       link: ''
       linktext: ''
       samples: {  }
-  sample-2:
+  sample-4911:
     title: Welcome
     attributes:
       image: ''
       headline: ''
-      description: "<h1 class=\"center\">Welcome!</h1>\n<p class=\"center\">You just arrived at the home of the <strong>global and distributed</strong> movement against food waste.<br> Our main method is to save food from being thrown away. This is done via <strong>cooperations with stores</strong>, restaurants and any kind of business, that handles food.</p>\n<h1 class=\"center\" style=\"margin-bottom: 0\">Welcome!</h1>"
+      description: "<h1 class=\"center\">Welcome!</h1>\n<p class=\"center\">You just arrived at the home of the <strong>global and distributed</strong> movement against food waste.<br> Our main method is to save food from being thrown away. This is done via <strong>cooperations with stores</strong>, restaurants and any kind of business, that handles food.</p>"
+      link: ''
+      linktext: ''
+      samples: {  }
+  sample-2:
+    title: 'What we do'
+    attributes:
+      image: ''
+      headline: ''
+      description: '<h1 class="center" style="margin-bottom: 0">What we do:</h1>'
       link: ''
       linktext: ''
       samples:
@@ -109,9 +120,9 @@ content:
   sample-3:
     title: 'Getting Started'
     attributes:
-      image: 'gantry-media://nieves.jpg'
+      image: ''
       headline: ''
-      description: "<h1 class=\"center\">Getting Started</h1>\n<p align=\"left\">We support all initiatives, that want to join the fight against food waste! Depending on your needs there's different resources that could be of interest to you.</p>\n\n<div align=\"left\">In case you are:\n<ul><li><strong>an interested passerby</strong>:<br>\nThere's general info about foodsaving, existing groups and what's going on.</li>\n<li><strong>an enthusiastic individual</strong>:<br>\nWe may have info about other potential foodsavers or foodsharing groups in your area.<br>\nWe put together <a href=../startcommunity>a practical guide on how to start a foodsaving project.</a><br>\nYou could already have a look at our foodsaving tool <i>Karrot</i></li>\n<li><strong>a group that is just starting</strong>:<br>\nWe compiled several detailed how-tos that cover different aspects of foodsaving.<br>\nWe strongly suggest you try out <i>Karrot</i>! It's meant to make your life easier and bring structure to your pick-up management.</li>\n<li><strong>a group that is already going strong</strong>:<br>\nAre you tired of those spreadsheets and doodles to organize your pick-ups? Time to switch to <i>Karrot</i>!<br> \nMaybe you want to share your experiences in the form of a blog post? Get in contact and we'll make it possible!</li></ul></div>"
+      description: "<h1 class=\"center\">Getting Started</h1>\n<p align=\"left\">We support all initiatives, that want to join the fight against food waste! Depending on your needs there's different resources that could be of interest to you.</p>\n\n<div align=\"left\">In case you are:\n<ul><li><strong>an interested passerby</strong>:<br>\nThere's general info about <a href=\"https://yunity.atlassian.net/wiki/spaces/FSINT/pages/65241446/What+is+foodsaving\" target=\"_blank\">foodsaving</a>, <a href=\"https://yunity.atlassian.net/wiki/spaces/FSINT/pages/55607369/Existing+initiatives\" target=\"_blank\">existing groups</a> and <a href=\"https://foodsaving.today\" target=\"_blank\">what's going on</a>.</li>\n<li><strong>an enthusiastic individual</strong>:<br>\nWe may have info about other potential foodsavers or foodsharing groups in your area.<br>\nWe put together <a href=../startcommunity>a practical guide on how to start a foodsaving project.</a><br>\nYou could already have a look at our <a href=../software>foodsaving tool <i>Karrot</i></a> </li>\n<li><strong>a group that is just starting</strong>:<br>\nWe compiled several <a href=\"https://yunity.atlassian.net/wiki/spaces/FSINT/pages/50069535/Material+to+get+started\" target=\"_blank\">detailed how-tos</a> that cover different aspects of foodsaving.<br>\nWe strongly suggest you try out <a href=../software><i>Karrot</i></a>! It's meant to make your life easier and bring structure to your pick-up management.</li>\n<li><strong>a group that is already going strong</strong>:<br>\nAre you tired of those spreadsheets and doodles to organize your pick-ups? Time to switch to <a href=\"../software\"><i>Karrot</i></a>!<br> \nMaybe you want to share your experiences in the form of a blog post? <a href=\"mailto:foodsaving@yunity.org\" target=\"_blank\">Get in contact</a> and we'll make it possible!</li></ul></div>"
       link: ''
       linktext: ''
       samples: {  }
