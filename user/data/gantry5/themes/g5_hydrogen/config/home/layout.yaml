@@ -116,7 +116,7 @@ content:
   custom-8757:
     title: Nieves.jpg
     attributes:
-      html: '<img src="user/images/g5_hydrogen/nieves.jpg" style="border-radius="15px">'
+      html: '<img src="user/images/g5_hydrogen/nieves.jpg" style="border-radius: 15px">'
   sample-3:
     title: 'Getting Started'
     attributes:

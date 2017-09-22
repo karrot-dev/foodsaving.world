@@ -1,0 +1,59 @@
+name: community
+timestamp: 1506119679
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1503843840
+positions:
+  footer: Footer
+sections:
+  header: Header
+  navigation: Navigation
+  showcase: Showcase
+  feature: Feature
+  subfeature: Subfeature
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  menu:
+    menu-7531: Menu
+  sample:
+    sample-1199: 'Foodsaving World'
+    sample-4285: 'Come gather round'
+    sample-9828: 'Bullet Points'
+    sample-2137: 'Together we are strong'
+    sample-5041: 'Still manageable'
+    sample-2204: 'Still manageable pt.2'
+    sample-2771: 'Friendly, connected, professional'
+  custom:
+    custom-2986: virginiaFeeding.jpg
+    custom-2652: foodsharingFruit.jpg
+  messages:
+    system-messages-3919: 'System Messages'
+  position:
+    position-position-4039: Footer
+  social:
+    social-1433: Social
+  branding:
+    branding-9150: Branding
+  mobile-menu:
+    mobile-menu-2483: 'Mobile Menu'
+inherit:
+  home:
+    header: header
+    navigation: navigation
+    menu-7531: menu-8665
+    showcase: showcase
+    feature: feature
+    sample-4285: sample-4911
+    main: main
+    system-messages-3919: system-messages-8032
+    subfeature: subfeature
+    footer: footer
+    position-position-4039: position-footer
+    social-1433: social-8249
+    branding-9150: branding-7082
+    offcanvas: offcanvas
+    mobile-menu-2483: mobile-menu-3886
