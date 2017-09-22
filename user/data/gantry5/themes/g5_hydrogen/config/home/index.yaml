@@ -1,5 +1,5 @@
 name: home
-timestamp: 1506077841
+timestamp: 1506118071
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
