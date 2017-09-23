@@ -2,7 +2,7 @@
 title: Knowledge
 ---
 
-<div class="sample-content"><div class="info-box"><div class="fa fa-box fa-folder-open float-left"></div><p>We collect, translate and distribute knowledge about every aspect of foodsaving!</p></div></div>
+<div class="sample-content"><div class="info-box"><div class="fa fa-box fa-folder-open float-left"></div><p><strong>We collect, translate and distribute knowledge about every aspect of foodsaving!</strong></p></div></div>
 
 ### Let's share experience!
 The German speaking countries have a history of foodsaving that goes back to 2011. They collected a lot of wisdom about how to successfully cooperate with businesses to save their surplus, how to distribute it afterwards and how to maintain a well-functioning group of volunteers. Apart from that, we are in contact with many other foodsaving initiatives and many shared their work and insights with us and thus with you. Using this as a base, we created a collection of documents, which hopefully proves useful:

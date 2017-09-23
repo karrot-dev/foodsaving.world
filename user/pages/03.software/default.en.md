@@ -2,7 +2,7 @@
 title: Software
 ---
 
-<div class="sample-content"><div class="info-box"><div class="fa fa-box fa-file-code-o float-left"></div><p>We provide free and open source software for you to organize your pick-ups!</p></div></div>
+<div class="sample-content"><div class="info-box"><div class="fa fa-box fa-file-code-o float-left"></div><p><strong>We provide free and open source software for you to organize your pick-ups!</strong></p></div></div>
 
 ### Let's get organized!
 The core piece of our work is a tool, that is meant to enable you to run a successful, efficient and organized foodsaving project. It is a <strong>completely translatable, open source and free</strong> piece of software, that is developed by passionate volunteers only. <br>

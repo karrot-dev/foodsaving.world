@@ -122,7 +122,7 @@ content:
     attributes:
       image: ''
       headline: ''
-      description: "<div align=\"left\"><ul>\n<li>GoogleDocs Spreadsheets or similar things</li>\n<li>Having fewer but bigger pickups, where all foodsavers are invited to join (wholesale markets, big supermarket - e.g. Copenhagen)</li></div>"
+      description: "<div align=\"left\"><ul>\n<li>Online spreadsheets or similar things</li>\n<li>Having fewer but bigger pickups, where all foodsavers are invited to join (wholesale markets, big supermarket - e.g. Copenhagen)</li></div>"
       link: ''
       linktext: ''
       samples: {  }
@@ -135,7 +135,7 @@ content:
     attributes:
       image: ''
       headline: ''
-      description: "For the sharing part facebook or other social media can be pretty useful, since it is easy to reach a lot of people as soon as the group is slightly known by local folks. But especially the saving part is hard to organize via classic social networks. That's why we started developing <strong><a href=\"https://blog.foodsaving.world/2017/05/11/walkthrough.html target=\"_blank\">Karrot</a>. It's a software inspired by German <a href=\"https://foodsharing.de/\" target=\"_blank\">foodsharing.de</a></strong>. With it you can:\n\n<div align=\"left\"><ul>\n<li>create a group for your region</li>\n<li>invite people to join</li>\n<li>enter (potentially) cooperating stores with additional info</li>\n<li>enter pick-up dates, for which members of the group can sign up</li>\n<li>see the history of what happened so far in your group</li>\n<li><strong>a lot more in the future!</strong> <i>Karrot is under active development</i></li></div>\n<p><a href=\"../startcommunity/awareness\" class=\"button\">Back</a> <a href=\"../startcommunity/legal\" class=\"button\">Next</a></p>"
+      description: "For the sharing part facebook or other social media can be pretty useful, since it is easy to reach a lot of people as soon as the group is slightly known by local folks. But especially the saving part is hard to organize via classic social networks. That's why we started developing <strong><a href=\"https://blog.foodsaving.world/2017/05/11/walkthrough.html\" target=\"_blank\">Karrot</strong></a>. It's a software inspired by German <a href=\"https://foodsharing.de/\" target=\"_blank\">foodsharing.de</a></strong>. With it you can:\n\n<div align=\"left\"><ul>\n<li>create a group for your region</li>\n<li>invite people to join</li>\n<li>enter (potentially) cooperating stores with additional info</li>\n<li>enter pick-up dates, for which members of the group can sign up</li>\n<li>see the history of what happened so far in your group</li>\n<li><strong>a lot more in the future!</strong> <i>Karrot is under active development</i></li></div>\n<p><a href=\"../startcommunity/awareness\" class=\"button\">Back</a> <a href=\"../startcommunity/legal\" class=\"button\">Next</a></p>"
       link: ''
       linktext: ''
       samples: {  }

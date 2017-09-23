@@ -2,7 +2,7 @@
 title: People
 ---
 
-<div class="sample-content"><div class="info-box"><div class="fa fa-box fa-group float-left"></div><p>We want to bring people together, so they can get active in a group of foodsavers!</p></div></div>
+<div class="sample-content"><div class="info-box"><div class="fa fa-box fa-group float-left"></div><p><strong>We want to bring people together, so they can get active in a group of foodsavers!</strong></p></div></div>
 
 ### Let's build communities to save food!
 Not much can be done alone, so building a community is of utmost importance for a successful foodsaving project. Not only to have people to carry out the pick-ups, but also to have a good network of hungry fellows to make use of the saved food. We want to helop you with that!
