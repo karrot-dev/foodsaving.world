@@ -5,8 +5,6 @@ headline: Inspiration, Sprachnachrichten und ein Besuch
 disqus: true
 taxonomy:
   category: blog
-  tag:
-    - grav
   author: Unai
 ---
 Leire und ich (Unai) haben die Energie von foodsharing Kopenhagen gesehen und wollten das auch hier in Bilbao ausprobieren. Etwa Ende 2016 haben wir ein Meeting bei [Sarean](https://www.facebook.com/sareangunea/) arrangiert, das zwei weitere Leute angezogen hat: Ione und Laura.

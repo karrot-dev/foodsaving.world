@@ -5,7 +5,6 @@ headline: Strategies for the future
 disqus: true
 taxonomy:
     category: blog
-    tag: [grav]
     author: bruno
 ---
 

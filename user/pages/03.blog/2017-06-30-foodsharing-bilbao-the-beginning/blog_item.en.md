@@ -5,7 +5,6 @@ headline: Inspiration, voice calls and a visit
 disqus: true
 taxonomy:
     category: blog
-    tag: [grav]
     author: unai
 ---
 
