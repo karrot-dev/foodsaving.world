@@ -1,5 +1,5 @@
-name: people
-timestamp: 1506170997
+name: software
+timestamp: 1506172048
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -20,8 +20,8 @@ particles:
   menu:
     menu-8665: Menu
   sample:
-    sample-1: 'Connecting People'
-    sample-8843: 'Let''s build communities to save food!'
+    sample-1: 'Providing Software'
+    sample-8843: 'Let''s get organized!'
     sample-3: pictocome
   messages:
     system-messages-8032: 'System Messages'
