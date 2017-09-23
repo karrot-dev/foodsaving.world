@@ -1,0 +1,152 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1503843840
+layout:
+  header: {  }
+  navigation: {  }
+  showcase:
+    -
+      - sample-5106
+  feature:
+    -
+      - sample-4965
+  main:
+    -
+      - system-messages-4542
+    -
+      - 'sample-1639 50'
+      - 'custom-2105 50'
+    -
+      - sample-5669
+  subfeature:
+    -
+      - sample-1672
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+  showcase:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+  feature:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+  main:
+    inherit:
+      outline: home
+      include:
+        - attributes
+  subfeature:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+  footer:
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+  offcanvas:
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+        - children
+content:
+  sample-5106:
+    title: 'Raising Awareness'
+    attributes:
+      image: ''
+      headline: 'Raising Awareness'
+      description: 'Making people realize that food waste matters...'
+      link: ''
+      linktext: ''
+      samples: {  }
+    inherit:
+      outline: home
+      particle: sample-1
+      include:
+        - block
+  sample-4965:
+    title: 'Promote the good cause'
+    attributes:
+      image: ''
+      headline: ''
+      description: "<h3><div class=\"fa fa-bullhorn\"></div><i> Promote the good cause</i></h3>\n\nMost importantly: <i>Don't use the \"free of cost\" incentive!</i><br>\nFoodsaving isn't about promoting access to free food, it's about fighting a waste-system that we disagree with. Make a clear statement and don't let people assume that you are bunch of cheap garbage-hungry humans. What you are doing is amazing and you know it! <br>\n\nThe fact that your community exists already gets a lot of attention and raises awareness. Don't be shy! Get people to talk about it; share food, love and awareness!"
+      link: ''
+      linktext: ''
+      samples: {  }
+    inherit:
+      outline: home
+      particle: sample-4911
+      include:
+        - block
+  system-messages-4542:
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - block
+      particle: system-messages-8032
+  sample-1639:
+    title: 'Events that spark interest'
+    attributes:
+      image: ''
+      headline: ''
+      description: "<h3><div class=\"fa fa-cutlery\"></div><i> Events that spark interest</i></h3>\n\nThere are many possibilities to get people's interest up: Events like <a href=\"http://now-here-this.timeout.com/2015/03/01/eat-to-the-beat-disco-soup-are-turning-food-waste-into-party-fuel/\" target=\"_blank\">disco soups</a> or pop-up Food-Share Points, where saved food gets distributed to the people, always get a lot of attention."
+      link: ''
+      linktext: ''
+      samples: {  }
+  custom-2105:
+    title: stopFoodWaste.jpg
+    attributes:
+      html: '<img src="user/images/g5_hydrogen/stopFoodWaste.jpg" style="border-radius: 15px">'
+  sample-5669:
+    title: 'Events that spark interest pt.2'
+    attributes:
+      image: ''
+      headline: ''
+      description: 'Or you make use of <a href="https://feedbackglobal.org/wp-content/uploads/2016/12/F5K-The-Introductory-Toolkit-1.pdf" target="_blank">Feedback Global''s toolkit</a> and organize a <a href="https://feedbackglobal.org/campaigns/feeding-the-5000/" target="_blank">Feeding the 5000</a> event. That''s <i>definitely</i> get you that press you need! And on top of that it''s fun and a great opportunity to get to know more like-minded people!'
+      link: ''
+      linktext: ''
+      samples: {  }
+  sample-1672:
+    title: 'It''s getting political'
+    attributes:
+      image: ''
+      headline: ''
+      description: "<h3><div class=\"fa fa-institution\"></div><i> It's getting political</i></h3>\n\nYou could also run an awareness rising campaign among politicians and other public players. <br>\nFor instance, over the course of 2015 and 2016 <a href=\"https://foodsharing.de\" target=\"_blank\">foodsharing.de</a> has actively participated in the <a href=\"http://www.leeretonne.de/\" target=\"_blank\">Leere Tonne</a> (\"Empty bins\") campaign, using a petition to ask the German government to adopt a similar law as the one voted for in the French Parliament in spring 2016, which forces supermarkets to donate their surplus food instead of throwing it away. <br>\nFood waste is becoming a more and more prominent topic in public discourse, so there are already public programmes - like the European <a href=\"http://eu-refresh.org/\" target=\"_blank\">Refresh program</a> - , with which you could connect to support each other. <br>\nKeep in mind though that, as far as political parties are concerned, foodsharing stays as neutral as possible.\n\n<p><a href=\"../startcommunity/buildcommunity\" class=\"button\">Back</a> <a href=\"../startcommunity/organization\" class=\"button\">Next</a></p>"
+      link: ''
+      linktext: ''
+      samples: {  }
+    inherit:
+      outline: home
+      particle: sample-3
+      include:
+        - block

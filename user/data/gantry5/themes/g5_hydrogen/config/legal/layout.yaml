@@ -1,0 +1,141 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1503843840
+layout:
+  /header/: {  }
+  /navigation/:
+    -
+      - menu-8665
+  /showcase/:
+    -
+      - sample-1
+  /feature/:
+    -
+      - 'custom-3418 50'
+      - 'sample-4911 50'
+    -
+      - sample-1956
+  /main/:
+    -
+      - system-messages-8032
+    -
+      - sample-7326
+  /subfeature/:
+    -
+      - sample-3
+  /footer/:
+    -
+      - position-footer
+    -
+      - 'social-8249 70'
+      - 'branding-7082 30'
+  offcanvas:
+    -
+      - mobile-menu-3886
+structure:
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  subfeature:
+    type: section
+    attributes:
+      class: flush
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  sample-1:
+    title: 'Legal circumstances'
+    attributes:
+      image: ''
+      headline: 'Legal Circumstances'
+      description: 'Know what you are working with...'
+      link: ''
+      linktext: ''
+      samples: {  }
+  custom-3418:
+    title: kirchheimMarket1.jpg
+    attributes:
+      html: '<img src="user/images/g5_hydrogen/kirchheimMarket1.jpg" style="border-radius: 15px">'
+  sample-4911:
+    title: 'Be prepared'
+    attributes:
+      image: ''
+      headline: ''
+      description: "<h3><div class=\"fa fa-balance-scale\"></div> <i>Be prepared</i></h3>\n\n<p>First of all, you will need to thoroughly check the legal situation in your country, regarding consumption of products that have passed their Best Before Date. </p>"
+      link: ''
+      linktext: ''
+      samples: {  }
+  sample-1956:
+    title: 'Be prepared pt.2'
+    attributes:
+      image: ''
+      headline: ''
+      description: "<p>Foodsharing.de is legally allowed to exist thanks to a simple liability contract signed by every new Foodsaver, which acts as a waiver and clearly states that the food donor is excluded from liability of negligence. <a href=\"https://wiki.foodsharing.de/Rechtsvereinbarung\" target=\"_blank\">Here you can find the German one used by foodsharing.de</a> and <a href=\"https://yunity.atlassian.net/wiki/spaces/FSINT/pages/58982448/Liability+contract+from+foodsharing+Edinburgh\" target=\"_blank\">here the English one from the Edinburgh initiative</a>.</p>\n\n<p> So far there have never been any legal cases in which the above-metioned documents were put to test, so don't be too naïve and trusting in this regard. Foodsharing always makes use of a legal grey area that mostly works because everybody encountering it realizes that it makes sense. <br>\nStill: <i>If</i> somebody really wants to f*ck you up in court they will probably find a way...</p>"
+      link: ''
+      linktext: ''
+      samples: {  }
+  sample-7326:
+    title: 'Existing experiences'
+    attributes:
+      image: ''
+      headline: ''
+      description: "<h3><div class=\"fa fa-lightbulb-o\"></div> <i>Existing experiences</i></h3>\n<ul>\n<li>The legal situation for Food-Share Points is slightly different but also based on foodsharing being seen as individuals sharing food without the continuity and big administartive efforts organizations provide. The Swedish initiative LivsmeDela from Uppsala has come up with a nicely written sheet on the legal situation for Food-Share Points based on European law, <a href=\"https://yunity.atlassian.net/wiki/spaces/FSINT/pages/58982452/Legal+statement+for+Food-Share+Points+from+Uppsala\" target=\"_blank\">which you can find here</a>.</li>\n<li>Registering your community as a legal entity could make sense for liability reasons. Example: as a private person without a legal entity, you would take full responsibility if sued in court for food poisoning. The situations vary a lot from country to country and, frankly, we find it hard enough to research the legal situation in our own country, so hold on tight, check it out yourself and tell us what you find out!</li>\n<li>Staying away from money saves you a lot of trouble: You get food for free, so don't screw the nicely cooperating business by selling it!</li>"
+      link: ''
+      linktext: ''
+      samples: {  }
+  sample-3:
+    title: 'Found out something?'
+    attributes:
+      image: ''
+      headline: ''
+      description: "<h3><div class=\"fa fa-cloud-upload\"> <i>Share your findings</i></h3>\n\n<p>Researching and dealing with these legal compliactions is the hardest bit most of the time. Did you have fun doing it? Well we certainly didn't. So if you have any valuable insight concerning the legislation of your region it would be super nice of you to tell us! Then we can make it available to other potential foodsaving pioneers and save them the trouble you needed to go through. Just <a href=\"mailto:foodsaving@yunity.org\" target=\"_blank\">write us a mail</a> and we'll take care of the rest.</p>\n\n<p><a href=\"../startcommunity/organization\" class=\"button\">Back</a></p>"
+      link: ''
+      linktext: ''
+      samples: {  }
+  position-footer:
+    attributes:
+      key: footer
+  social-8249:
+    attributes:
+      css:
+        class: social-items
+      items:
+        -
+          icon: 'fa fa-facebook'
+          text: Facebook
+          link: 'https://www.facebook.com/groups/foodsaving.worldwide/'
+          name: Facebook
+        -
+          icon: 'fa fa-rss'
+          text: RSS
+          link: blog.rss
+          name: RSS
+  branding-7082:
+    inherit:
+      outline: default
+      particle: branding-7821
+      include:
+        - block
+        - attributes
+  mobile-menu-3886:
+    title: 'Mobile Menu'

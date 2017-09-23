@@ -1,0 +1,45 @@
+name: organization
+timestamp: 1506126069
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1503843840
+positions:
+  footer: Footer
+sections:
+  header: Header
+  navigation: Navigation
+  showcase: Showcase
+  feature: Feature
+  subfeature: Subfeature
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  menu:
+    menu-8665: Menu
+  sample:
+    sample-1: 'Organizing the foodsaving'
+    sample-4911: 'Sustainable relationships'
+    sample-2: 'Sustainable relationships pt.2'
+    sample-3398: 'Sustainable relationships pt.3'
+    sample-3: 'Structure and overview'
+    sample-8867: 'Structure and overview pt.2'
+    sample-8582: 'Structure and overview pt.3'
+  custom:
+    custom-6992: bodhiBiocompany.jpg
+    custom-8712: foodsharingFood.jpg
+  messages:
+    system-messages-8032: 'System Messages'
+  position:
+    position-footer: Footer
+  social:
+    social-8249: Social
+  branding:
+    branding-7082: Branding
+  mobile-menu:
+    mobile-menu-3886: 'Mobile Menu'
+inherit:
+  default:
+    branding-7082: branding-7821
