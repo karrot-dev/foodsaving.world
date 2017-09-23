@@ -1,0 +1,39 @@
+name: get_started
+timestamp: 1506173066
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1503843840
+positions:
+  footer: Footer
+sections:
+  header: Header
+  navigation: Navigation
+  showcase: Showcase
+  feature: Feature
+  subfeature: Subfeature
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  menu:
+    menu-8665: Menu
+  sample:
+    sample-1: 'Get Started!'
+    sample-8843: 'It''s easy!'
+  messages:
+    system-messages-8032: 'System Messages'
+  custom:
+    custom-1729: 'Custom HTML'
+  position:
+    position-footer: Footer
+  social:
+    social-8249: Social
+  branding:
+    branding-7082: Branding
+  mobile-menu:
+    mobile-menu-3886: 'Mobile Menu'
+inherit:
+  default:
+    branding-7082: branding-7821
