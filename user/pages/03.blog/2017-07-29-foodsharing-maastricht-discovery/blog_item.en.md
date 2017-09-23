@@ -5,7 +5,6 @@ headline: The start and growth of a student initiative
 disqus: true
 taxonomy:
     category: blog
-    tag: [grav]
     author: niki
 ---
 

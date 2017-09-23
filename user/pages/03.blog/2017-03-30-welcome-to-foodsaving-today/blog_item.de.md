@@ -5,8 +5,6 @@ headline: Es beginnt...
 disqus: true
 taxonomy:
   category: blog
-  tag:
-    - grav
   author: nicksellen
 ---
 Heute starten wir eine neue Website! Um Neuigkeiten, Informationen, Ankündigungen, Ereignisse über Foodsaving aus aller Welt zu verbreiten. Zu teilen und zu inspirieren.

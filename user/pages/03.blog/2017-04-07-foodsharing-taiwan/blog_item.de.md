@@ -5,11 +5,9 @@ headline: Die Bewegung wächst
 disqus: true
 taxonomy:
   category: blog
-  tag:
-    - grav
   author: Stefan
 ---
-![](/images/fstaiwan.jpg)
+![](fstaiwan.jpg)
 
 foodsharing Taiwan wurde Ende 2015 gegründet. Inspiriert von [foodsharing](https://foodsharing.de) in Deutschland dachten wir uns, dass das auch ähnlich in Taiwan funktionieren könnte.
 
@@ -19,7 +17,7 @@ Dann haben wir endlich eine Bäckerei und ein Restaurant gefunden, die uns angeb
 
 Im Sommer 2016 haben wir auch einen öffentlichen Kühlschrank bei einem Café aufgebaut, nahe an den Läden, wo wir das Essen abholen. Der Kühlschrank wurde uns von einem Freund gesponsert und der Cafébesitzer war so großzügig die Stromrechnungen zu übernehmen.
 
-![](/images/Foodhub1.jpg)
+![](Foodhub1.jpg)
 
 Durch den Kühlschrank bekommen wir viel Aufmerksamkeit und haben einige Interviews bei Zeitungen, Zeitschriften und sogar Fernsehsendungen gegeben. Und so haben uns einige Leute kontaktiert und ihre Mithilfe angeboten. Sogar ein Unternehmen hat angeboten, Kühlschränke zu spenden. So konnten wir mit einer Gruppe Studenten zusammenarbeiten und konnten einen weiteren Kühlschrank Anfang 2017 am Campus aufbauen.
 

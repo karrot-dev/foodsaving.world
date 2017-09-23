@@ -5,7 +5,6 @@ headline: It begins...
 disqus: true
 taxonomy:
     category: blog
-    tag: [grav]
     author: nicksellen
 ---
 

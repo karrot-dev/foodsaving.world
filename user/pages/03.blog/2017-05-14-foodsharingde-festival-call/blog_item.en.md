@@ -5,26 +5,24 @@ headline: 'Saving food with fun and music'
 disqus: true
 taxonomy:
   category: blog
-  tag:
-    - grav
   author: Janina, Bodhi
 ---
 
 As you may know, [foodsharing.de](https://foodsharing.de) is present on many commercial festivals to save food and raise awareness for the topic of food waste. The upcoming festival season will again hold many possibilities for enthusiastic foodsavers to come with us, spread the word and save a lot of food. We're looking forward to your application for various music festivals throughout Germany!
 
-![](/images/summerstale_booth.JPG)
+![](summerstale_booth.JPG)
 
 In many cases the teams will be bigger this year (we'll get 15 to 25 tickets per festival) and that's why we look forward to working together with a lot of motivated foodsavers, who are **at least 18 years old**, who already **completed their trial pick-ups** and who **didn't commit any relevant violations**.
 
 We want to use the relaxed atmosphere on the festivals to tell people about foodsharing, because in these settings - far away from the stress of work and everyday life - many people are much more open to new ideas. On top of that, we always save huge amounts of provisions, which the people brought to the festival and don't want to carry home with them afterwards. A lot of times we can also save prepared food and ingredients from the food stands, so that we literally swim in a sea of food on the day after the festival.
 
-So you see, there's a lot to do! Of course there's also time to simply enjoy the festival, but we want to put emphasis on the fact, that going to a festival with foodsharing is mainly volunteering: Together with a team of equally motivated foodsavers you (wo)man the info stand/Food-Share Point, talk to people about food waste, our work and how they can help, too, and at night - when the food stands close - you save all the nice ready-made food from the infield and maybe even distribute it directly afterwards. When this is done, you fall tired and happy into your sleeping bag in the foodsharing camp and on the next morning you maybe already serve free breakfast again.  
+So you see, there's a lot to do! Of course there's also time to simply enjoy the festival, but we want to put emphasis on the fact, that going to a festival with foodsharing is mainly volunteering: Together with a team of equally motivated foodsavers you (wo)man the info stand/Food-Share Point, talk to people about food waste, our work and how they can help, too, and at night - when the food stands close - you save all the nice ready-made food from the infield and maybe even distribute it directly afterwards. When this is done, you fall tired and happy into your sleeping bag in the foodsharing camp and on the next morning you maybe already serve free breakfast again.
 The group spirit is probably one of the nicest experiences, while doing foodsharing on a festival: A long weekend full of purposeful action together with a group of likeminded people under sometimes chaotic circumstances definitely brings us closer to each other!
 
 
 **Please be aware of the fact that all the foodsavers will sleep together in the crew camping area!** We decided to make this a general rule, because the festival grounds are often huge and hard to navigate. Keeping the group together is important to be able to flexibly and timely react when opportunities to save food arise without prior warning - something that happens quite a lot. On top of that it also enhances above-mentioned group spirit and at some festivals staying in the crew camp also has the benefit of clean procelain toilets and showers for us to use... ;)
 
-![](/images/appelflappen.jpg)
+![](appelflappen.jpg)
 
 To apply for a ticket just use the link for the festival you're interested in and fill in the respective form. The festivals differ quite a bit and so do the requirements. In general we can say: The bigger a festival, the more there is to do. But also on the big festivals there's gonna be time to attend a concert or meet up with friends, it should just be clear that foodsharing is the reason why we're there.
 
@@ -43,7 +41,7 @@ Deadline for the applications always is three weeks before the festival starts, 
 
 We're looking forward to a nice, varied and productive festival season with you!
 
-![](/images/bodhi_essenfueralle.jpg)
+![](bodhi_essenfueralle.jpg)
 
 P.S: Apart from the above-mentioned big festivals foodsharing is also present at some smaller ones. Since we only get a handful of tickets for those, which are mostly distributed very quickly, we don't mention them in this call for participation. Still, if you want to participate in one of those just try your luck: On foodsharing.de you can join the district 'foodsharing auf Festivals' and have a look on the list of working groups for that district, because that's where all the festivals are listed. [This link](https://foodsharing.de/?page=groups&p=1432) will take you there directly and then you can contact the groups.
 

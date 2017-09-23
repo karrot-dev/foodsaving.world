@@ -5,8 +5,6 @@ headline: Aktuelle Schwierigkeiten bei der Umsetzung
 disqus: true
 taxonomy:
   category: blog
-  tag:
-    - grav
   author: bruno
 ---
 Am schwierigsten ist momentan wahrscheinlich der Aufbau weiterer Kooperationen mit Supermärkten bzw. Lebensmittelläden. Entweder haben sie zu viel Angst wegen der Lebensmittelrichtlinien, oder es gibt für sie keinen Anreiz ihre Lebensmittelverschwendung zu reduzieren bzw. ist das für sie keine Priorität.

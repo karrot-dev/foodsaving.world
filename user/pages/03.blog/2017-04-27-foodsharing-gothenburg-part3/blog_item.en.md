@@ -5,7 +5,6 @@ headline: Tools to connect and to organize
 disqus: true
 taxonomy:
     category: blog
-    tag: [grav]
     author: bruno
 ---
 

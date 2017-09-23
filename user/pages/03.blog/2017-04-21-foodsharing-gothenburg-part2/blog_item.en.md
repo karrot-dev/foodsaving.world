@@ -5,7 +5,6 @@ headline: Main practical challenges
 disqus: true
 taxonomy:
     category: blog
-    tag: [grav]
     author: bruno
 ---
 

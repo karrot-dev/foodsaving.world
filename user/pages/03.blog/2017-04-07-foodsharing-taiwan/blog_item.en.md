@@ -5,11 +5,10 @@ headline: The movement spreads
 disqus: true
 taxonomy:
     category: blog
-    tag: [grav]
     author: stefan
 ---
 
-![](/images/fstaiwan.jpg)
+![](fstaiwan.jpg)
 
 Foodsharing Taiwan was founded in late 2015. Inspired by [foodsharing](https://foodsharing.de) in Germany we thought, that something similar might work in Taiwan as well.
 
@@ -19,7 +18,7 @@ We finally found a bakery and a restaurant who offered us to pick up their surpl
 
 In summer 2016 we also installed a public fridge, at a coffee shop, not far from the stores, where we pick up the food. The fridge was donated by a friend and the owner of the coffee shop was generous enough to cover the electricity fees.
 
-![](/images/Foodhub1.jpg)
+![](Foodhub1.jpg)
 
 We got a lot of attention for the fridge and gave some interviews to newspapers, magazines and even TV shows. Thus quite some people contacted us, offering to help. Also a company offered to donate fridges. Thus we were able to cooperate with a group of students and set up another fridge on campus early in 2017.
 

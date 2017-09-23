@@ -5,8 +5,6 @@ headline: Tools für Organisation und Kommunikation
 disqus: true
 taxonomy:
   category: blog
-  tag:
-    - grav
   author: Bruno
 ---
 Das ist wahrscheinlich der eher theoretische Teil, verglichen verglichen mit den praktischen Aktivitäten des Essenrettens und -teilens, aber trotzdem mag ich diesen Teil am Liebsten. Ich war schon immer sehr enthusiastisch was die Art und Menge der Organisation angeht, die, ohne formelle Hierarchien, Verbindung schafft durch die digitale Plattform.
