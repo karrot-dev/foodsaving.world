@@ -1,5 +1,10 @@
 ---
 title: 'Legal Circumstances'
+content:
+    items: '@self.modular'
+    order:
+        by: date
+        dir: desc
 ---
 
 # Legal situation

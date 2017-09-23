@@ -1,0 +1,58 @@
+name: awareness
+timestamp: 1506126202
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1503843840
+positions:
+  footer: Footer
+sections:
+  header: Header
+  navigation: Navigation
+  showcase: Showcase
+  feature: Feature
+  subfeature: Subfeature
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  menu:
+    menu-8171: Menu
+  sample:
+    sample-5106: 'Raising Awareness'
+    sample-4965: 'Promote the good cause'
+    sample-1639: 'Events that spark interest'
+    sample-5669: 'Events that spark interest pt.2'
+    sample-1672: 'It''s getting political'
+  messages:
+    system-messages-4542: 'System Messages'
+  custom:
+    custom-2105: stopFoodWaste.jpg
+  position:
+    position-position-9192: Footer
+  social:
+    social-4514: Social
+  branding:
+    branding-5910: Branding
+  mobile-menu:
+    mobile-menu-1736: 'Mobile Menu'
+inherit:
+  home:
+    header: header
+    navigation: navigation
+    menu-8171: menu-8665
+    showcase: showcase
+    sample-5106: sample-1
+    feature: feature
+    sample-4965: sample-4911
+    main: main
+    system-messages-4542: system-messages-8032
+    subfeature: subfeature
+    sample-1672: sample-3
+    footer: footer
+    position-position-9192: position-footer
+    social-4514: social-8249
+    branding-5910: branding-7082
+    offcanvas: offcanvas
+    mobile-menu-1736: mobile-menu-3886

@@ -85,7 +85,7 @@ structure:
         - children
 content:
   sample-1199:
-    title: 'Foodsaving World'
+    title: 'Community Building'
     attributes:
       image: ''
       headline: 'Community Building'
@@ -141,7 +141,7 @@ content:
     attributes:
       image: ''
       headline: ''
-      description: "<h3><div class=\"fa fa-asterisk\"></div><i>As big as possible while still manageable</i></h3>\n\nSome sort of membership control can become useful if your initiative grows fast. There are many ways to implement this and how you organize your rising network is completely up to you. For example, foodsharing.de has reached 17,000 volunteer members after 4 years of existence. Such a rapid growth is certainly a sign of good health, but it also meant introducing a selection process for membership. All people who want to join the German platform must pass a 10 minutes quiz which evaluates if they have understood the basic internal guidelines. This is to ensure that members are serious about saving food, know that they will have to spend time in doing so and really understand what the foodsharing philosophy is all about. "
+      description: "<h3><div class=\"fa fa-asterisk\"></div> <i>As big as possible while still manageable</i></h3>\n\nSome sort of membership control can become useful if your initiative grows fast. There are many ways to implement this and how you organize your rising network is completely up to you. For example, foodsharing.de has reached 17,000 volunteer members after 4 years of existence. Such a rapid growth is certainly a sign of good health, but it also meant introducing a selection process for membership. All people who want to join the German platform must pass a 10 minutes quiz which evaluates if they have understood the basic internal guidelines. This is to ensure that members are serious about saving food, know that they will have to spend time in doing so and really understand what the foodsharing philosophy is all about. "
       link: ''
       linktext: ''
       samples: {  }
@@ -163,7 +163,7 @@ content:
     attributes:
       image: ''
       headline: ''
-      description: "<h3><div class=\"fa fa-female\"></div> <i>Friendly, connected and professional</i></h3>\n\n<p>For some behavioral standards example, please refer to the checklist 'Professionalism for foodsavers' within the <a href=\"https://yunity.atlassian.net/wiki/spaces/FSINT/pages/46203075/How+to+build+and+maintain+cooperations+with+stores\" target=\"_blank\">cooperation mini manual</a>.\n\nHowever you choose to work together, the most important thing is, that you <i>do</i>. To make that possible it's important to stay in contact and to know where the other foodsavers are located. Karrot provide's a map feature that gives a nice overview, if everybody signs up and enters their contact and location data. That way you have a nice overview of who can helo out where and in which parts of your area it makes sense to look for more cooperation partners. If for some reason Karrot doesn't work for you, you should still try to keep a secure database of your members with contacts and addresses, respectful of data privacy and protection laws.</p>"
+      description: "<h3><div class=\"fa fa-female\"></div> <i>Friendly, connected and professional</i></h3>\n\n<p>For some behavioral standards example, please refer to the checklist 'Professionalism for foodsavers' within the <a href=\"https://yunity.atlassian.net/wiki/spaces/FSINT/pages/46203075/How+to+build+and+maintain+cooperations+with+stores\" target=\"_blank\">cooperation mini manual</a>.\n\nHowever you choose to work together, the most important thing is, that you <i>do</i>. To make that possible it's important to stay in contact and to know where the other foodsavers are located. Karrot provide's a map feature that gives a nice overview, if everybody signs up and enters their contact and location data. That way you have a nice overview of who can helo out where and in which parts of your area it makes sense to look for more cooperation partners. If for some reason Karrot doesn't work for you, you should still try to keep a secure database of your members with contacts and addresses, respectful of data privacy and protection laws.</p>\n\n<p><a href=\"../startcommunity/awareness\" class=\"button\">Next</a></p>"
       link: ''
       linktext: ''
       samples: {  }

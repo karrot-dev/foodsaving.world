@@ -1,0 +1,168 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1503843840
+layout:
+  /header/: {  }
+  /navigation/:
+    -
+      - menu-8665
+  /showcase/:
+    -
+      - sample-1
+  /feature/:
+    -
+      - sample-4911
+    -
+      - 'custom-6992 50'
+      - 'sample-2 50'
+    -
+      - sample-3398
+  /main/:
+    -
+      - system-messages-8032
+  /subfeature/:
+    -
+      - sample-3
+    -
+      - 'sample-8867 50'
+      - 'custom-8712 50'
+    -
+      - sample-8582
+  /footer/:
+    -
+      - position-footer
+    -
+      - 'social-8249 70'
+      - 'branding-7082 30'
+  offcanvas:
+    -
+      - mobile-menu-3886
+structure:
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  subfeature:
+    type: section
+    attributes:
+      class: flush
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  sample-1:
+    title: 'Organizing the foodsaving'
+    attributes:
+      image: ''
+      headline: 'Organizing the foodsaving'
+      description: 'How to be effective, efficient and still have fun...'
+      link: ''
+      linktext: ''
+      samples: {  }
+  sample-4911:
+    title: 'Sustainable relationships'
+    attributes:
+      image: ''
+      headline: ''
+      description: "<h3><div class=\"fa fa-briefcase\"></div> <i>Building sustainable relationships with stores</i></h3>\n\n<p>Make sure you have enough volunteers to back up the daily pick-ups! It is important that the store considers your group as reliable, and that you keep on delivering on what you promised instead of making them wait for people who do not show up.</p>\n<p><a href=\"https://yunity.atlassian.net/wiki/spaces/FSINT/pages/46203075/How+to+build+and+maintain+cooperations+with+stores\" target=\"_blank\">Here is a small manual</a> on how to give businesses a good first impression, an appealing second one and make the third irresistible!</p>"
+      link: ''
+      linktext: ''
+      samples: {  }
+  custom-6992:
+    title: bodhiBiocompany.jpg
+    attributes:
+      html: '<img src="user/images/g5_hydrogen/bodhiBiocompany.jpg" style="border-radius: 15px">'
+  sample-2:
+    title: 'Sustainable relationships pt.2'
+    attributes:
+      image: ''
+      headline: ''
+      description: 'A real kick-off would be the participation of a whole branch of supermarkets. You would need to address the key account manager of this chain and not simply the local management team. Feel free to use <a href="https://yunity.atlassian.net/wiki/spaces/FSINT/pages/93497044/Example+letter+to+a+chain+HQ" target="_blank">this example letter</a> and adapt it to your case as much as needed.'
+      link: ''
+      linktext: ''
+      samples: {  }
+  sample-3398:
+    title: 'Sustainable relationships pt.3'
+    attributes:
+      image: ''
+      headline: ''
+      description: 'Our recommendation would be to designate one person from your group who would be accountable for communicating with this chain''s stores. This way, communication is more efficient and you generate trust, because this one person is able to keep the overview and consistently represent your initiative towards the chain.'
+      link: ''
+      linktext: ''
+      samples: {  }
+  sample-3:
+    title: 'Structure and overview'
+    attributes:
+      image: ''
+      headline: ''
+      description: "<h3><div class=\"fa fa-calendar-check-o\"></div> <i>Structure and overview</i></h3>\n\n<p>On a more practical level, how can you organize yourselves when you get bigger?</p>\n\nMost foodsaving groups function through facebook. But we don't want to exclude people who aren't on there, and the features offered by that platform are not enough to organize anything else than peer-to-peer foodsharing, let alone store pick-ups! So groups come up with their very own versions of digital foosaving infratsructure. Here are the different systems we have seen working so far:"
+      link: ''
+      linktext: ''
+      samples: {  }
+  sample-8867:
+    title: 'Structure and overview pt.2'
+    attributes:
+      image: ''
+      headline: ''
+      description: "<div align=\"left\"><ul>\n<li>GoogleDocs Spreadsheets or similar things</li>\n<li>Having fewer but bigger pickups, where all foodsavers are invited to join (wholesale markets, big supermarket - e.g. Copenhagen)</li></div>"
+      link: ''
+      linktext: ''
+      samples: {  }
+  custom-8712:
+    title: foodsharingFood.jpg
+    attributes:
+      html: '<img src="user/images/g5_hydrogen/foodsharingFood.jpg" style="border-radius: 15px">'
+  sample-8582:
+    title: 'Structure and overview pt.3'
+    attributes:
+      image: ''
+      headline: ''
+      description: "For the sharing part facebook or other social media can be pretty useful, since it is easy to reach a lot of people as soon as the group is slightly known by local folks. But especially the saving part is hard to organize via classic social networks. That's why we started developing <strong><a href=\"https://blog.foodsaving.world/2017/05/11/walkthrough.html target=\"_blank\">Karrot</a>. It's a software inspired by German <a href=\"https://foodsharing.de/\" target=\"_blank\">foodsharing.de</a></strong>. With it you can:\n\n<div align=\"left\"><ul>\n<li>create a group for your region</li>\n<li>invite people to join</li>\n<li>enter (potentially) cooperating stores with additional info</li>\n<li>enter pick-up dates, for which members of the group can sign up</li>\n<li>see the history of what happened so far in your group</li>\n<li><strong>a lot more in the future!</strong> <i>Karrot is under active development</i></li></div>\n<p><a href=\"../startcommunity/awareness\" class=\"button\">Back</a> <a href=\"../startcommunity/legal\" class=\"button\">Next</a></p>"
+      link: ''
+      linktext: ''
+      samples: {  }
+  position-footer:
+    attributes:
+      key: footer
+  social-8249:
+    attributes:
+      css:
+        class: social-items
+      items:
+        -
+          icon: 'fa fa-facebook'
+          text: Facebook
+          link: 'https://www.facebook.com/groups/foodsaving.worldwide/'
+          name: Facebook
+        -
+          icon: 'fa fa-rss'
+          text: RSS
+          link: blog.rss
+          name: RSS
+  branding-7082:
+    inherit:
+      outline: default
+      particle: branding-7821
+      include:
+        - block
+        - attributes
+  mobile-menu-3886:
+    title: 'Mobile Menu'

@@ -1,5 +1,5 @@
 name: community
-timestamp: 1506119679
+timestamp: 1506126302
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -20,7 +20,7 @@ particles:
   menu:
     menu-7531: Menu
   sample:
-    sample-1199: 'Foodsaving World'
+    sample-1199: 'Community Building'
     sample-4285: 'Come gather round'
     sample-9828: 'Bullet Points'
     sample-2137: 'Together we are strong'
