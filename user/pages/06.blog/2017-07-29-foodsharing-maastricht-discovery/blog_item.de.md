@@ -1,32 +1,32 @@
 ---
-title: Foodsharing Maastricht - A city discovers its love for saving food
+title: Foodsharing Maastricht - Eine Stadt entdeckt die Liebe zum Lebensmittelretten
 date: '12:00 29-07-2017'
-headline: The start and growth of a student initiative
+headline: Beginn und Wachstum einer Studierendeninitiative
 disqus: true
 taxonomy:
   category: blog
   author: niki
 ---
-The idea to start Foodsharing in Maastricht came up in January 2017. After posting it on Facebook we directly got help from the student-run sustainability department of Maastricht University, the [Green Office](https://www.greenofficemaastricht.nl/), which supports student initiatives to improve the sustainability of the university.
+Die Idee foodsharing Maastricht zu gründen kam im Januar 2017 auf. Nachdem wir etwas dazu auf facebook gepostet hatten, bekamen wir direkt Unterstützung aus der von Studierenden betriebenen Nachhaltigkeitsabteilung der Universität Maastricht. Das so genannte [Green Office](https://www.greenofficemaastricht.nl/) unterstützt Studierendeninitiativen, die sich der Erhöhung der Nachhaltigkeit der Universität annehmen.
 
-The time was right - the university hosted a student idea competition in order to find the best idea to improve university life. We participated with Foodsharing, and after some workshops and two rounds we were happy to win price money and the support of the university.
+Das Timing war super: In der Uni lief gerade ein Ideenwettbewerb zur Verbesseung des Unilebens. Wir nahmen mit foodsharing Teil und nach einigen Workshops und zwei Runden konnten wir uns über ein schönes Preisgeld freuen.
 
 ![Our logo](fsmaastricht_foodsavers.jpg)
 
-This contest gave us the amazing possibility to secure a room, in which we can store the saved food, and to be able to generally cooperate with the university. After the finals, everything went very quick. Two weeks later we got a small room in a university building in the center of Maastricht. Via Facebook we got several donations of second-hand fridges and of a shelf.
+Durch diesen Wettbewerb konnten wir uns einen Raum in der Uni sichern, in dem wir nun das gerettete Essen lagern. Davon abgesehen ist die generelle Unterstützung der Uni unbezahlbar. Nach der finalen Runde ging alles sehr schnell: Zwei Wochen später hatten wir bereits einen kleinen Raum im Universitätsgebäude im Herzen Maastrichts und über facebook konnten wir einige gespendete Regale und Kühlschränke ergattern.
 
-The second part, building up a team, showed how many interested and motivated students live in Maastricht. Together with the Green Office, we organized an information evening to gather interested people and to raise awareness of the initative in Maastricht. Through this event, we met our first great team members who are now - half a year later - still an important part of our team.
+Der zweite Aspekt - der Teamaufbau - zeigte uns wieviele motivierte Studierende es in Maastricht gibt. Gemeinsam mit dem Green Office veranstalteten wir einen Informationsabend, um Interessierte zusammenzubringen und unseren Bekanntheitsgrad zu erhöhen. Durch dieses Event haben wir unsere ersten Mitstreiter gefunden. Jetzt - ein halbes Jahr später - sind sie immernoch ein wichtiger Teil unseres Teams.
 
 ![Parts of the team](fsmaastricht_fsp2.jpg)
 
-We created a [Facebook group](https://www.facebook.com/FoodSharingMaastricht/) and later a page where step by step, new people texted us to become foodsavers. However, until that point we did not have any cooperations with supermarkets. We decided to first organize the room and a team in order to really be able to manage pick-ups.
+Wir haben eine [Facebook Gruppe](https://www.facebook.com/FoodSharingMaastricht/) erstellt unhd danach eine Page, auf der uns nach und nach Menschen angeschrieben haben, die Foodsaver werden wollten. Zu diesem Zeitpunkt hatten wir allerdings noch keine Kooperationen mit Betrieben. Wir wollten erstmal einen Raum und ein Team haben, damit wir die Abholungen dann auch wirklich zuverlässig durchführen können.
 
-It was not as easy as we thought to convince supermarkets to cooperate with us. The first ones all denied. Smaller supermarkets always argued that they do not have any food waste at all (which is hard to believe) or that they use it already for other purposes (which is great). However, the biggest fish, large supermarkets, do not yet cooperate at all. They fear about their image, about additional work they have to do and are in general not open to a small student initiative and their activities. It is very frustrating to see that many people and companies in the Netherlands are not yet ready to fight against food waste.
+Es war allerdings nicht so einfach, wie wir gedacht hätten, Supermärkte von einer Kooperation mit uns zu überzeugen. Die ersten, die wir fragten, haben alle abgelehnt. Kleinere Märkte sagten immer sie würden nichts wegwerfen (was schwer zu glauben ist), oder dass sie ihren Überschuss anderweitig verwerten (was toll ist). Die wirklich großen Fische, die riesigen Supermärkte, kooperieren bis jetzt überhaupt nicht. Sie haben Angst um ihr Image, vor zusätzlicher Arbeit und sie sind generell der Idee gegenüber nicht aufgeschlossen mit einer kleinen Studierendeninitiative zusammenzuarbeiten. Es ist frustrierend zu sehen, dass immernoch soviele Menschen und Betriebe in den Niederlanden nicht bereit sind sich gegen Lebensmittelverschwendung einzusetzen.
 
-Therefore, after the summer break, we want to focus more on awareness raising campaigns and events, we want to further grow in order to reach more people and to gain the power to convince also larger companies to donate their food waste. Only if enough customers are aware of the situation the pressure on supermarkets will be high enough to make them change their minds.
+Aus diesem Grund wollen wir nach der Sommerpause mehr Fokus auf Events und Kampagnen zur Stärkung des Bewusstseins für dieses Thema legen. Wir wollen weiter wachsen, um noch mehr Menschen zu erreichen und schließlich die nötige Bedeutung zu erlangen, dass auch große Supermärkte uns ernst nehmen und mit uns kooperieren wollen. Wenn nur genügend ihrer Kunden unser Anliegen unterstützen wird der Druck auf die Supermärkte irgendwann groß genug sein, um sie zum Umdenken zu bringen.
 
-Recently, we picked up food from three smaller supermarkets on a regular basis and we started to cooperate with the food supplier of the university, which already greatly improves the sustainability of our university. On a national level, we just joined the Dutch-wide Foodsharing foundation, which was also just recently founded. It is great to see that more and more Dutch cities are involved and we hope the initiative will spread further around the globe.
+Seit Kurzem führen wir bei drei kleineren Märkten regelmäßig Abholungen durch, ausserdem haben wir begonnen mit Lieferanten der Universität zu kooperieren, was sofort einen großen positiven Einfluss auf die Nachhaltigkeit unserer Universität hat. Wir sind der gesamtniederländischen foodsharing foundation beigetreten, die sich auch erst kürzlich gegründet hat. Es ist wunderbar zu sehen, dass mehr und mehr Städte hierzulande mitmachen und wir hoffen, dass sich die Idee noch weiter auf der Erde verbreitet.
 
 ![Incomplete group picture](fsmaastricht_team.jpg)
 
-(The Green Office published [an article](https://www.greenofficemaastricht.nl/single-post/2017/04/18/FoodSharing-Maastricht-Chasing-away-food-wastage) concerning this initiative on their own website in April 2017)
+(Das Green Office hat schon im April 2017 [einen Artikel](https://www.greenofficemaastricht.nl/single-post/2017/04/18/FoodSharing-Maastricht-Chasing-away-food-wastage) über die hier vorgestellte Grppe auf ihrer eigenen Page veröffentlicht)
