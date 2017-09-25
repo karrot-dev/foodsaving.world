@@ -19,6 +19,6 @@ jobs:
                 git checkout . &&
                 git clean -fd &&
                 git pull &&
-                composer install --no-dev &&
+                composer install &&
                 ./bin/grav clear-cache
             '
