@@ -10,6 +10,7 @@ jobs:
              - djahniesProposals
     steps:
       - checkout
+      - run: ssh-keyscan -H yuca.yunity.org >> ~/.ssh/known_hosts
       - deploy:
           name: Dev Branch Deploy
           command: >
