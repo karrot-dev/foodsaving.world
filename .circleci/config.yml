@@ -17,7 +17,6 @@ jobs:
             ssh fsww-dev@yuca.yunity.org '
                 cd /var/www/fsww-dev/www &&
                 git checkout . &&
-                git clean -fd &&
                 git pull &&
                 composer install &&
                 ./bin/grav clear-cache
