@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  deploy-next:
+  build:
     working_directory: ~/repo
     docker:
       - image: circleci/php:7.1.5-browsers
