@@ -12,6 +12,12 @@ Our friends from [Foodsharing Taiwan](https://foodsharing.tw/) are supported by 
 
 [Grant details](https://grants.g0v.tw/projects/5968ee2fd60a0d001ed1f7d1)
 
+# Donate on Librapay
+
+We started using the [open source](https://github.com/liberapay/liberapay.com) platform [Librapay](https://liberapay.com) to accept recurring donations.
+
+[![](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/foodsaving.world/donate)
+
 # Manitu
 
 Our hosting is sponsored by [Manitu.de](https://www.manitu.de/), which also provides the server infrastructure for [yunity.org](https://yunity.org) and [foodsharing.de](https://foodsharing.de)
