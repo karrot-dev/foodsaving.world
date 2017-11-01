@@ -1,5 +1,7 @@
 ---
 title: Blog
+published: false
+child_type: blog_item
 visible: true
 content:
     items: '@self.children'
@@ -12,6 +14,5 @@ content:
     show_date: true
     pagination: true
     url_taxonomy_filters: true
-child_type: blog_item
 ---
 
