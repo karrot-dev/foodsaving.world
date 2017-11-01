@@ -8,9 +8,7 @@ layout:
   /navigation/:
     -
       - menu-8665
-  /showcase/:
-    -
-      - sample-1
+  /showcase/: {  }
   /feature/: {  }
   /main/:
     -
@@ -58,15 +56,6 @@ structure:
     attributes:
       boxed: ''
 content:
-  sample-1:
-    title: 'Connecting People'
-    attributes:
-      image: ''
-      headline: 'Connecting People'
-      description: '<div class="sample-content"><div class="info-box"><div class="fa fa-box fa-group float-left"></div><p><strong>We want to bring people together, so they can get active in a group of foodsavers!</strong></p></div></div>'
-      link: ''
-      linktext: ''
-      samples: {  }
   sample-8843:
     title: 'Let''s build communities to save food!'
     attributes:

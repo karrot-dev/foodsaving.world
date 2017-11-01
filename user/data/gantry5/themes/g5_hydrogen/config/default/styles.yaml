@@ -5,8 +5,8 @@ base:
   body-font: 'roboto, sans-serif'
   heading-font: 'roboto, sans-serif'
 accent:
-  color-1: '#3068A8'
-  color-2: '#FCCB3F'
+  color-1: '#3068a8'
+  color-2: '#fccb3f'
 header:
   background: '#795548'
   text-color: '#ffffff'
@@ -36,7 +36,7 @@ offcanvas:
   background: '#354d59'
   text-color: '#ffffff'
   width: 17rem
-  toggle-color: '#ffffff'
+  toggle-color: '#795548'
   toggle-visibility: '1'
 breakpoints:
   large-desktop-container: 75rem

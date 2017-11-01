@@ -493,7 +493,7 @@ hr {
 /* line 28, user/themes/g5_hydrogen/scss/hydrogen/_offcanvas.scss */
 .g-offcanvas-toggle {
   font-size: 1.5rem;
-  color: #fff;
+  color: #795548;
   display: none;
 }
 @media only all and (max-width: 48rem) {

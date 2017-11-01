@@ -25,9 +25,15 @@ layout:
     -
       - sample-3
     -
+      - custom-6069
+    -
       - sample-6999
     -
+      - custom-7870
+    -
       - sample-1550
+    -
+      - custom-2785
     -
       - sample-1305
   /footer/:
@@ -98,7 +104,7 @@ content:
         -
           icon: 'fa fa-group'
           subtitle: ''
-          description: '<p><a href="/en/people">Bridge the barriers of nationalities and bring together foodsaving enthusiasts from all over the world.</a></p>'
+          description: '<p><a href="#connecting">Bridge the barriers of nationalities and bring together foodsaving enthusiasts from all over the world.</a></p>'
           id: ''
           class: ''
           variations: ''
@@ -106,7 +112,7 @@ content:
         -
           icon: 'fa fa-file-code-o'
           subtitle: ''
-          description: '<p><a href="/en/software">Our very own pick-up management tool named <b>Karrot</b>! Completely translatable, open source and free to use forever!</a></p>'
+          description: '<p><a href="#software">Our very own pick-up management tool named <b>Karrot</b>! Completely translatable, open source and free to use forever!</a></p>'
           id: ''
           class: ''
           variations: ''
@@ -114,7 +120,7 @@ content:
         -
           icon: 'fa fa-folder-open'
           subtitle: ''
-          description: '<p><a href="/en/knowledge">Collect experiences, problems and solutions for all the foodsaving groups out there to benefit from.</a></p>'
+          description: '<p><a href="#sharing">Collect experiences, problems and solutions for all the foodsaving groups out there to benefit from.</a></p>'
           id: ''
           class: ''
           variations: ''
@@ -132,6 +138,10 @@ content:
       link: ''
       linktext: ''
       samples: {  }
+  custom-6069:
+    title: 'Custom HTML'
+    attributes:
+      html: '<a name="connecting"></a>'
   sample-6999:
     title: 'Connecting People'
     attributes:
@@ -141,6 +151,10 @@ content:
       link: ''
       linktext: ''
       samples: {  }
+  custom-7870:
+    title: 'Custom HTML'
+    attributes:
+      html: '<a name="software"></a>'
   sample-1550:
     title: 'Providing Software'
     attributes:
@@ -150,6 +164,10 @@ content:
       link: ''
       linktext: ''
       samples: {  }
+  custom-2785:
+    title: 'Custom HTML'
+    attributes:
+      html: '<a name="sharing"></a>'
   sample-1305:
     title: 'Sharing Knowledge'
     attributes:

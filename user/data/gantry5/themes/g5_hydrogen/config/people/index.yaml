@@ -1,5 +1,5 @@
 name: people
-timestamp: 1509539349
+timestamp: 1509555729
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -19,12 +19,11 @@ sections:
 particles:
   menu:
     menu-8665: Menu
-  sample:
-    sample-1: 'Connecting People'
-    sample-8843: 'Let''s build communities to save food!'
-    sample-3: pictocome
   messages:
     system-messages-8032: 'System Messages'
+  sample:
+    sample-8843: 'Let''s build communities to save food!'
+    sample-3: pictocome
   position:
     position-footer: Footer
   social:

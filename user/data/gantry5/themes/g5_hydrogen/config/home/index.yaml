@@ -1,5 +1,5 @@
 name: home
-timestamp: 1509554817
+timestamp: 1509556869
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -31,6 +31,9 @@ particles:
     system-messages-8032: 'System Messages'
   custom:
     custom-8757: Nieves.jpg
+    custom-6069: 'Custom HTML'
+    custom-7870: 'Custom HTML'
+    custom-2785: 'Custom HTML'
   position:
     position-footer: Footer
   social:
