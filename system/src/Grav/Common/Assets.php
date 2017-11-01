@@ -184,7 +184,7 @@ class Assets
 
         // Set timestamp
         if (isset($config['enable_asset_timestamp']) && $config['enable_asset_timestamp'] === true) {
-            $this->timestamp = '?' . Grav::instance()['cache']->getKey();
+            $this->timestamp = Grav::instance()['cache']->getKey();
         }
 
         return $this;
@@ -285,9 +285,20 @@ class Assets
             return $this;
         }
 
+        $query = [];
+
         $modified = false;
         $remote = $this->isRemoteLink($asset);
         if (!$remote) {
+
+            $asset_parts = parse_url($asset);
+            if (isset($asset_parts['query'])) {
+                $query[] = $asset_parts['query'];
+                unset($asset_parts['query']);
+                $asset = Uri::buildUrl($asset_parts);
+            }
+
+
             $modified = $this->getLastModificationTime($asset);
             $asset = $this->buildLocalLink($asset);
         }
@@ -305,7 +316,8 @@ class Assets
             'pipeline' => (bool) $pipeline,
             'loading'  => $loading ?: '',
             'group'    => $group ?: 'head',
-            'modified' => $modified
+            'modified' => $modified,
+            'query'    => implode('&', $query),
         ];
 
         // check for dynamic array and merge with defaults
@@ -453,12 +465,13 @@ class Assets
      * For adding chunks of string-based inline JS
      *
      * @param  mixed $asset
-     * @param  int   $priority the priority, bigger comes first
-     * @param string $group    name of the group
+     * @param  int $priority the priority, bigger comes first
+     * @param string $group name of the group
+     * @param null $attributes
      *
      * @return $this
      */
-    public function addInlineJs($asset, $priority = null, $group = null)
+    public function addInlineJs($asset, $priority = null, $group = null, $attributes = null)
     {
         $asset = trim($asset);
 
@@ -473,7 +486,8 @@ class Assets
             'asset'    => $asset,
             'priority' => intval($priority ?: 10),
             'order'    => count($this->js),
-            'group'    => $group ?: 'head'
+            'group'    => $group ?: 'head',
+            'type'     => $attributes ?: '',
         ];
 
         // check for dynamic array and merge with defaults
@@ -508,24 +522,9 @@ class Assets
 
         // Sort array by priorities (larger priority first)
         if (Grav::instance()) {
-            uasort($this->css, function ($a, $b) {
-                if ($a['priority'] == $b['priority']) {
-                    return $b['order'] - $a['order'];
-                }
-
-                return $a['priority'] - $b['priority'];
-            });
-
-            uasort($this->inline_css, function ($a, $b) {
-                if ($a['priority'] == $b['priority']) {
-                    return $b['order'] - $a['order'];
-                }
-
-                return $a['priority'] - $b['priority'];
-            });
+            uasort($this->css, array($this, 'sortAssetsByPriorityThenOrder'));
+            uasort($this->inline_css, array($this, 'sortAssetsByPriorityThenOrder'));
         }
-        $this->css = array_reverse($this->css);
-        $this->inline_css = array_reverse($this->inline_css);
 
         $inlineGroup = array_key_exists('loading', $attributes) && $attributes['loading'] === 'inline';
 
@@ -553,7 +552,7 @@ class Assets
                     }
                     else {
                         $media = isset($file['media']) ? sprintf(' media="%s"', $file['media']) : '';
-                        $output .= '<link href="' . $file['asset'] . $this->getTimestamp($file) . '"' . $attributes . $media . ' />' . "\n";
+                        $output .= '<link href="' . $file['asset'] . $this->getQuerystring($file) . '"' . $attributes . $media . ' />' . "\n";
                     }
                 }
             }
@@ -573,7 +572,7 @@ class Assets
                     }
                     else {
                         $media = isset($file['media']) ? sprintf(' media="%s"', $file['media']) : '';
-                        $output .= '<link href="' . $file['asset'] . $this->getTimestamp($file) . '"' . $attributes . $media . ' />' . "\n";
+                        $output .= '<link href="' . $file['asset'] . $this->getQuerystring($file) . '"' . $attributes . $media . ' />' . "\n";
                     }
                 }
             }
@@ -609,24 +608,8 @@ class Assets
         }
 
         // Sort array by priorities (larger priority first)
-        uasort($this->js, function ($a, $b) {
-            if ($a['priority'] == $b['priority']) {
-                return $b['order'] - $a['order'];
-            }
-
-            return $a['priority'] - $b['priority'];
-        });
-
-        uasort($this->inline_js, function ($a, $b) {
-            if ($a['priority'] == $b['priority']) {
-                return $b['order'] - $a['order'];
-            }
-
-            return $a['priority'] - $b['priority'];
-        });
-
-        $this->js = array_reverse($this->js);
-        $this->inline_js = array_reverse($this->inline_js);
+        uasort($this->js, array($this, 'sortAssetsByPriorityThenOrder'));
+        uasort($this->inline_js, array($this, 'sortAssetsByPriorityThenOrder'));
 
         $inlineGroup = array_key_exists('loading', $attributes) && $attributes['loading'] === 'inline';
 
@@ -653,7 +636,7 @@ class Assets
                         $inline_js .= $this->gatherLinks([$file], JS_ASSET) . "\n";
                     }
                     else {
-                        $output .= '<script src="' . $file['asset'] . $this->getTimestamp($file) . '"' . $attributes . ' ' . $file['loading'] . '></script>' . "\n";
+                        $output .= '<script src="' . $file['asset'] . $this->getQuerystring($file) . '"' . $attributes . ' ' . $file['loading'] . '></script>' . "\n";
                     }
                 }
             }
@@ -672,7 +655,7 @@ class Assets
                         $inline_js .= $this->gatherLinks([$file], JS_ASSET) . "\n";
                     }
                     else {
-                        $output .= '<script src="' . $file['asset'] . $this->getTimestamp($file) . '"' . $attributes . ' ' . $file['loading'] . '></script>' . "\n";
+                        $output .= '<script src="' . $file['asset'] . $this->getQuerystring($file) . '"' . $attributes . ' ' . $file['loading'] . '></script>' . "\n";
                     }
                 }
             }
@@ -686,7 +669,8 @@ class Assets
         }
 
         if ($inline_js) {
-            $output .= "\n<script>\n" . $inline_js . "\n</script>\n";
+            $attribute_string = isset($inline) && $inline['type'] ? " type=\"" . $inline['type'] . "\"" : '';
+            $output .= "\n<script" . $attribute_string . ">\n" . $inline_js . "\n</script>\n";
         }
 
         return $output;
@@ -1384,22 +1368,50 @@ class Assets
      */
     public function setTimestamp($value)
     {
-        $this->timestamp = '?' . $value;
+        $this->timestamp = $value;
     }
 
-    public function getTimestamp($asset = null)
+    /**
+     * Get the timestamp for assets
+     *
+     * @return string
+     */
+    public function getTimestamp($include_join = true)
     {
-        if (is_array($asset)) {
-            if ($asset['remote'] === false) {
-                if (Utils::contains($asset['asset'], '?')) {
-                    return str_replace('?', '&', $this->timestamp);
-                } else {
-                    return $this->timestamp;
-                }
-            }
-        } elseif (empty($asset)) {
-            return $this->timestamp;
+        if ($this->timestamp) {
+            $timestamp = $include_join ? '?' . $this->timestamp : $this->timestamp;
+            return $timestamp;
         }
+        return;
+    }
+
+    /**
+     *
+     *
+     * @param $asset
+     * @return string
+     */
+    public function getQuerystring($asset)
+    {
+        $querystring = '';
+
+        if (!empty($asset['query'])) {
+            if (Utils::contains($asset['asset'], '?')) {
+                $querystring .=  '&' . $asset['query'];
+            } else {
+               $querystring .= '?' . $asset['query'];
+            }
+        }
+
+        if ($this->timestamp) {
+            if (Utils::contains($asset['asset'], '?') || $querystring) {
+                $querystring .=  '&' . $this->timestamp;
+            } else {
+                $querystring .= '?' . $this->timestamp;
+            }
+        }
+
+        return $querystring;
     }
 
     /**
@@ -1416,9 +1428,13 @@ class Assets
      *
      * @return mixed
      */
-    protected function priorityCompare($a, $b)
+    protected function sortAssetsByPriorityThenOrder($a, $b)
     {
-        return $a ['priority'] - $b ['priority'];
+        if ($a['priority'] == $b['priority']) {
+            return $a['order'] - $b['order'];
+        }
+
+        return $b['priority'] - $a['priority'];
     }
 
 }

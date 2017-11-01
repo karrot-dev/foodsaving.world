@@ -67,6 +67,8 @@ class TwigExtension extends \Twig_Extension
             new \Twig_SimpleFilter('*ize', [$this, 'inflectorFilter']),
             new \Twig_SimpleFilter('absolute_url', [$this, 'absoluteUrlFilter']),
             new \Twig_SimpleFilter('contains', [$this, 'containsFilter']),
+            new \Twig_SimpleFilter('chunk_split', [$this, 'chunkSplitFilter']),
+
             new \Twig_SimpleFilter('defined', [$this, 'definedDefaultFilter']),
             new \Twig_SimpleFilter('ends_with', [$this, 'endsWithFilter']),
             new \Twig_SimpleFilter('fieldName', [$this, 'fieldNameFilter']),
@@ -90,12 +92,15 @@ class TwigExtension extends \Twig_Extension
             new \Twig_SimpleFilter('sort_by_key', [$this, 'sortByKeyFilter']),
             new \Twig_SimpleFilter('starts_with', [$this, 'startsWithFilter']),
             new \Twig_SimpleFilter('t', [$this, 'translate']),
+            new \Twig_SimpleFilter('tl', [$this, 'translateLanguage']),
             new \Twig_SimpleFilter('ta', [$this, 'translateArray']),
             new \Twig_SimpleFilter('truncate', ['\Grav\Common\Utils', 'truncate']),
             new \Twig_SimpleFilter('truncate_html', ['\Grav\Common\Utils', 'truncateHTML']),
             new \Twig_SimpleFilter('json_decode', [$this, 'jsonDecodeFilter']),
             new \Twig_SimpleFilter('array_unique', 'array_unique'),
-
+            new \Twig_SimpleFilter('basename', 'basename'),
+            new \Twig_SimpleFilter('dirname', 'dirname'),
+            new \Twig_SimpleFilter('print_r', 'print_r'),
         ];
     }
 
@@ -109,22 +114,26 @@ class TwigExtension extends \Twig_Extension
         return [
             new \Twig_SimpleFunction('array', [$this, 'arrayFunc']),
             new \Twig_SimpleFunction('array_key_value', [$this, 'arrayKeyValueFunc']),
-            new \Twig_SimpleFunction('array_key_exists', [$this, 'arrayKeyExistsFunc']),
+            new \Twig_SimpleFunction('array_key_exists', 'array_key_exists'),
+            new \Twig_SimpleFunction('array_unique', 'array_unique'),
             new \Twig_SimpleFunction('array_intersect', [$this, 'arrayIntersectFunc']),
             new \Twig_simpleFunction('authorize', [$this, 'authorize']),
             new \Twig_SimpleFunction('debug', [$this, 'dump'], ['needs_context' => true, 'needs_environment' => true]),
             new \Twig_SimpleFunction('dump', [$this, 'dump'], ['needs_context' => true, 'needs_environment' => true]),
             new \Twig_SimpleFunction('vardump', [$this, 'vardumpFunc']),
+            new \Twig_SimpleFunction('print_r', 'print_r'),
+            new \Twig_SimpleFunction('http_response_code', 'http_response_code'),
             new \Twig_SimpleFunction('evaluate', [$this, 'evaluateStringFunc'], ['needs_context' => true, 'needs_environment' => true]),
             new \Twig_SimpleFunction('evaluate_twig', [$this, 'evaluateTwigFunc'], ['needs_context' => true, 'needs_environment' => true]),
             new \Twig_SimpleFunction('gist', [$this, 'gistFunc']),
             new \Twig_SimpleFunction('nonce_field', [$this, 'nonceFieldFunc']),
-            new \Twig_SimpleFunction('pathinfo', [$this, 'pathinfoFunc']),
+            new \Twig_SimpleFunction('pathinfo', 'pathinfo'),
             new \Twig_simpleFunction('random_string', [$this, 'randomStringFunc']),
             new \Twig_SimpleFunction('repeat', [$this, 'repeatFunc']),
             new \Twig_SimpleFunction('regex_replace', [$this, 'regexReplace']),
             new \Twig_SimpleFunction('string', [$this, 'stringFunc']),
             new \Twig_simpleFunction('t', [$this, 'translate']),
+            new \Twig_simpleFunction('tl', [$this, 'translateLanguage']),
             new \Twig_simpleFunction('ta', [$this, 'translateArray']),
             new \Twig_SimpleFunction('url', [$this, 'urlFunc']),
             new \Twig_SimpleFunction('json_decode', [$this, 'jsonDecodeFilter']),
@@ -239,15 +248,15 @@ class TwigExtension extends \Twig_Extension
     /**
      * Inflector supports following notations:
      *
-     * {{ 'person'|pluralize }} => people
-     * {{ 'shoes'|singularize }} => shoe
-     * {{ 'welcome page'|titleize }} => "Welcome Page"
-     * {{ 'send_email'|camelize }} => SendEmail
-     * {{ 'CamelCased'|underscorize }} => camel_cased
-     * {{ 'Something Text'|hyphenize }} => something-text
-     * {{ 'something_text_to_read'|humanize }} => "Something text to read"
-     * {{ '181'|monthize }} => 5
-     * {{ '10'|ordinalize }} => 10th
+     * `{{ 'person'|pluralize }} => people`
+     * `{{ 'shoes'|singularize }} => shoe`
+     * `{{ 'welcome page'|titleize }} => "Welcome Page"`
+     * `{{ 'send_email'|camelize }} => SendEmail`
+     * `{{ 'CamelCased'|underscorize }} => camel_cased`
+     * `{{ 'Something Text'|hyphenize }} => something-text`
+     * `{{ 'something_text_to_read'|humanize }} => "Something text to read"`
+     * `{{ '181'|monthize }} => 5`
+     * `{{ '10'|ordinalize }} => 10th`
      *
      * @param string $action
      * @param string $data
@@ -375,6 +384,19 @@ class TwigExtension extends \Twig_Extension
         ksort($array);
 
         return $array;
+    }
+
+    /**
+     * Wrapper for chunk_split() function
+     *
+     * @param $value
+     * @param $chars
+     * @param string $split
+     * @return string
+     */
+    public function chunkSplitFilter($value, $chars, $split = '-')
+    {
+        return chunk_split($value, $chars, $split);
     }
 
     /**
@@ -593,6 +615,20 @@ class TwigExtension extends \Twig_Extension
     public function translate()
     {
         return $this->grav['language']->translate(func_get_args());
+    }
+
+    /**
+     * Translate Strings
+     *
+     * @param $args
+     * @param array|null $languages
+     * @param bool $array_support
+     * @param bool $html_out
+     * @return mixed
+     */
+    public function translateLanguage($args, array $languages = null, $array_support = false, $html_out = false)
+    {
+        return $this->grav['language']->translate($args, $languages, $array_support, $html_out);
     }
 
     /**
@@ -820,19 +856,6 @@ class TwigExtension extends \Twig_Extension
             $current_array[$key] = $val;
             return $current_array;
         }
-    }
-
-    /**
-     * Check to see if an array key exists
-     *
-     * @param string $key           key of item
-     * @param string $current_array optional array to add to
-     *
-     * @return array
-     */
-    public function arrayKeyExistsFunc($key, $current_array = null)
-    {
-        return array_key_exists($key, $current_array);
     }
 
     /**
@@ -1072,14 +1095,4 @@ class TwigExtension extends \Twig_Extension
         var_dump($var);
     }
 
-    /**
-     * Simple wrapper for pathinfo()
-     *
-     * @param $var
-     * @return mixed
-     */
-    public function pathinfoFunc($var)
-    {
-        return pathinfo($var);
-    }
 }
