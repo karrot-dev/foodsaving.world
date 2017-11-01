@@ -15,7 +15,7 @@ blueprints/styles/navigation.yaml	08c30ad7304f9010d052afaa92049eed
 blueprints/styles/offcanvas.yaml	f9be1396ee2c3ec1272f7fc2019ae1b8
 blueprints/styles/showcase.yaml	e2bb0d74cdd8b6689cdae09acab9e356
 blueprints/styles/subfeature.yaml	204bb082613179610bb5f882b002d5d6
-blueprints.yaml	aaf67f652450e7c70825348ddab1d3b4
+blueprints.yaml	045dd2a81558f031d61852fd15bd2455
 config/default/particles/logo.yaml	b6a52ffa880d0ad080cfaf6c827093db
 fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot	ecdd509cadbf1ea78b8d2e31ec52328c
 fonts/roboto_bold_macroman/Roboto-Bold-webfont.svg	375c4f3bd35840adee24a1535bbb2018
@@ -34,7 +34,7 @@ fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff	3e5675c89f974f7811eeaf
 fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff2	bde1ca6a5d7cefc8108c75fdaad29ed6
 g5_hydrogen.yaml	c992c6c2943becc7320a32e402e7e4f8
 gantry/presets.yaml	7f3dfc6dcb9acb88e4c8f66afed12c97
-gantry/theme.yaml	f62d958d9171d1d81b4b909f5a504d6d
+gantry/theme.yaml	0f452d9a51e03278061997afbb8140cd
 images/ipad.png	d5a7118045cc491070f6aac905dffc1f
 images/iphone.png	3e0764062333d05540e4cae7045fe07d
 images/macbook.png	faf9871d2d37a66bfd77cf13eff8a683
@@ -58,7 +58,7 @@ scss/configuration/_base.scss	391a1099982a456a3c1ac50621494391
 scss/configuration/_colors.scss	707fa45ff7e3b8f34cb3911de575ff5c
 scss/configuration/_core.scss	53d6b98677d63d0ec830b26c930fb0d7
 scss/configuration/_nav.scss	4570e1c2ba67fbc42d985b67ca38359a
-scss/configuration/_typography.scss	5005fe55a6a7c397013cfd41c200aeb0
+scss/configuration/_typography.scss	18ee14c3e2f075cd30ff89e9386442f5
 scss/hydrogen/_contentarray.scss	ede3fd1b7cb7ff17abdae8fbcea136fd
 scss/hydrogen/_core.scss	8f1f6af5e39e85d3743243620efeb7f5
 scss/hydrogen/_dropdownanimations.scss	96a4b4059c70d43f22f66b2a7b247c25

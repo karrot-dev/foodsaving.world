@@ -1,3 +1,71 @@
+# v1.6.6
+## 10/27/2017
+
+1. [](#new)
+    * Fixed issue where sortable media in expert mode would reset frontmatter [#1252](https://github.com/getgrav/grav-plugin-admin/issues/1252)
+
+# v1.6.5
+## 10/26/2017
+
+1. [](#new)
+    * Added ability to **order** page media (requires latest Grav update)
+
+# v1.6.4
+## 10/11/2017
+
+1. [](#improved)
+    * Use system PHP size for upload limit rather than `system.media.upload_limit` or `file.filesize` plugin options
+1. [](#bugfix)
+    * Fixed Dropzone timeout to address slow internet connections [#1239](https://github.com/getgrav/grav-plugin-admin/pull/1239)
+
+# v1.6.3
+## 10/02/2017
+
+1. [](#bugfix)
+    * Fixed chart labels not parsing HTML [#1234](https://github.com/getgrav/grav-plugin-admin/issues/1234)
+
+# v1.6.2
+## 09/29/2017
+
+1. [](#improved)
+    * Removed extraneous files in vendor folder for smaller download package
+
+# v1.6.1
+## 09/29/2017
+
+1. [](#improved)
+    * Added support for Latin Extended fonts [#1211](https://github.com/getgrav/grav-plugin-admin/pull/1221)
+    * Added collapsible attribute to lists [#1231](https://github.com/getgrav/grav-plugin-admin/pull/1231)
+1. [](#bugfix)
+    * Fix editor not clickable in list field [#1224](https://github.com/getgrav/grav-plugin-admin/pull/1124)
+    * Updated Google Font URLs to always connect over HTTPS. [#1106](https://github.com/getgrav/grav-plugin-admin/pull/1106)
+    * Fixed fieldset field not allowing to properly save when contained within a list [#1225](https://github.com/getgrav/grav-plugin-admin/issues/1225)
+    * Fixed Video markdown syntax when drag & dropping in the content editor [#1160](https://github.com/getgrav/grav-plugin-admin/issues/1160)
+    * Fixed headers drop-down in editor to properly align
+    * Fixed fields not working in Microsoft Edge with Selectize.js [#1222](https://github.com/getgrav/grav-plugin-admin/pull/1222)
+    * Replaced a left-over "is empty" check [#1232](https://github.com/getgrav/grav-plugin-admin/pull/1232)
+    * Fixed headers drop-down in editor to align properly
+  
+
+# v1.6.0
+## 09/07/2017
+
+1. [](#new)
+    * **Added 2-Factor Authentication support to the admin!**
+    * **Added rate-limiting for "failed login attempts" and "forgot password"**
+1. [](#improved)
+    * Revamped the toggle switch CSS so it's more flexible and works better [#1198](https://github.com/getgrav/grav-plugin-admin/issues/1198)
+    * Improved toggle/button alignment on Page edit view
+1. [](#bugfix)
+    * Fixed an issue where icon-picker style was hiding field elements [#1199](https://github.com/getgrav/grav-plugin-admin/issues/1199)
+    * Fixed https -> http redirect issue [#1195](https://github.com/getgrav/grav-plugin-admin/issues/1195)
+    * Also check `/.` for home route [#1191](https://github.com/getgrav/grav-plugin-admin/issues/1191)
+    * Fixed administration being broken in multi-site environments with plugin overrides
+    * Fixed lang-switcher broken in MS Edge browser [#1213](https://github.com/getgrav/grav-plugin-admin/pull/1213)
+    * Added custom `form_id` attribute for modal forms [#1216](https://github.com/getgrav/grav-plugin-admin/issues/1216)
+    * Fixed partially cropped line in Markdown editor for MS Edge/Firefox [#1219](https://github.com/getgrav/grav-plugin-admin/pull/1219)
+    * Downgraded Babel libraries to v6.x for compatibility with webpack [#1218](https://github.com/getgrav/grav-plugin-admin/pull/1218)
+
 # v1.5.2
 ## 08/16/2017
 
