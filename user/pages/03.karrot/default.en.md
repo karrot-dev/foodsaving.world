@@ -40,11 +40,13 @@ title: Karrot
   <li>Since Karrot is
     <strong>open source</strong> we encourage groups to host their own instances of the platform, if they have the ability to do
     so. Still, we also provide access to a hosted version here on foodsaving.world.
+      
+      <p></p>
 
     <div align="center">
-      <p>
         <a href="https://foodsaving.world" target="_blank" class="button">Try Karrot now!</a>
-      </p>
+        <a href="https://blog.foodsaving.world" target="_blank" class="button">Karrot Blog</a>
+        <a href="https://github.com/yunity/karrot-frontend" target="_blank" class="button">Source Code</a>
     </div>
   </li>
 </ul>
