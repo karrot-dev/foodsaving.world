@@ -1,4 +1,5 @@
 ---
 title: People
+published: false
 ---
 

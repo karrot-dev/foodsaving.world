@@ -1,5 +1,5 @@
 name: blog
-timestamp: 1506189172
+timestamp: 1505302604
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -13,10 +13,10 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  menu:
-    menu-9354: Menu
   content:
     system-content-9343: 'Page Content'
+  menu:
+    menu-9354: Menu
 inherit:
   default:
     navigation: navigation

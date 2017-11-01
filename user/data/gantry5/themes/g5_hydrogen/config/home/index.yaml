@@ -1,5 +1,5 @@
 name: home
-timestamp: 1506118071
+timestamp: 1509554817
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -24,6 +24,9 @@ particles:
     sample-4911: Welcome
     sample-2: 'What we do'
     sample-3: 'Getting Started'
+    sample-6999: 'Connecting People'
+    sample-1550: 'Providing Software'
+    sample-1305: 'Sharing Knowledge'
   messages:
     system-messages-8032: 'System Messages'
   custom:

@@ -1,5 +1,5 @@
 name: software
-timestamp: 1506172048
+timestamp: 1509554538
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -22,7 +22,6 @@ particles:
   sample:
     sample-1: 'Providing Software'
     sample-8843: 'Let''s get organized!'
-    sample-3: pictocome
   messages:
     system-messages-8032: 'System Messages'
   position:

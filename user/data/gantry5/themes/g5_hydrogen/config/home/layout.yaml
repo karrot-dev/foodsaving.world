@@ -24,6 +24,12 @@ layout:
   /subfeature/:
     -
       - sample-3
+    -
+      - sample-6999
+    -
+      - sample-1550
+    -
+      - sample-1305
   /footer/:
     -
       - position-footer
@@ -123,6 +129,33 @@ content:
       image: ''
       headline: ''
       description: "<h1 class=\"center\">Getting Started</h1>\n<p align=\"left\">We support all initiatives, that want to join the fight against food waste! Depending on your needs there's different resources that could be of interest to you.</p>\n\n<div align=\"left\">In case you are:\n<ul><li><strong>an interested passerby</strong>:<br>\nThere's general info about <a href=\"https://yunity.atlassian.net/wiki/spaces/FSINT/pages/65241446/What+is+foodsaving\" target=\"_blank\">foodsaving</a>, <a href=\"https://yunity.atlassian.net/wiki/spaces/FSINT/pages/55607369/Existing+initiatives\" target=\"_blank\">existing groups</a> and <a href=\"https://foodsaving.today\" target=\"_blank\">what's going on</a>.</li>\n<li><strong>an enthusiastic individual</strong>:<br>\nWe may have info about other potential foodsavers or foodsharing groups in your area.<br>\nWe put together <a href=../startcommunity>a practical guide on how to start a foodsaving project.</a><br>\nYou could already have a look at our <a href=../software>foodsaving tool <i>Karrot</i></a> </li>\n<li><strong>a group that is just starting</strong>:<br>\nWe compiled several <a href=\"https://yunity.atlassian.net/wiki/spaces/FSINT/pages/50069535/Material+to+get+started\" target=\"_blank\">detailed how-tos</a> that cover different aspects of foodsaving.<br>\nWe strongly suggest you try out <a href=../software><i>Karrot</i></a>! It's meant to make your life easier and bring structure to your pick-up management.</li>\n<li><strong>a group that is already going strong</strong>:<br>\nAre you tired of those spreadsheets and doodles to organize your pick-ups? Time to switch to <a href=\"../software\"><i>Karrot</i></a>!<br> \nMaybe you want to share your experiences in the form of a blog post? <a href=\"mailto:foodsaving@yunity.org\" target=\"_blank\">Get in contact</a> and we'll make it possible!</li></ul></div>"
+      link: ''
+      linktext: ''
+      samples: {  }
+  sample-6999:
+    title: 'Connecting People'
+    attributes:
+      image: ''
+      headline: 'Connecting People'
+      description: "<h3>Let's build communities to save food!</h3>\n\n<em>We want to bring people together, so they can get active in a group of foodsavers!</em>\n\n<div align=\"left\">\n<p>\n  Not much can be done alone, so building a community is of utmost importance for a successful foodsaving project. Not only\n  to have people to carry out the pick-ups, but also to have a good network of hungry fellows to make use of the saved food.\n  We want to helop you with that!\n</p>\n  <ul>\n    <li>\n      <strong>\n        <a href=\"../startcommunity/buildcommunity\">Gather people in your area</a>\n      </strong>! Just try and get in contact with who's already your neighbor anyways.</li>\n    <li>\n      <strong>\n        <a href=\"mailto:foodsaving@yunity.org\" target=\"_blank\">Contact us by mail</a>\n      </strong>! Maybe we already have received messages by other interested people or know of interesting projects in your area.</li>\n    <li>\n      <strong>\n        <a href=\"https://www.facebook.com/groups/foodsaving.worldwide\" target=\"_blank\">Join our facebook group</a>\n      </strong>! It is full of active people saving food in their cities already. We can share experiences, problems and possible\n      solutions for the benefit of all.</li>\n    <li>\n      <strong>\n        <a href=\"https://slackin.yunity.org\" target=\"_blank\">Join our team</a>\n      </strong>! For real coaching and more close contact it's beneficial if you join the yunity Slack and on there the channel 'foodsaving-worldwide'.\n      You can chat with us and ask all the questions you may have.</li>\n  </ul>\n</div>"
+      link: ''
+      linktext: ''
+      samples: {  }
+  sample-1550:
+    title: 'Providing Software'
+    attributes:
+      image: ''
+      headline: 'Providing Software'
+      description: "TODO\n\nadd introduction into foodsaving tech\n\nkarrot, foodsharing.de, boulder foodsaving robot, olio, facebook groups?"
+      link: ''
+      linktext: ''
+      samples: {  }
+  sample-1305:
+    title: 'Sharing Knowledge'
+    attributes:
+      image: ''
+      headline: 'Sharing Knowledge'
+      description: "<h3>Let's share experience!</h3>\n\n<em>We collect, translate and distribute knowledge about every aspect of foodsaving!</em>\n\n<div align=\"left\">\n  <p>The German speaking countries have a history of foodsaving that goes back to 2011. They collected a lot of wisdom about\n    how to successfully cooperate with businesses to save their surplus, how to distribute it afterwards and how to maintain\n    a well-functioning group of volunteers. Apart from that, we are in contact with many other foodsaving initiatives and\n    many shared their work and insights with us and thus with you. Using this as a base, we created a collection of documents,\n    which hopefully proves useful:\n    <ul>\n      <li>Directly on this site there is the guide on\n        <strong>\n          <a href=\"../startcommunity\">how to start a foodsaving initiative</a>\n        </strong>.</li>\n      <li>We put together a\n        <strong>\n          <a href=\"https://yunity.atlassian.net/wiki/spaces/FSINT/pages/50069535/Material+to+get+started\" target=\"_blank\">library of howtos, manuals and template documents</a>\n        </strong> for groups, that are just starting. We did this for you, so please use everything in there however you see fit!</li>\n      <li>We compiled a\n        <strong>\n          <a href=\"https://yunity.atlassian.net/wiki/spaces/FSINT/pages/41812111/foodsharing+Wiki+for+International+Audiences\" target=\"_blank\">shortened, translated and adapted version of the German foodsharing wiki</a>\n        </strong>.\n        <br>The German original can be found\n        <a href=\"https://wiki.foodsharing.de/Hauptseite\" target=\"_blank\">here.</a>\n      </li>\n      <li>We run a\n        <strong>\n          <a href=\"https://foodsaving.today\" target=\"_blank\">blog full of stories from foodsaving groups</a>\n        </strong>, where everybody can share their challenges and success.\n        <br>We are\n        <a href=\"mailto:foodsaving@yunity.org\" target=\"_blank\">always hungry for more stories</a> (in any language) to include them on there!</li>\n</div>"
       link: ''
       linktext: ''
       samples: {  }

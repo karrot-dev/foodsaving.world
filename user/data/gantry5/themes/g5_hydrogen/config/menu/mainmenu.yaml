@@ -2,16 +2,15 @@ settings:
   title: Mainmenu
 ordering:
   home: ''
-  people: ''
-  software: ''
-  knowledge: ''
   startcommunity:
     __particle-SQyp6: ''
     __particle-5ccLI: ''
     __particle-tKYZj: ''
     __particle-b0DIC: ''
-  blog: ''
+  karrot: ''
   team: ''
+  sponsors: ''
+  contact: ''
 items:
   home:
     enabled: '1'
@@ -19,24 +18,21 @@ items:
     dropdown_hide: '0'
     width: auto
     anchor_class: ''
-  team:
-    enabled: true
-    anchor_class: ''
-  blog:
-    enabled: true
-    anchor_class: ''
-  people:
-    enabled: true
-    anchor_class: ''
-  software:
-    enabled: true
-    anchor_class: ''
-  knowledge:
+  karrot:
     enabled: true
     anchor_class: ''
   startcommunity:
     columns:
       - 100
+    enabled: true
+    anchor_class: ''
+  team:
+    enabled: true
+    anchor_class: ''
+  sponsors:
+    enabled: true
+    anchor_class: ''
+  contact:
     enabled: true
     anchor_class: ''
   startcommunity/__particle-tKYZj:

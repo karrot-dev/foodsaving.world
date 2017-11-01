@@ -1,5 +1,5 @@
 name: community
-timestamp: 1506126302
+timestamp: 1509554817
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -17,8 +17,6 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  menu:
-    menu-7531: Menu
   sample:
     sample-1199: 'Community Building'
     sample-4285: 'Come gather round'
@@ -32,6 +30,8 @@ particles:
     custom-2652: foodsharingFruit.jpg
   messages:
     system-messages-3919: 'System Messages'
+  menu:
+    menu-7531: Menu
   position:
     position-position-4039: Footer
   social:
@@ -44,7 +44,6 @@ inherit:
   home:
     header: header
     navigation: navigation
-    menu-7531: menu-8665
     showcase: showcase
     feature: feature
     sample-4285: sample-4911
@@ -52,8 +51,9 @@ inherit:
     system-messages-3919: system-messages-8032
     subfeature: subfeature
     footer: footer
+    offcanvas: offcanvas
+    menu-7531: menu-8665
     position-position-4039: position-footer
     social-1433: social-8249
     branding-9150: branding-7082
-    offcanvas: offcanvas
     mobile-menu-2483: mobile-menu-3886
