@@ -119,10 +119,12 @@ content:
     attributes:
       image: ''
       headline: ''
-      description: "<h3><div class=\"fa fa-cutlery\"></div><i> Events that spark interest</i></h3>\n\nThere are many possibilities to get people's interest up: Events like <a href=\"http://now-here-this.timeout.com/2015/03/01/eat-to-the-beat-disco-soup-are-turning-food-waste-into-party-fuel/\" target=\"_blank\">disco soups</a> or pop-up Food-Share Points, where saved food gets distributed to the people, always get a lot of attention."
+      description: "<h3><div class=\"fa fa-cutlery\"></div><i> Events that spark interest</i></h3>\n\n<p>There are many possibilities to get people's interest up: Events like <a href=\"http://now-here-this.timeout.com/2015/03/01/eat-to-the-beat-disco-soup-are-turning-food-waste-into-party-fuel/\" target=\"_blank\">disco soups</a> or pop-up Food-Share Points, where saved food gets distributed to the people, always get a lot of attention.</p>"
       link: ''
       linktext: ''
       samples: {  }
+    block:
+      class: textCenter
   custom-2105:
     title: stopFoodWaste.jpg
     attributes:
@@ -136,6 +138,8 @@ content:
       link: ''
       linktext: ''
       samples: {  }
+    block:
+      class: textCenter
   sample-1672:
     title: 'It''s getting political'
     attributes:
