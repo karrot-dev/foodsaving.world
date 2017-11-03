@@ -20,6 +20,9 @@ images/*
 user/localhost/config/security.yaml
 user/config/security.yaml
 
+# Theme Specific
+user/data/gantry5/themes/g5_hydrogen/css-compiled/*
+
 # OS Generated
 .DS_Store*
 ehthumbs.db
