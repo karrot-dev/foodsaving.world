@@ -12,9 +12,9 @@ Our friends from [Foodsharing Taiwan](https://foodsharing.tw/) are supported by 
 
 [Grant details](https://grants.g0v.tw/projects/5968ee2fd60a0d001ed1f7d1)
 
-# Donate on Librapay
+# Donate on Liberapay
 
-We started using the [open source](https://github.com/liberapay/liberapay.com) platform [Librapay](https://liberapay.com) to accept recurring donations.
+We started using the [open source](https://github.com/liberapay/liberapay.com) platform [Liberapay](https://liberapay.com) to accept recurring donations.
 
 [![](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/foodsaving.world/donate)
 
