@@ -9,4 +9,4 @@ atoms:
       enabled: '1'
       css: {  }
       javascript:
-        - { location: '', inline: "const hash = window.location.hash\nif (hash.startsWith('#!/') && !hash.includes('landingPage')) {\n  window.location.replace('https://alpha.foodsaving.world/#' + hash.slice(2) )\n}", in_footer: '0', extra: {  }, priority: '0', name: 'Redirect old angular app' }
+        - { location: '', inline: "const hash = window.location.hash\nif (hash.startsWith('#!/')) {\n  window.location.replace('https://karrot.world/#' + hash.slice(2) )\n}", in_footer: '0', extra: {  }, priority: '0', name: 'Redirect old angular app' }
