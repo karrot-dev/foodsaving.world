@@ -24,7 +24,7 @@ I personally like the following strategy: working towards clearing all of their 
 
 There is no excuse for wasting perfectly good food anymore!! And the fight is worth it. We have indeed some evidence that our nagging in one case made the supermarket start donating food to some other more established charity organizations.
 
-![](nyamatraddare.jpg) *Slowly but steadly the number of foodsavers is growing. The [foodsaving tool](https://foodsaving.world) by [yunity](https://yunity.org) has made things easier in this sense*
+![](nyamatraddare.jpg) *Slowly but steadly the number of foodsavers is growing. The [foodsaving tool](https://karrot.world) by [yunity](https://yunity.org) has made things easier in this sense*
 
 Another challenge that we’ve had, which I personally think is more fun to deal with, is making people understand that we are not providing them a charity service, and that we actually need them to participate in this process and to engage themselves.
 
@@ -34,4 +34,4 @@ Some people may not have the time or even the conditions (mental or physical hin
 
 Other people are willing to participate, but bringing them in is also a matter of making it easy for them to participate. Barriers for entry should be low. The more, the merrier.
 
-In this sense, the [foodsaving tool](https://foodsaving.world) developed by [yunity](https://yunity.org) has been useful. In the next post I will present the kind of tools we have been using here in Gothenburg and discuss how they’ve helped us in creating community and networks, while prototyping a way to organize on a larger scale to reduce food waste while sharing.
+In this sense, the [foodsaving tool](https://karrot.world) developed by [yunity](https://yunity.org) has been useful. In the next post I will present the kind of tools we have been using here in Gothenburg and discuss how they’ve helped us in creating community and networks, while prototyping a way to organize on a larger scale to reduce food waste while sharing.

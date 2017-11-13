@@ -23,7 +23,7 @@ Persönlich mag ich diese Strategie: Sich bemühen alle Zweifel auszulöschen un
 
 Es gibt keine Ausrede mehr, mit der man das Verschwenden von essbaren Lebensmitteln noch rechtfertigen kann!! Und der Kampf lohnt sich. Wir haben tatsächlich schon gesehen, dass unsere Hartnäckigkeit dazu geführt hat, dass der Supermarkt angefangen hat Lebensmittel einer anderen, mehr etablierten NGO zu spenden.
 
-![](nyamatraddare.jpg) *Langsam aber stetig wächst die Anzahl der Foodsaver. Das [foodsaving tool](https://foodsaving.world) von [yunity](https://yunity.org) vereinfacht hier vieles*
+![](nyamatraddare.jpg) *Langsam aber stetig wächst die Anzahl der Foodsaver. Das [foodsaving tool](https://karrot.world) von [yunity](https://yunity.org) vereinfacht hier vieles*
 
 Eine weitere, aber meines Erachtens angenehmere, Herausfordung ist Menschen zu erklären, dass wir keine Wohlfahrtsorganisation sind, die ihnen einen Dienst bietet, sondern, dass wir davon abhängig sind, dass die Menschen selbst mitmachen.
 
@@ -33,4 +33,4 @@ Manche Menschen haben keine Zeit oder andere Einschränkungen und können so sel
 
 Andere wollen mitmachen, aber man muss darauf achten, dass man den Menschen das Mitwirken leicht macht. Der Einstieg sollte weitestgehend ohne Hindernisse stattfinden. Je mehr, desto besser.
 
-In diesem Sinne ist das [foodsaving tool](https://foodsaving.world), das von [yunity](https://yunity.org) entwickelt wurde, nützlich. Im nächsten Blogeintrag werde ich ein paar Tools vorstellen, die wir hier in Göteborg eingesetzt haben und erläutern inwiefern sie uns geholfen haben eine Gemeinschaft und ein Netzwerk zu formen. Welches wiederum als Vorlage für die organisierte, auf Teilen basierte Reduktion von Lebensmittelverschwendung im großen Maßstab dienen kann.
+In diesem Sinne ist das [foodsaving tool](https://karrot.world), das von [yunity](https://yunity.org) entwickelt wurde, nützlich. Im nächsten Blogeintrag werde ich ein paar Tools vorstellen, die wir hier in Göteborg eingesetzt haben und erläutern inwiefern sie uns geholfen haben eine Gemeinschaft und ein Netzwerk zu formen. Welches wiederum als Vorlage für die organisierte, auf Teilen basierte Reduktion von Lebensmittelverschwendung im großen Maßstab dienen kann.
