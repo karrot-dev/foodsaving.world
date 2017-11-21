@@ -1,5 +1,5 @@
 name: awareness
-timestamp: 1509643029
+timestamp: 1511259392
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -17,8 +17,6 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  menu:
-    menu-8171: Menu
   sample:
     sample-5106: 'Raising Awareness'
     sample-4965: 'Promote the good cause'
@@ -29,19 +27,20 @@ particles:
     system-messages-4542: 'System Messages'
   custom:
     custom-2105: stopFoodWaste.jpg
+    custom-8814: 'Custom HTML'
+    custom-3937: 'Custom HTML'
+  menu:
+    menu-8171: Menu
   position:
     position-position-9192: Footer
   social:
     social-4514: Social
-  branding:
-    branding-5910: Branding
   mobile-menu:
     mobile-menu-1736: 'Mobile Menu'
 inherit:
   home:
     header: header
     navigation: navigation
-    menu-8171: menu-8665
     showcase: showcase
     sample-5106: sample-1
     feature: feature
@@ -51,8 +50,9 @@ inherit:
     subfeature: subfeature
     sample-1672: sample-3
     footer: footer
+    offcanvas: offcanvas
+    menu-8171: menu-8665
     position-position-9192: position-footer
     social-4514: social-8249
-    branding-5910: branding-7082
-    offcanvas: offcanvas
+    custom-3937: custom-9418
     mobile-menu-1736: mobile-menu-3886

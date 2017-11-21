@@ -29,8 +29,8 @@ layout:
     -
       - position-footer
     -
-      - 'social-8249 70'
-      - 'branding-7082 30'
+      - 'social-9580 90'
+      - 'custom-4417 10'
   offcanvas:
     -
       - mobile-menu-3886
@@ -62,6 +62,8 @@ structure:
   footer:
     attributes:
       boxed: ''
+      class: ''
+      background: ''
 content:
   sample-1:
     title: 'Legal circumstances'
@@ -115,10 +117,8 @@ content:
   position-footer:
     attributes:
       key: footer
-  social-8249:
+  social-9580:
     attributes:
-      css:
-        class: social-items
       items:
         -
           icon: 'fa fa-facebook'
@@ -130,12 +130,9 @@ content:
           text: RSS
           link: blog.rss
           name: RSS
-  branding-7082:
-    inherit:
-      outline: default
-      particle: branding-7821
-      include:
-        - block
-        - attributes
+  custom-4417:
+    title: g0vcloud.png
+    attributes:
+      html: '<img src="user/images/g5_hydrogen/g0vcloud.png">'
   mobile-menu-3886:
     title: 'Mobile Menu'

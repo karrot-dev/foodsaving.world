@@ -24,8 +24,8 @@ layout:
     -
       - position-footer
     -
-      - 'social-8249 70'
-      - 'branding-7082 30'
+      - 'social-8249 90'
+      - 'custom-6093 10'
   offcanvas:
     -
       - mobile-menu-3886
@@ -72,7 +72,7 @@ content:
     attributes:
       image: ''
       headline: ''
-      description: "<h3>Starting a foodsaving initiative is easy!</h3>\n\n<p>All you need are some motivated people, a bit of time and the confidence to talk to store owners. <br>\nStill, there are some aspects that should be considered and we want to help you with that:\n<ul>\n<li><a href=\"buildcommunity\">Community Building</a></li>\n<li><a href=\"organization\">Organization</a></li>\n<li><a href=\"awareness\">Raising Awareness</a></li>\n<li><a href=\"legal\">Legal Circumstances</a></li>\n"
+      description: "<h3>Starting a foodsaving initiative is easy!</h3>\n\n<p>All you need are some motivated people, a bit of time and the confidence to talk to store owners. <br>\nStill, there are some aspects that should be considered and we want to help you with that:\n<ul>\n<li><a href=\"startcommunity/buildcommunity\">Community Building</a></li>\n<li><a href=\"startcommunity/organization\">Organization</a></li>\n<li><a href=\"startcommunity/awareness\">Raising Awareness</a></li>\n<li><a href=\"startcommunity/legal\">Legal Circumstances</a></li>\n"
       link: ''
       linktext: ''
       samples: {  }
@@ -98,12 +98,9 @@ content:
           text: RSS
           link: blog.rss
           name: RSS
-  branding-7082:
-    inherit:
-      outline: default
-      particle: branding-7821
-      include:
-        - block
-        - attributes
+  custom-6093:
+    title: 'Custom HTML'
+    attributes:
+      html: '<image src="user/images/g5_hydrogen/g0vcloud.png">'
   mobile-menu-3886:
     title: 'Mobile Menu'

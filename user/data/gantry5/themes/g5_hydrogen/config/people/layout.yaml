@@ -93,11 +93,7 @@ content:
           link: blog.rss
           name: RSS
   branding-7082:
-    inherit:
-      outline: default
-      particle: branding-7821
-      include:
-        - block
-        - attributes
+    attributes:
+      content: 'Foodsaving Worldwide'
   mobile-menu-3886:
     title: 'Mobile Menu'

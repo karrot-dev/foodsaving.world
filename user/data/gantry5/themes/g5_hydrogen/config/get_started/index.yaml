@@ -1,5 +1,5 @@
 name: get_started
-timestamp: 1509632531
+timestamp: 1511259786
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -26,14 +26,11 @@ particles:
     system-messages-8032: 'System Messages'
   custom:
     custom-1729: 'Custom HTML'
+    custom-6093: 'Custom HTML'
   position:
     position-footer: Footer
   social:
     social-8249: Social
-  branding:
-    branding-7082: Branding
   mobile-menu:
     mobile-menu-3886: 'Mobile Menu'
-inherit:
-  default:
-    branding-7082: branding-7821
+inherit: {  }

@@ -1,5 +1,5 @@
 name: organization
-timestamp: 1509632531
+timestamp: 1511259963
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -30,16 +30,15 @@ particles:
   custom:
     custom-6992: bodhiBiocompany.jpg
     custom-8712: foodsharingFood.jpg
+    custom-5734: g0vcloud.png
   messages:
     system-messages-8032: 'System Messages'
   position:
     position-footer: Footer
   social:
     social-8249: Social
-  branding:
-    branding-7082: Branding
   mobile-menu:
     mobile-menu-3886: 'Mobile Menu'
 inherit:
   default:
-    branding-7082: branding-7821
+    custom-5734: custom-4417

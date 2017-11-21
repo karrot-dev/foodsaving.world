@@ -34,8 +34,8 @@ layout:
     -
       - position-footer
     -
-      - 'social-8249 70'
-      - 'branding-7082 30'
+      - 'social-8249 90'
+      - 'custom-5734 10'
   offcanvas:
     -
       - mobile-menu-3886
@@ -67,6 +67,8 @@ structure:
   footer:
     attributes:
       boxed: ''
+      class: ''
+      background: ''
 content:
   sample-1:
     title: 'Organizing the foodsaving'
@@ -157,12 +159,13 @@ content:
           text: RSS
           link: blog.rss
           name: RSS
-  branding-7082:
+  custom-5734:
+    title: g0vcloud.png
     inherit:
       outline: default
-      particle: branding-7821
+      particle: custom-4417
       include:
-        - block
         - attributes
+        - block
   mobile-menu-3886:
     title: 'Mobile Menu'
