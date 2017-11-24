@@ -18,12 +18,7 @@ layout:
   /subfeature/:
     -
       - sample-3
-  /footer/:
-    -
-      - position-footer
-    -
-      - 'social-8249 70'
-      - 'branding-7082 30'
+  footer: {  }
   offcanvas:
     -
       - mobile-menu-3886
@@ -53,8 +48,11 @@ structure:
       class: flush
       boxed: ''
   footer:
-    attributes:
-      boxed: ''
+    inherit:
+      outline: home
+      include:
+        - children
+        - attributes
 content:
   sample-8843:
     title: 'Let''s build communities to save food!'
@@ -74,26 +72,5 @@ content:
       link: ''
       linktext: ''
       samples: {  }
-  position-footer:
-    attributes:
-      key: footer
-  social-8249:
-    attributes:
-      css:
-        class: social-items
-      items:
-        -
-          icon: 'fa fa-facebook'
-          text: Facebook
-          link: 'https://www.facebook.com/groups/foodsaving.worldwide/'
-          name: Facebook
-        -
-          icon: 'fa fa-rss'
-          text: RSS
-          link: blog.rss
-          name: RSS
-  branding-7082:
-    attributes:
-      content: 'Foodsaving Worldwide'
   mobile-menu-3886:
     title: 'Mobile Menu'

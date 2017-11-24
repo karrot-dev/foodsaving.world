@@ -1,5 +1,5 @@
 name: awareness
-timestamp: 1511259392
+timestamp: 1511518475
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -27,7 +27,6 @@ particles:
     system-messages-4542: 'System Messages'
   custom:
     custom-2105: stopFoodWaste.jpg
-    custom-8814: 'Custom HTML'
     custom-3937: 'Custom HTML'
   menu:
     menu-8171: Menu

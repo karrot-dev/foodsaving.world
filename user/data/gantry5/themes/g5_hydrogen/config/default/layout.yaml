@@ -19,8 +19,8 @@ layout:
     -
       - position-footer
     -
-      - 'social-9580 90'
-      - 'custom-4417 10'
+      - 'social-9580 80'
+      - 'custom-4417 20'
   offcanvas:
     -
       - mobile-menu-6142
@@ -67,4 +67,4 @@ content:
   custom-4417:
     title: g0vcloud.png
     attributes:
-      html: '<img src="user/images/g5_hydrogen/g0vcloud.png">'
+      html: '<a href="http://g0v.tw/en-US/about.html"><img src="user/images/g5_hydrogen/g0vcloud.png"></a>'

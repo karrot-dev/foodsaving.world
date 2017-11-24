@@ -30,12 +30,7 @@ layout:
       - 'custom-8712 50'
     -
       - sample-8582
-  /footer/:
-    -
-      - position-footer
-    -
-      - 'social-8249 90'
-      - 'custom-5734 10'
+  footer: {  }
   offcanvas:
     -
       - mobile-menu-3886
@@ -65,10 +60,11 @@ structure:
       class: flush
       boxed: ''
   footer:
-    attributes:
-      boxed: ''
-      class: ''
-      background: ''
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - children
 content:
   sample-1:
     title: 'Organizing the foodsaving'
@@ -141,31 +137,5 @@ content:
       link: ''
       linktext: ''
       samples: {  }
-  position-footer:
-    attributes:
-      key: footer
-  social-8249:
-    attributes:
-      css:
-        class: social-items
-      items:
-        -
-          icon: 'fa fa-facebook'
-          text: Facebook
-          link: 'https://www.facebook.com/groups/foodsaving.worldwide/'
-          name: Facebook
-        -
-          icon: 'fa fa-rss'
-          text: RSS
-          link: blog.rss
-          name: RSS
-  custom-5734:
-    title: g0vcloud.png
-    inherit:
-      outline: default
-      particle: custom-4417
-      include:
-        - attributes
-        - block
   mobile-menu-3886:
     title: 'Mobile Menu'

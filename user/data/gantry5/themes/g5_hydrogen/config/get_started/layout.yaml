@@ -20,12 +20,7 @@ layout:
   /subfeature/:
     -
       - custom-1729
-  /footer/:
-    -
-      - position-footer
-    -
-      - 'social-8249 90'
-      - 'custom-6093 10'
+  footer: {  }
   offcanvas:
     -
       - mobile-menu-3886
@@ -55,8 +50,11 @@ structure:
       class: flush
       boxed: ''
   footer:
-    attributes:
-      boxed: ''
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - children
 content:
   sample-1:
     title: 'Get Started!'
@@ -80,27 +78,5 @@ content:
     title: 'Custom HTML'
     attributes:
       html: '<img title="This could be you!" alt="People happily saving food" src="/user/images/g5_hydrogen/startYourCommunity.jpg" style="border-radius: 15px">'
-  position-footer:
-    attributes:
-      key: footer
-  social-8249:
-    attributes:
-      css:
-        class: social-items
-      items:
-        -
-          icon: 'fa fa-facebook'
-          text: Facebook
-          link: 'https://www.facebook.com/groups/foodsaving.worldwide/'
-          name: Facebook
-        -
-          icon: 'fa fa-rss'
-          text: RSS
-          link: blog.rss
-          name: RSS
-  custom-6093:
-    title: 'Custom HTML'
-    attributes:
-      html: '<image src="user/images/g5_hydrogen/g0vcloud.png">'
   mobile-menu-3886:
     title: 'Mobile Menu'

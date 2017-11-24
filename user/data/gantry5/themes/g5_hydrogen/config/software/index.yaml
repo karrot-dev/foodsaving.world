@@ -1,5 +1,5 @@
 name: software
-timestamp: 1511258581
+timestamp: 1511518475
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -24,12 +24,17 @@ particles:
     sample-8843: 'Let''s get organized!'
   messages:
     system-messages-8032: 'System Messages'
-  position:
-    position-footer: Footer
-  social:
-    social-8249: Social
-  branding:
-    branding-7082: Branding
   mobile-menu:
     mobile-menu-3886: 'Mobile Menu'
-inherit: {  }
+  position:
+    position-position-4084: Footer
+  social:
+    social-9068: Social
+  custom:
+    custom-2371: 'Custom HTML'
+inherit:
+  home:
+    footer: footer
+    position-position-4084: position-footer
+    social-9068: social-8249
+    custom-2371: custom-9418

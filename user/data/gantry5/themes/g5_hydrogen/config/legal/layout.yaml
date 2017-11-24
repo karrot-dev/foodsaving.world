@@ -25,12 +25,7 @@ layout:
   /subfeature/:
     -
       - sample-3
-  /footer/:
-    -
-      - position-footer
-    -
-      - 'social-9580 90'
-      - 'custom-4417 10'
+  footer: {  }
   offcanvas:
     -
       - mobile-menu-3886
@@ -60,10 +55,11 @@ structure:
       class: flush
       boxed: ''
   footer:
-    attributes:
-      boxed: ''
-      class: ''
-      background: ''
+    inherit:
+      outline: home
+      include:
+        - children
+        - attributes
 content:
   sample-1:
     title: 'Legal circumstances'
@@ -114,25 +110,5 @@ content:
       link: ''
       linktext: ''
       samples: {  }
-  position-footer:
-    attributes:
-      key: footer
-  social-9580:
-    attributes:
-      items:
-        -
-          icon: 'fa fa-facebook'
-          text: Facebook
-          link: 'https://www.facebook.com/groups/foodsaving.worldwide/'
-          name: Facebook
-        -
-          icon: 'fa fa-rss'
-          text: RSS
-          link: blog.rss
-          name: RSS
-  custom-4417:
-    title: g0vcloud.png
-    attributes:
-      html: '<img src="user/images/g5_hydrogen/g0vcloud.png">'
   mobile-menu-3886:
     title: 'Mobile Menu'
