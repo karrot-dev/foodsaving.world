@@ -1,5 +1,5 @@
 name: default
-timestamp: 1509632531
+timestamp: 1511518115
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -26,8 +26,8 @@ particles:
     system-content-7859: 'Page Content'
   social:
     social-9580: Social
-  branding:
-    branding-7821: Branding
+  custom:
+    custom-4417: g0vcloud.png
   mobile-menu:
     mobile-menu-6142: Mobile-menu
 inherit: {  }

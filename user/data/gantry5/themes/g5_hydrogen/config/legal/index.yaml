@@ -1,5 +1,5 @@
 name: legal
-timestamp: 1509643189
+timestamp: 1511518475
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -27,16 +27,18 @@ particles:
     sample-3: 'Found out something?'
   custom:
     custom-3418: kirchheimMarket1.jpg
+    custom-4161: 'Custom HTML'
   messages:
     system-messages-8032: 'System Messages'
-  position:
-    position-footer: Footer
-  social:
-    social-8249: Social
-  branding:
-    branding-7082: Branding
   mobile-menu:
     mobile-menu-3886: 'Mobile Menu'
+  position:
+    position-position-8273: Footer
+  social:
+    social-3886: Social
 inherit:
-  default:
-    branding-7082: branding-7821
+  home:
+    footer: footer
+    position-position-8273: position-footer
+    social-3886: social-8249
+    custom-4161: custom-9418

@@ -1,5 +1,5 @@
 name: home
-timestamp: 1509641712
+timestamp: 1511518475
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -34,14 +34,11 @@ particles:
     custom-6069: 'Custom HTML'
     custom-7870: 'Custom HTML'
     custom-2785: 'Custom HTML'
+    custom-9418: 'Custom HTML'
   position:
     position-footer: Footer
   social:
     social-8249: Social
-  branding:
-    branding-7082: Branding
   mobile-menu:
     mobile-menu-3886: 'Mobile Menu'
-inherit:
-  default:
-    branding-7082: branding-7821
+inherit: {  }

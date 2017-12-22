@@ -1,5 +1,5 @@
 name: blog
-timestamp: 1506198715
+timestamp: 1511518115
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'

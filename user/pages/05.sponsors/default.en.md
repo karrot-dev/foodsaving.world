@@ -4,7 +4,7 @@ title: Sponsors
 
 # g0v
 
-Our friends from [Foodsharing Taiwan](https://foodsharing.tw/) are supported by the [g0v](http://g0v.tw/) grant, which they use for local work, as well as to fund development of karrot and foodsaving worldwide.
+Our friends from [Foodsharing Taiwan](https://foodsharing.tw/) are supported by the [g0v grant](http://grants.g0v.tw/power/en), which they use for local work, as well as to fund development of karrot and foodsaving worldwide.
 
 > 我們欣喜萬分的宣布我們在2017秋季的g0v公民科技獎助金提案競賽過關斬將進入決選圈最後獲獎！
 

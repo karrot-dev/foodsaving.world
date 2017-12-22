@@ -1,5 +1,5 @@
 name: knowledge
-timestamp: 1509632531
+timestamp: 1511518475
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -25,14 +25,17 @@ particles:
     sample-3: pictocome
   messages:
     system-messages-8032: 'System Messages'
-  position:
-    position-footer: Footer
-  social:
-    social-8249: Social
-  branding:
-    branding-7082: Branding
   mobile-menu:
     mobile-menu-3886: 'Mobile Menu'
+  position:
+    position-position-9555: Footer
+  social:
+    social-3973: Social
+  custom:
+    custom-3862: 'Custom HTML'
 inherit:
-  default:
-    branding-7082: branding-7821
+  home:
+    footer: footer
+    position-position-9555: position-footer
+    social-3973: social-8249
+    custom-3862: custom-9418
