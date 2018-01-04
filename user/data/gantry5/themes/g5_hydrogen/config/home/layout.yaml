@@ -160,7 +160,18 @@ content:
     attributes:
       image: ''
       headline: 'Providing Software'
-      description: "TODO\n\nadd introduction into foodsaving tech\n\nkarrot, foodsharing.de, boulder foodsaving robot, olio, facebook groups?"
+      description: |
+        <h3>Get organized!</h3>
+        <em>We want to support growing foodsaving groups with software tools!</em>
+        <div align="left">
+        <p>When a foodsaving group is growing, it becomes hard to keep all members in sync. They start using group chats, spreadsheets and other online tools. At some point, this isn't enough anymore and specialized software becomes crucial for their operations. We aim to build this software and connect similar-minded projects!</p>
+        <ul>
+        <li><strong><a href="../karrot">Karrot</a></strong> is our own software, derived from foodsharing.de, aimed at foodsaving groups around the world</li>
+        <li><strong><a href="https://foodsharing.de" target="_blank" rel="noopener">Foodsharing.de</a></strong> aims at German-speaking groups, it's foodsaving organizer and a social network at the same time</li>
+        <li><strong><a href="https://robot.boulderfoodrescue.org/" target="_blank" rel="noopener">Boulder Food Rescue Robot</a></strong> is a software developed by <a href="https://www.boulderfoodrescue.org/" target="_blank" rel="noopener">foodsaving activists in Boulder, Colorado</a></li>
+        <li><strong><a href="https://olioex.com/" target="_blank" rel="noopener">OLIO</a></strong> created a closed-source software to share food in your neighbourhood</li>
+        </ul>
+        </div>
       link: ''
       linktext: ''
       samples: {  }
