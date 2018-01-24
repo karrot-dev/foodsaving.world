@@ -20,7 +20,6 @@ layout:
       - position-footer
     -
       - 'social-9580 80'
-      - 'custom-4417 20'
   offcanvas:
     -
       - mobile-menu-6142
@@ -64,7 +63,3 @@ content:
           text: RSS
           link: blog.rss
           name: RSS
-  custom-4417:
-    title: g0vcloud.png
-    attributes:
-      html: '<a href="http://g0v.tw/en-US/about.html"><img src="user/images/g5_hydrogen/g0vcloud.png"></a>'

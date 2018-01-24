@@ -28,7 +28,6 @@ particles:
   custom:
     custom-2986: virginiaFeeding.jpg
     custom-2652: foodsharingFruit.jpg
-    custom-5639: 'Custom HTML'
   messages:
     system-messages-3919: 'System Messages'
   menu:
@@ -54,5 +53,4 @@ inherit:
     menu-7531: menu-8665
     position-position-4039: position-footer
     social-1433: social-8249
-    custom-5639: custom-9418
     mobile-menu-2483: mobile-menu-3886

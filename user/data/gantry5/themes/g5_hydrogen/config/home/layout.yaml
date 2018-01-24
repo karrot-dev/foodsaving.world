@@ -41,7 +41,6 @@ layout:
       - position-footer
     -
       - 'social-8249 85'
-      - 'custom-9418 15'
   offcanvas:
     -
       - mobile-menu-3886
@@ -195,9 +194,5 @@ content:
           text: RSS
           link: blog.rss
           name: RSS
-  custom-9418:
-    title: 'Custom HTML'
-    attributes:
-      html: '<a href="http://g0v.tw/en-US/about.html"><img src="user/images/g5_hydrogen/g0vcloud.png"></a>'
   mobile-menu-3886:
     title: 'Mobile Menu'

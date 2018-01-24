@@ -27,7 +27,6 @@ particles:
     system-messages-4542: 'System Messages'
   custom:
     custom-2105: stopFoodWaste.jpg
-    custom-3937: 'Custom HTML'
   menu:
     menu-8171: Menu
   position:
@@ -53,5 +52,4 @@ inherit:
     menu-8171: menu-8665
     position-position-9192: position-footer
     social-4514: social-8249
-    custom-3937: custom-9418
     mobile-menu-1736: mobile-menu-3886

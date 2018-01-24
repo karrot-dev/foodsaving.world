@@ -30,11 +30,8 @@ particles:
     position-position-4084: Footer
   social:
     social-9068: Social
-  custom:
-    custom-2371: 'Custom HTML'
 inherit:
   home:
     footer: footer
     position-position-4084: position-footer
     social-9068: social-8249
-    custom-2371: custom-9418
