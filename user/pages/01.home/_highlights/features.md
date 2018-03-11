@@ -22,3 +22,5 @@ features:
 You just arrived at the home of the **global and distributed** movement against food waste.</br>
 Our main method is to **save food from being thrown away**.</br>
 This is done via **cooperations with stores** restaurants and any kind of business, that handles food.
+
+#### **We want to help you be part of it!**

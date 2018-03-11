@@ -3,7 +3,7 @@ title: Homepage Showcase
 menu: Top
 buttons:
     - text: Get started
-      url: http://learn.getgrav.org
+      url: /start
       primary: true
 ---
 
