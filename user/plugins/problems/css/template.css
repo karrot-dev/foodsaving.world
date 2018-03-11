@@ -23,9 +23,9 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 a {
-  color: #1bb3e9; }
+  color: #EE5732; }
   a:hover {
-    color: #0e6e90; }
+    color: #9a5746; }
 
 b, strong, label, th {
   font-weight: 600; }
@@ -80,9 +80,9 @@ b, strong, label, th {
     #header.scrolled #logo a {
       color: #444444 !important; }
     #header.scrolled #navbar a {
-      color: #1bb3e9 !important; }
+      color: #EE5732 !important; }
     #header.scrolled #navbar a:before, #header.scrolled #navbar a:after {
-      background-color: #1bb3e9 !important; }
+      background-color: #EE5732 !important; }
   #header > .grid, #header #logo, #header #navbar {
     height: 100%; }
   #header #logo {
@@ -115,7 +115,7 @@ b, strong, label, th {
             height: 1px;
             bottom: 0;
             left: 0;
-            background-color: #1bb3e9;
+            background-color: #EE5732;
             visibility: hidden;
             -webkit-transform: scaleX(0);
             -moz-transform: scaleX(0);
@@ -350,7 +350,7 @@ hr {
   padding: 25px;
   float: left;
   clear: both;
-  background: #1bb3e9;
+  background: #EE5732;
   color: white; }
 
 fieldset {
@@ -363,7 +363,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
   textarea:hover, input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover, select[multiple=multiple]:hover {
     border-color: #c4c4c4; }
   textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
-    border-color: #1bb3e9;
+    border-color: #EE5732;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(21, 163, 214, 0.7); }
 
 .form-field .required {
@@ -392,11 +392,11 @@ td {
 
 .button {
   background: white;
-  color: #1bb3e9;
-  border: 1px solid #1bb3e9;
+  color: #EE5732;
+  border: 1px solid #EE5732;
   border-radius: 3px; }
   .button:hover {
-    background: #1bb3e9;
+    background: #EE5732;
     color: white; }
   .button:active {
     box-shadow: 0 1px 0 #118ab5; }
@@ -442,7 +442,7 @@ td {
 
 .bullet-icon {
   float: left;
-  background: #1bb3e9;
+  background: #EE5732;
   padding: 0.875rem;
   width: 3.5rem;
   height: 3.5rem;
@@ -452,7 +452,7 @@ td {
   text-align: center; }
 
 .bullet-icon-1 {
-  background: #1bb3e9; }
+  background: #EE5732; }
 
 .bullet-icon-2 {
   background: #1be9da; }
@@ -572,7 +572,7 @@ td {
       .list-item .list-blog-header h4 a {
         color: #444444; }
         .list-item .list-blog-header h4 a:hover {
-          color: #1bb3e9; }
+          color: #EE5732; }
     .list-item .list-blog-header img {
       display: block;
       margin-top: 1rem;
@@ -597,7 +597,7 @@ td {
 .tags a {
   display: inline-block;
   font-size: 0.8rem;
-  border: 1px solid #1bb3e9;
+  border: 1px solid #EE5732;
   border-radius: 3px;
   padding: 0.1rem 0.4rem;
   margin-bottom: 0.2rem;
@@ -718,7 +718,7 @@ ul.pagination {
         width: 100%; } }
     .modular .features .feature i.fa {
       font-size: 2rem;
-      color: #1bb3e9; }
+      color: #EE5732; }
     .modular .features .feature h4 {
       margin: 0;
       font-size: 1.1rem; }

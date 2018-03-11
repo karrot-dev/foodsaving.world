@@ -25,9 +25,9 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 a {
-  color: #1BB3E9; }
+  color: #EE5732; }
   a:hover {
-    color: #0e6e90; }
+    color: #9a5746; }
 
 b, strong, label, th {
   font-weight: 600; }
@@ -89,11 +89,11 @@ b, strong, label, th {
     #header.scrolled #logo a, #header.scrolled #navbar span {
       color: #444 !important; }
     #header.scrolled #navbar a {
-      color: #1BB3E9 !important; }
+      color: #EE5732 !important; }
       #header.scrolled #navbar a:hover {
-        color: #0e6e90 !important; }
+        color: #9a5746 !important; }
     #header.scrolled #navbar a:before, #header.scrolled #navbar a:after {
-      background-color: #1BB3E9 !important; }
+      background-color: #EE5732 !important; }
     #header.scrolled .navigation {
       margin-top: 0.5rem !important; }
   #header > .grid, #header #logo, #header #navbar {
@@ -158,7 +158,7 @@ b, strong, label, th {
               height: 1px;
               bottom: 0;
               left: 0;
-              background-color: #1BB3E9;
+              background-color: #EE5732;
               visibility: hidden;
               -webkit-transform: scaleX(0);
               -moz-transform: scaleX(0);
@@ -207,9 +207,9 @@ b, strong, label, th {
             /* Active Dropdown nav item */ }
             #header #navbar ul.navigation li ul li.active > a {
               background-color: #ececec;
-              color: #1BB3E9; }
+              color: #EE5732; }
             #header #navbar ul.navigation li ul li:hover > a {
-              background-color: #1BB3E9;
+              background-color: #EE5732;
               color: #fff; }
             #header #navbar ul.navigation li ul li a {
               display: block;
@@ -251,7 +251,7 @@ b, strong, label, th {
   background-color: rgba(255, 255, 255, 0);
   box-shadow: none; }
   .header-image #header .navigation .has-children:hover a {
-    color: #1BB3E9; }
+    color: #EE5732; }
   .header-image #header #logo h3, .header-image #header #logo a {
     color: #FFFFFF; }
   .header-image #header a, .header-image #header .menu-btn {
@@ -450,12 +450,12 @@ hr {
   padding: 25px;
   float: left;
   clear: both;
-  background: #1BB3E9;
+  background: #EE5732;
   color: #fff; }
 
 .label {
   vertical-align: middle;
-  background: #1BB3E9;
+  background: #EE5732;
   border-radius: 100%;
   color: #fff;
   height: 1rem;
@@ -477,7 +477,7 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
   textarea:hover, input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover, select[multiple=multiple]:hover {
     border-color: #c4c4c4; }
   textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
-    border-color: #1BB3E9;
+    border-color: #EE5732;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(21, 163, 214, 0.7); }
 
 .form-field .required {
@@ -507,11 +507,11 @@ td {
 
 .button {
   background: #fff;
-  color: #1BB3E9;
-  border: 1px solid #1BB3E9;
+  color: #EE5732;
+  border: 1px solid #EE5732;
   border-radius: 3px; }
   .button:hover {
-    background: #1BB3E9;
+    background: #EE5732;
     color: #fff; }
   .button:active {
     box-shadow: 0 1px 0 #118ab5; }
@@ -557,7 +557,7 @@ td {
 
 .bullet-icon {
   float: left;
-  background: #1BB3E9;
+  background: #EE5732;
   padding: 0.875rem;
   width: 3.5rem;
   height: 3.5rem;
@@ -567,7 +567,7 @@ td {
   text-align: center; }
 
 .bullet-icon-1 {
-  background: #1BB3E9; }
+  background: #EE5732; }
 
 .bullet-icon-2 {
   background: #1be9da; }
@@ -656,7 +656,7 @@ td {
       .list-item .list-blog-header h4 a {
         color: #444; }
         .list-item .list-blog-header h4 a:hover {
-          color: #1BB3E9; }
+          color: #EE5732; }
     .list-item .list-blog-header img {
       display: block;
       margin-top: 1rem;
@@ -681,7 +681,7 @@ td {
 .tags a {
   display: inline-block;
   font-size: 0.8rem;
-  border: 1px solid #1BB3E9;
+  border: 1px solid #EE5732;
   border-radius: 3px;
   padding: 0.1rem 0.4rem;
   margin-bottom: 0.2rem;
@@ -864,7 +864,7 @@ ul.pagination {
         width: 100%; } }
     .modular .features .feature i.fa {
       font-size: 2rem;
-      color: #1BB3E9; }
+      color: #EE5732; }
     .modular .features .feature h4 {
       margin: 0;
       font-size: 1.1rem; }
