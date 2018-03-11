@@ -1,7 +1,7 @@
 ---
-title: One Page Demo Site
+title: Foodsaving Worldwide
 menu: Home
-onpage_menu: true
+onpage_menu: false
 body_classes: "modular header-image fullwidth"
 
 content:
@@ -13,7 +13,4 @@ content:
             - _showcase
             - _highlights
             - _callout
-            - _features
 ---
-
-

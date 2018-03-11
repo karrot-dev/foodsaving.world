@@ -4,6 +4,6 @@ menu: Easy Content
 image_align: right
 ---
 
-## Content Unchained
+## Free information on every aspect of foodsaving
 
-No longer are you a _slave to your CMS_. Grav **empowers** you to create anything from a [simple one-page site](#), to a [beautiful blog](#), to a powerful and feature-rich [product site](#), to pretty much anything you can dream up!
+We believe that no more good food should be thrown away, that's why we provide you with every piece of intel we came across and continue working on improving the material.

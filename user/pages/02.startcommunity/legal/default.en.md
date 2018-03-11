@@ -1,0 +1,15 @@
+---
+title: 'Legal Circumstances'
+content:
+    items: '@self.modular'
+    order:
+        by: date
+        dir: desc
+---
+
+# Legal situation
+### <div class="fa fa-balance-scale"></div> _Be prepared_
+* First of all, you will need to thoroughly check the legal situation in your country, regarding consumption of products that have passed their Best Before Date. Foodsharing.de is legally allowed to exist thanks to a simple liability contract signed by every new Foodsaver, which acts as a waiver and clearly states that the food donor is excluded from liability of negligence. <a href="https://wiki.foodsharing.de/Rechtsvereinbarung" target="_blank">Here you can find the German one used by foodsharing.de</a> and <a href="https://yunity.atlassian.net/wiki/spaces/FSINT/pages/58982448/Liability+contract+from+foodsharing+Edinburgh" target="_blank">here the English one from the Edinburgh initiative</a>.
+* The legal situation for Food-Share Points is slightly different but also based on foodsharing being seen as individuals sharing food without the continuity and big administartive efforts organizations provide. The Swedish initiative LivsmeDela from Uppsala has come up with a nicely written sheet on the legal situation for Food-Share Points based on European law, <a href="https://yunity.atlassian.net/wiki/spaces/FSINT/pages/58982452/Legal+statement+for+Food-Share+Points+from+Uppsala" target="_blank">which you can find here</a>.
+* Registering your community as a legal entity could make sense for liability reasons. Example: as a private person without a legal entity, you would take full responsibility if sued in court for food poisoning. The situations vary a lot from country to country and, frankly, we find it hard enough to research the legal situation in our own country, so hold on tight, check it out yourself and tell us what you find out!
+* Staying away from money saves you a lot of trouble: You get food for free, so don't screw the nicely cooperating business by selling it!

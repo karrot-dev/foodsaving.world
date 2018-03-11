@@ -2,13 +2,10 @@
 title: Homepage Showcase
 menu: Top
 buttons:
-    - text: Read the Documentation
+    - text: Get started
       url: http://learn.getgrav.org
       primary: true
 ---
 
-# Welcome to Grav
-## Crazy **Fast**, Ridiculously **Easy**, Amazingly **Powerful**...
-
-
-
+# Foodsaving Worldwide
+## A distributed, global grassroots movement against food waste.

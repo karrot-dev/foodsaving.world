@@ -1,23 +1,26 @@
 ---
-title: Homepage Highlights
+title: Highlights
 menu: Highlights
 class: big
 features:
-	- header: Crazy Fast
-	  text: "Performance is not just an after thought, we baked it in from the start!"
-	  icon: fighter-jet
-    - header: Easy to build
-      text: "Simple text files means Grav is trivial to install, and easy to maintain."
-      icon: database
-    - header: Awesome Technology
-      text: "Grav employees best-in-class technologies such as Twig, Markdown &amp; Yaml"
-      icon: cubes
-    - header: Super Flexible
-      text: "From the ground up, with many plugin hooks, Grav is extremely extensible"
-      icon: puzzle-piece
+    - header: Cooperations
+      text: "How to convince businesses to let you save their food waste"
+      icon: handshake-o
+    - header: Food-Share Points
+      text: "Public shelves and fridges for everybody to share food"
+      icon: gift
+    - header: Community
+      text: "Build a foodsaving group that consists of friends"
+      icon: child
+    - header: Events
+      text: "All the great things a functional foodsaving community can do"
+      icon: cutlery
 ---
 
-## Built on top of Greatness
-### Four core tenants keep Grav focused
+## Welcome
 
-We believe the best recipe to make something great, is to bake with [quality ingredients](#) and add dollops of [cool stuff](#). 
+You just arrived at the home of the **global and distributed** movement against food waste.
+
+Our main method is to **save food from being thrown away**.
+
+This is done via **cooperations with stores** restaurants and any kind of business, that handles food.
