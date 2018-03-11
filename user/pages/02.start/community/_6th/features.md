@@ -1,5 +1,5 @@
 ---
-title: friendly
+title: Friendly
 class: big
 ---
 

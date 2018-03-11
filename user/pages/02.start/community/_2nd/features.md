@@ -1,5 +1,6 @@
 ---
-title: feature
+title: Gather
+class: big
 ---
 
 ### <div class="fa fa-arrow-right"></div> _Come gather 'round, people_

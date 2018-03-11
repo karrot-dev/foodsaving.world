@@ -1,5 +1,5 @@
 ---
-title: together
+title: Manageable
 class: big
 ---
 

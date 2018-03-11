@@ -1,6 +1,5 @@
 ---
 title: Raise Awareness
-menu: Awareness
 onpage_menu: false
 body_classes: "modular header-image fullwidth"
 
@@ -10,8 +9,8 @@ content:
         by: default
         dir: asc
         custom:
-            - _showcase
-            - _bla
-            - _callout
-            - _highlights
+            - _1st
+            - _2nd
+            - _3rd
+            - _4th
 ---

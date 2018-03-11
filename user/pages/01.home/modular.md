@@ -10,7 +10,7 @@ content:
         by: default
         dir: asc
         custom:
-            - _showcase
-            - _highlights
-            - _callout
+            - _1st
+            - _2nd
+            - _3rd
 ---

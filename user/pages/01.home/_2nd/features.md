@@ -1,6 +1,5 @@
 ---
-title: Highlights
-menu: Highlights
+title: Features
 class: big
 features:
     - header: Cooperations
