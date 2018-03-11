@@ -2,7 +2,7 @@
 title: Karrot
 menu: Top
 buttons:
-    - text: Check it out
+    - text: Check it out!
       url: https://karrot.world
       primary: true
 ---
