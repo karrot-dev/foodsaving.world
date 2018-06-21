@@ -4,16 +4,16 @@ menu: Highlights
 class: big
 features:
     - header: Community Building
-      icon: handshake-o
+      icon: users
       link: /start/community
     - header: Organization
-      icon: gift
+      icon: inbox
       link: /start/organization
     - header: Raising Awareness
-      icon: child
+      icon: bullhorn
       link: /start/awareness
     - header: Legal Circumstances
-      icon: cutlery
+      icon: university
       link: /start/legal
 ---
 
