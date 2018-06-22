@@ -3,7 +3,7 @@ title: Community Callout
 image_align: left
 ---
 
-### <div class="fa fa-handshake-o"></div> _Together we are strong_
+## <div class="fa fa-handshake-o"></div> _Together we are strong_
 
 There are many activities that can be set up to get to know each other and create bonds. Here are some ideas of events that we found relevant, fun, easy to organize and engaging:
 

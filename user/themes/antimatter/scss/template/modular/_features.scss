@@ -12,7 +12,6 @@
 
         p {
             margin: 1rem 0;
-            font-size: $core-font-size + 0.2rem;
             @include breakpoint(mobile-only) {
                 font-size: $core-font-size;
             }

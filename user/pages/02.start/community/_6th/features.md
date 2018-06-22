@@ -3,7 +3,7 @@ title: Friendly
 class: big
 ---
 
-### <div class="fa fa-female"></div> _Friendly, connected and professional_
+## <div class="fa fa-female"></div> _Friendly, connected and professional_
 
 For some behavioral standards example, please refer to the checklist 'Professionalism for foodsavers' within the <a href="https://yunity.atlassian.net/wiki/spaces/FSINT/pages/46203075/How+to+build+and+maintain+cooperations+with+stores" target="_blank">cooperation mini manual</a>.
 
