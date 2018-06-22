@@ -1,7 +1,6 @@
 ---
 title: Community Callout
 image_align: left
-class: big
 ---
 
 ### <div class="fa fa-handshake-o"></div> _Together we are strong_
