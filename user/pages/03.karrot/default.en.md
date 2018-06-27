@@ -44,7 +44,7 @@ title: Karrot
       <p></p>
 
     <div align="center">
-        <a href="https://karrot.world" target="_blank" class="button">Try Karrot now!</a>
+        <a href="https://karrot.world" target="_blank" class="button">Check Karrot out now!</a>
         <a href="https://blog.foodsaving.world" target="_blank" class="button">Karrot Blog</a>
         <a href="https://github.com/yunity/karrot-frontend" target="_blank" class="button">Source Code</a>
     </div>
