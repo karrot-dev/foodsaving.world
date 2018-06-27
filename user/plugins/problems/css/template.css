@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Montserrat:400|Raleway:300,400,600|Inconsolata);
+@import url(//fonts.googleapis.com/css?family=Montserrat:400|Raleway:300,400,600|Inconsolata|Cabin+Sketch:400,700);
 
 #header #logo h3, #header #navbar ul, #header #navbar .panel-activation, #footer p {
   position: relative;
@@ -105,7 +105,7 @@ b, strong, label, th {
         float: left;
         position: relative; }
         #header #navbar ul li a {
-          font-family: "Montserrat", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+          font-family: "Cabin Sketch", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
           display: inline-block;
           padding: 0.1rem 0.8rem; }
           #header #navbar ul li a:before, #header #navbar ul li a:after {
@@ -211,7 +211,7 @@ body {
   font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "Cabin Sketch", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   letter-spacing: -0px; }
