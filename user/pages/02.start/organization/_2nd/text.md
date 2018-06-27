@@ -1,9 +1,7 @@
 ---
 title: Awareness Callout
 image_align: right
-
 ---
-
 
 ## <div class="fa fa-briefcase"></div> _Building sustainable relationships with stores_
 Make sure you have enough volunteers to back up the daily pick-ups! It is important that the store considers your group as reliable, and that you keep on delivering on what you promised instead of making them wait for people who do not show up.
