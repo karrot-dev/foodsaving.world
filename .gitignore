@@ -19,3 +19,4 @@ user/config/security.yaml
 user/themes/antimatter/css-compiled/*
 css-compiled/*
 user/themes/antimatter/.sass-cache/*
+user/themes/antimatter/css-compiled/*
