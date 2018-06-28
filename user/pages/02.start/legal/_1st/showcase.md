@@ -1,0 +1,5 @@
+---
+title: legal
+---
+
+# Legal circumstances

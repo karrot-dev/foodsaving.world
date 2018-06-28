@@ -2,7 +2,7 @@
 title: Homepage Showcase
 menu: Top
 buttons:
-    - text: Get started
+    - text: Get started now!
       url: /start
       primary: true
 ---
