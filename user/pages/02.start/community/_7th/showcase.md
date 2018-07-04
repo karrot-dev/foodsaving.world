@@ -1,5 +1,5 @@
 ---
-title: Homepage Showcase
+title: buttons
 buttons:
     - text: Forward
       url: /start/awareness
