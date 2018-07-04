@@ -1,6 +1,7 @@
 ---
 title: fifth
 image_align: right
+show_prev_next: true
 ---
 
 ### <div class="fa fa-share"></div>Share your findings
