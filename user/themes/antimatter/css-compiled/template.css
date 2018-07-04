@@ -788,6 +788,20 @@ ul.pagination {
 #body > script:first-child + .grav-lightslider {
   margin-top: -3rem; }
 
+.people img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 130px;
+  width: 260px; }
+.people .role {
+  font-style: italic; }
+.people .person {
+  padding: 60px; }
+  .people .person > div {
+    text-align: center;
+    font-size: 1.3rem; }
+
 .modular.header-image #header {
   background-color: rgba(255, 255, 255, 0);
   box-shadow: none; }
