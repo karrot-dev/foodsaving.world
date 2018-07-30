@@ -10,7 +10,7 @@ people:
         image: lars.jpg
     -
         name: 'Janina Abels'
-        role: 'Documentation'
+        role: 'Communication'
         email: djahnie@disroot.org
         image: janina.png
     -
