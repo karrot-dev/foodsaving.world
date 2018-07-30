@@ -1,9 +1,9 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-<div class="people g-grid">
+<div class="people pure-g">
     {% for person in page.header.people | randomize %}
-        <div class="person g-block size-50">
+        <div class="person pure-u-1 pure-u-md-1-3">
             <img src="{{ page.media[person.image].url }}">
             <div class="name">{{ person.name }}</div>
             <div class="role">{{ person.role }}</div>
