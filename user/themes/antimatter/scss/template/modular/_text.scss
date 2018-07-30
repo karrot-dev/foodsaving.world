@@ -9,6 +9,8 @@ $image-margin:      2rem;
 .callout {
     background: $text-bg;
     padding: $text-padding $content-padding;
+    max-width: 1000px;
+    margin: auto;
     @include breakpoint(desktop-only) {
         text-align: center;
     }
