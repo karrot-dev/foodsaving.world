@@ -7,5 +7,4 @@ buttons:
     - text: Forward
       url: /start/organization
       primary: true
-
 ---

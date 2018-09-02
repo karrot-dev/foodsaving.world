@@ -22,4 +22,4 @@ Pictures taken and provided with friendly permission by:
 
 ## History
 
-[Click here](history) to read about what we've been up to in 2017. (This file will be maintained once a year, for more frequent updates please refer to the [yunity heartbeat](https://yunity.org/heartbeat).
+[Click here](history) to read about what we've been up to in 2017. (This file will be maintained once a year, for more frequent updates please refer to the [yunity heartbeat](https://yunity.org/heartbeat)).
