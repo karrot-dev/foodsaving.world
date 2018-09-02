@@ -1,24 +1,8 @@
 ---
-Title: doesntmatter
-image_align: left
+title: Awareness Callout
+image_align: right
 ---
 
-## <div class="fa fa-calendar-check-o"></div> _Structure and overview_
+## <div class="fa fa-arrows-alt"></div> _Dare to think big!_
 
-On a more practical level, how can you organize yourselves when you get bigger?
-
-Most foodsaving groups function through facebook, whatsapp or telegram groups and google spreadsheets. This is functional but can quickly get annoying, if unexpected things happen. Also, having to manage numerous cooperations and foodsavers without notifications and publicly accessible information becomes more of a hassle the bigger the organization gets.
-
-For the sharing part facebook or other social media can be pretty useful, since it is easy to reach a lot of people as soon as the group is slightly known by local folks. But especially the saving part is hard to organize via classic social networks. That's why we started developing **[Karrot](/karrot)**. It's a software inspired by German <a href="https://foodsharing.de/" target="_blank">foodsharing.de</a>. With it you have:
-
-- password protected groups
-- user accounts with profile information and picture
-- store pages with description and location
-- map to display store locations
-- individual or recurring pickup dates
-- notification mails
-- group wall with emoji reactions
-- full translation support via transifex
-- activity history for full transparency
-- pickup feedback option
-* **a lot more in the future!** _Karrot is under active development_
+A real kick-off would be the participation of a whole branch of supermarkets. You would need to address the key account manager of this chain and not simply the local management team. Feel free to use <a href="https://community.foodsaving.world/t/template-text-letter-to-s-chain-hq/69" target="_blank">this example letter</a> and adapt it to your case as much as needed. Our recommendation would be to designate one person from your group who would be accountable for communicating with this chain's stores. This way, communication is more efficient and you generate trust, because this one person is able to keep the overview and consistently represent your initiative towards the chain.
