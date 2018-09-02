@@ -13,4 +13,8 @@ content:
             - _2nd
             - _3rd
             - _4th
+
+routes:
+    aliases:
+    - '/en/startcommunity/awareness'
 ---

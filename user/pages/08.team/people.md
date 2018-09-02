@@ -2,6 +2,8 @@
 title: Team
 routes:
     default: '/team'
+    aliases:
+        - '/en/team'
 people:
     -
         name: 'Lars Wolf'

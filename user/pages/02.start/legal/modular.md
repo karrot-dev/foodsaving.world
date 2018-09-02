@@ -15,4 +15,8 @@ content:
           - _4th
           - _5th
           - _6th
+
+routes:
+    aliases:
+    - '/en/startcommunity/legal'
 ---

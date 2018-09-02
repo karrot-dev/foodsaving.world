@@ -1,5 +1,8 @@
 ---
 title: History
+routes:
+    aliases:
+        - '/en/home/history'
 ---
 
 # Foodsaving worldwide retrospective

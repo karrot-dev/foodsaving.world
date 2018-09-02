@@ -16,4 +16,8 @@ content:
             - _5th
             - _6th
             - _7th
+
+routes:
+    aliases:
+    - '/en/startcommunity/buildcommunity'
 ---

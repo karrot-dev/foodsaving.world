@@ -12,4 +12,8 @@ content:
             - _1st
             - _2nd
             - _3rd
+
+routes:
+    aliases:
+    - '/en/startcommunity/organization'
 ---

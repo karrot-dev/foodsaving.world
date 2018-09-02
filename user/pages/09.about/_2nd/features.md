@@ -1,5 +1,5 @@
 ---
-title: Team
+title: About
 ---
 
 ## Contact
@@ -23,3 +23,13 @@ Pictures taken and provided with friendly permission by:
 ## History
 
 [Click here](history) to read about what we've been up to in 2017. (This file will be maintained once a year, for more frequent updates please refer to the [yunity heartbeat](https://yunity.org/heartbeat)).
+
+## Sponsors
+
+Our hosting is sponsored by [Manitu.de](https://www.manitu.de/), which also provides the server infrastructure for [yunity.org](https://yunity.org) and [foodsharing.de](https://foodsharing.de)
+
+![](https://foodsharing.de/img/manitu_logo.png)
+
+We started using the [open source](https://github.com/liberapay/liberapay.com) platform [Liberapay](https://liberapay.com) to accept recurring donations.
+
+[![](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/foodsaving.world/donate)

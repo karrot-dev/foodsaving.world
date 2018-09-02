@@ -11,4 +11,9 @@ content:
         custom:
             - _1st
             - _2nd
+
+routes:
+    aliases:
+        - '/en/contact'
+        - '/en/sponsors'
 ---
