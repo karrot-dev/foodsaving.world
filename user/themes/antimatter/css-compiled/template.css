@@ -842,7 +842,9 @@ ul.pagination {
 
 .modular .features {
   padding: 6rem 0;
-  text-align: center; }
+  text-align: left;
+  max-width: 1000px;
+  margin: auto; }
   .modular .features:after {
     content: "";
     display: table;
@@ -897,7 +899,9 @@ ul.pagination {
       font-size: 3rem;
       float: left; }
     .modular .features.big .feature-content {
-      padding-right: 2rem; }
+      padding-right: 2rem;
+      text-align: left;
+      max-width: 350px; }
       .modular .features.big .feature-content.icon-offset {
         margin-left: 5rem; }
       .modular .features.big .feature-content h4 {
@@ -909,7 +913,9 @@ ul.pagination {
 
 .callout {
   background: #f6f6f6;
-  padding: 6rem 0.938rem; }
+  padding: 6rem 0.938rem;
+  max-width: 1000px;
+  margin: auto; }
   @media only all and (max-width: 59.938em) {
     .callout {
       text-align: center; } }

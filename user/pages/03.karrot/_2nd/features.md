@@ -4,24 +4,30 @@ title: Karrot
 
 ### Let's get organized!
 
-_We develop free and open source software for you to organize your pick-ups!_
+_We develop free and open source software for you to organize your pickups!_
 
 The core piece of our work is a tool, that is meant to enable you to run a successful, efficient and organized foodsaving project. It is a **completely translatable, open source and free** piece of software, that is developed by passionate volunteers only.
 
-We host an instance of it on [karrot.world](https://karrot.world) and you can try it out as much as you like. The general idea for long-term use however is, that foodsaving groups host their own instances if possible.
+We host an instance of it on [karrot.world](https://karrot.world) and you can simply use it there. The general idea for long-term use is, however, that foodsaving groups host their own instances if possible.
 
 _You're very welcome to [visit our project on GitHub](https://github.com/yunity/karrot-frontend) if you want to have a closer look at the development process and code._
 
 These are just some of the benefits you'll experience when deciding to use Karrot for your foodsaving group:
 
-- **Less confusion**
-  All the relevant info of a store can be entered on the store page. General group info can be entered on the group page and every single foodsaver has a profile, in which info can be entered.
-- **More overview**
-  You have a map of where the stores and the people doing the pick-ups are located. You have a nice list of upcoming pickups and can sign up for them online.
-- **Record of past events**
+- **Less confusion**<br>
+  All your foodsavers and stores can be entered in the software. Each pickup has a number of slots which foodsavers can sign up for – this way everyone knows who goes where and when.
+- **More overview**<br>
+  You have a map of where the stores and the people doing the pickups are located. You have a nice list of upcoming pickups and can sign up for them online. You get notified about empty pickups and new people wanting to join your group.
+- **Better communication**<br>
+  On the group wall the whole group can talk to each other. More confidential conversations can be had in direct messages. Everything related to a single pickup can be discussed in the dedicated pickup chats and after the pickup feedback can be given in words and weights.
+- **Record of past events**<br>
   The history shows who did what and when. If a pickup was missed you can see who to yell at... ;)
-- Karrot is **fully translatable**> by the community and many languages are already added. To contribute more translations just [visit the project on transifex](https://www.transifex.com/yunity-1/karrot/).
-- Since Karrot is **open source** we encourage groups to host their own instances of the platform, if they have the ability to do so. Still, we also provide access to a hosted version on karrot.world.
+- **Multi-language**<br>
+  Karrot is fully translatable by the community and many languages are already added. To contribute more translations just [visit the project on transifex](https://www.transifex.com/yunity-1/karrot/).
+- **Open source**<br>
+  Everything is transparent and possibly changeable. We encourage groups to host their own instances of the platform, if they have the ability to do so. Still, we also provide access to a hosted version on karrot.world.
+- **Responsive team**<br>
+  You can easily talk to the people developing Karrot and progressing foodsaving worldwide: Either on our [forum](https://community.foodsaving.world), on [Github](https://github.com/yunity/karrot-frontend), via [mail](mailto:info@foodsaving.world) or in real-time on our [team chat](https://slackin.yunity.org) (join the channel #foodsaving-worldwide or #karrot-dev to reach the right people immediately).
 
 <div align="center">
     <a href="https://karrot.world" target="_blank" class="button">Check out Karrot now!</a>
