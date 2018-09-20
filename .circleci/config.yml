@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:8.5
+    filters:
+         branches:
+           only:
+             - master
+    steps:
+      - checkout
+      - run: ssh-keyscan -H yuca.yunity.org >> ~/.ssh/known_hosts
+      - deploy:
+          name: Dev Branch Deploy
+          command: >
+            ssh fsww-dev@yuca.yunity.org '
+                cd /var/www/fsww/www &&
+                git checkout . &&
+                git pull &&
+                composer install &&
+                ./bin/grav clear-cache
+            '
