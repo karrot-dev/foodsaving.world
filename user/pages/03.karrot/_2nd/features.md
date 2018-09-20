@@ -20,10 +20,10 @@ These are just some of the benefits you'll experience when deciding to use Karro
   You have a map of where the stores and the people doing the pickups are located. You have a nice list of upcoming pickups and can sign up for them online. You get notified about empty pickups and new people wanting to join your group.
 - **Better communication**<br>
   On the group wall the whole group can talk to each other. More confidential conversations can be had in direct messages. Everything related to a single pickup can be discussed in the dedicated pickup chats and after the pickup feedback can be given in words and weights.
-- **Record of past events**<br>
-  The history shows who did what and when. If a pickup was missed you can see who to yell at... ;)
 - **Multi-language**<br>
   Karrot is fully translatable by the community and many languages are already added. To contribute more translations just [visit the project on transifex](https://www.transifex.com/yunity-1/karrot/).
+- **Record of past events**<br>
+  The history shows who did what and when. Everything from creating a store to giving feedback is logged here.
 - **Open source**<br>
   Everything is transparent and possibly changeable. We encourage groups to host their own instances of the platform, if they have the ability to do so. Still, we also provide access to a hosted version on karrot.world.
 - **Responsive team**<br>
