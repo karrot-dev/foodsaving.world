@@ -2,6 +2,8 @@ home:
   alias: '/home'
 
 pages:
+  markdown:
+    extra: true
   theme: antimatter
   markdown_extra: false
   process:
