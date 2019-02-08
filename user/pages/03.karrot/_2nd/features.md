@@ -15,7 +15,7 @@ _You're very welcome to [visit our project on GitHub](https://github.com/yunity/
 These are just some of the benefits you'll experience when deciding to use Karrot for your foodsaving group:
 
 - **Independent groups**<br>
-  Every group on karrot is completely independent and can have their own logo, processes and rules. Still, they are all displayed on the map together so that people can see that each independent group part of the bigger movement nevertheless.
+  Every group on karrot is completely independent and can have their own logo, processes and rules, yet they are all displayed on the map together so that people can see that each group is part of the bigger movement.
 - **Clear distribution of tasks**<br>
   All your foodsavers and stores can be entered in the software. Each pickup has a number of slots which foodsavers can sign up for – this way everyone knows who goes where and when.
 - **Maps and lists**<br>
