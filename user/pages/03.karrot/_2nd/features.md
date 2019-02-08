@@ -14,12 +14,18 @@ _You're very welcome to [visit our project on GitHub](https://github.com/yunity/
 
 These are just some of the benefits you'll experience when deciding to use Karrot for your foodsaving group:
 
-- **Less confusion**<br>
+- **Independent groups**<br>
+  Every group on karrot is completely independent and can have their own logo, processes and rules. Still, they are all displayed on the map together so that people can see that each independent group part of the bigger movement nevertheless.
+- **Clear distribution of tasks**<br>
   All your foodsavers and stores can be entered in the software. Each pickup has a number of slots which foodsavers can sign up for – this way everyone knows who goes where and when.
-- **More overview**<br>
-  You have a map of where the stores and the people doing the pickups are located. You have a nice list of upcoming pickups and can sign up for them online. You get notified about empty pickups and new people wanting to join your group.
-- **Better communication**<br>
-  On the group wall the whole group can talk to each other. More confidential conversations can be had in direct messages. Everything related to a single pickup can be discussed in the dedicated pickup chats and after the pickup feedback can be given in words and weights.
+- **Maps and lists**<br>
+  You have a map of where the stores and the people doing the pickups are located. You have a nice list of upcoming pickups and can sign up for them online.
+- **Application chats**<br>
+  When new people want to join your group they need to apply and answer questions your group can set. Before even making the applicant part of your group, everybody can chat to them. You can invite them to a meeting, have them fill out a form, accept your rules or whatever your group decides on.
+- **Notifications**<br>
+  You get notified about empty pickups and new people wanting to join your group.
+- **Many communication features**<br>
+  On the group wall the whole group can talk to each other. More confidential conversations can be had in direct messages. Everything related to a single pickup can be discussed in the dedicated pickup chats and when the pickup is done feedback can be given in words and weights.
 - **Multi-language**<br>
   Karrot is fully translatable by the community and many languages are already added. To contribute more translations just [visit the project on transifex](https://www.transifex.com/yunity-1/karrot/).
 - **Record of past events**<br>
@@ -31,6 +37,6 @@ These are just some of the benefits you'll experience when deciding to use Karro
 
 <div align="center">
     <a href="https://karrot.world" target="_blank" class="button">Check out Karrot now!</a>
-    <a href="https://blog.foodsaving.world" target="_blank" class="button">Karrot Blog</a>
+    <a href="https://community.foodsaving.world/c/karrot" target="_blank" class="button">Karrot forum section</a>
     <a href="https://github.com/yunity/karrot-frontend" target="_blank" class="button">Source Code</a>
 </div>
