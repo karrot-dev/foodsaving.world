@@ -10,7 +10,9 @@ A history that is more detailed but doesn't get updates anymore can be found in 
 
 ## Contact
 
-You can contact us via [e-mail](mailto:info@foodsaving.world). For more direct communication, please [join the yunity.org slack](https://slackin.yunity.org) and enter the [#foodsaving-worldwide](https://yunity.slack.com/messages/C15TDP2NM/) channel.
+Please [join the yunity.org slack](https://slackin.yunity.org) and enter the [#foodsaving-worldwide](https://yunity.slack.com/messages/C15TDP2NM/) channel.
+
+You can also contact us via [e-mail](mailto:info@foodsaving.world), but we might take a while to respond.
 
 As we are a global and distributed community, we don't have an office. If you need to reach us, please use electronic communication. The following postal address is only listed here for legal reasons.
 
