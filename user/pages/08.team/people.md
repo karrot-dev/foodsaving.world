@@ -11,8 +11,8 @@ people:
         email: lars.m.wolf@googlemail.com
         image: lars.jpg
     -
-        name: 'Janina Abels'
-        role: 'Communication, Karrot'
+        name: 'Janina Becker'
+        role: 'Karrot, Communication'
         email: djahnie@disroot.org
         image: janina.png
     -
@@ -30,4 +30,9 @@ people:
         role: 'Karrot, Conceptualization'
         email: real.j.tais@gmail.com
         image: tais.jpg
+    -
+        name: 'Bruno Chies'
+        role: 'Karrot, Communication'
+        email: brunomc@disroot.org
+        image: bruno.jpg
 ---
