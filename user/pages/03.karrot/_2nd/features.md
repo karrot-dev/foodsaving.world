@@ -26,7 +26,7 @@ These are just some of the benefits you'll experience when deciding to use Karro
   You get notified about empty pickups and new people wanting to join your group.
 - **Many communication features**<br>
   On the group wall the whole group can talk to each other. More confidential conversations can be had in direct messages. Everything related to a single pickup can be discussed in the dedicated pickup chats, everything about one store on the store wall and when a pickup is done feedback can be given in words and weights.
-- **Grassroots democracy**
+- **Grassroots democracy**<br>
   If there is a conflict, the group can enter a voting system to resolve it in a communal way. There are no admins with super powers built into the software.
 - **Multi-platform**<br>
   You can access Karrot just as well with a phone as with a laptop or desktop. For more frequent phone users there even is an Android app in the play store!
