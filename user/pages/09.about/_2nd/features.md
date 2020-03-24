@@ -23,7 +23,7 @@ We started using the [open source](https://github.com/liberapay/liberapay.com) p
 
 ## History and affiliation
 
-Do you wonder how this is connected to foodsharing in Germany, Austria and Switzerland? We compiled a [FAQ](fsintFAQ) to answer the most frequent questions.
+Do you wonder how this is connected to foodsharing in Germany, Austria and Switzerland? We compiled a [FAQ](../fsintFAQ) to answer the most frequent questions.
 
 [Click here](../history) to read about what we've been up to in 2017. (Sadly we didn't find the time so far to add more recent developments.)
 
