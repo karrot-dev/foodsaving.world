@@ -1,6 +1,6 @@
 ---
 title: 'fsintFAQ'
-date: 2020-03-24
+date: '2020-03-24'
 ---
 
 ## What is foodsharing and what is it not?
