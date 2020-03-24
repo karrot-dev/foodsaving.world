@@ -54,13 +54,13 @@ If you speak German you can of course use foodsharing.de. In that case just [get
 
 One benefit of Karrot is that you can directly register a group and get going. It is a software that is made for individual groups (that can also have different names) and yours could be one of them. But this benefit is at the same time the main disadvantage when comparing it to foodsharing: foodsharing is made for a whole country, with a shared map, nested districts and a whole lot of structures that go way beyond the day-to-day foodsaving activities.
 
-Another, even more important, difference between the two is how they let you organize as a group. foodsharing is employing the traditional hierarcical model and comes with several user roles and clearly distributed responsibilities and rights - also on the online platform. Karrot, however, aims for user empowerment via progressive democratic decision-making features and basically no hierarchy. On foodsharing the ambassadors and store coordinators have power over mere foodsavers and foodsharers, whereas in Karrot everybody can do anything as soon as they outgrew the newbie status.
+Another, even more important, difference between the two is how they let you organize as a group. foodsharing is employing the traditional hierarchical model and comes with several user roles and clearly distributed responsibilities and rights - also on the online platform. Karrot, however, aims for user empowerment via progressive democratic decision-making features and basically no hierarchy. On foodsharing the ambassadors and store coordinators have power over mere foodsavers and foodsharers, whereas in Karrot everybody can do anything as soon as they outgrew the newbie status.
 
 In short: If you want to start something locally in your city and/or build up your own thing from scratch, Karrot is the way to go. If you want to become part of an already existing organization bring it to your country to create a nation-wide opportunity for people to save food, you probably want to gather a team and tackle the great task of localizing foodsharing for your country.
 
 ## Where can I find more information on foodsharing and Karrot?
 
-There is a [nice wiki about foodsharing](https://wiki.foodsharing.de). Unfortunately it only exists in German so far (as at January 2020). The development, however, takes place in English and all the [issues on gitlab](https://gitlab.com/foodsharing-dev/foodsharing/issues) are in Englsih, too.
+There is a [nice wiki about foodsharing](https://wiki.foodsharing.de). Unfortunately it only exists in German so far (as at January 2020). The development, however, takes place in English and all the [issues on gitlab](https://gitlab.com/foodsharing-dev/foodsharing/issues) are in English, too.
 
 Karrot is discussed in [the international community forum](https://community.foodsaving.world/c/karrot), as well as in its [issues on github](https://github.com/yunity/karrot-frontend/issues).
 
