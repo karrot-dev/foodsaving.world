@@ -21,9 +21,11 @@ We started using the [open source](https://github.com/liberapay/liberapay.com) p
 
 [![](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/foodsaving.world/donate)
 
-## History
+## History and affiliation
 
-[Click here](history) to read about what we've been up to in 2017. (Sadly we didn't find the time so far to add 2018 and 2019, for more frequent updates please refer to the [yunity heartbeat](https://yunity.org/heartbeat)).
+Do you wonder how this is connected to foodsharing in Germany, Austria and Switzerland? We compiled an [FAQ]() to answer the most frequent questions.
+
+[Click here](../history) to read about what we've been up to in 2017. (Sadly we didn't find the time so far to add more recent developments.)
 
 A history that is more detailed but doesn't get updates anymore can be found in the legacy [yunity wiki](https://yunity.atlassian.net/wiki/spaces/YUN/pages/4227494/1.+The+story+so+far). It tells of the origins of foodsaving worldwide in yunity and foodsharing.de.
 
