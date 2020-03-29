@@ -1,8 +1,9 @@
 <?php
+
 /**
- * @package    Grav.Common.Language
+ * @package    Grav\Common\Language
  *
- * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -22,6 +23,7 @@ class LanguageCodes
         'bn-BD'      => [ 'name' => 'Bengali (Bangladesh)',      'nativeName' => 'বাংলা (বাংলাদেশ)' ],
         'bn-IN'      => [ 'name' => 'Bengali (India)',           'nativeName' => 'বাংলা (ভারত)' ],
         'br'         => [ 'name' => 'Breton',                    'nativeName' => 'Brezhoneg' ],
+        'bs'         => [ 'name' => 'Bosnian',                   'nativeName' => 'Bosanski' ],
         'ca'         => [ 'name' => 'Catalan',                   'nativeName' => 'Català' ],
         'ca-valencia'=> [ 'name' => 'Catalan (Valencian)',       'nativeName' => 'Català (valencià)' ], // not iso-639-1. a=l10n-drivers
         'cs'         => [ 'name' => 'Czech',                     'nativeName' => 'Čeština' ],
@@ -178,10 +180,7 @@ class LanguageCodes
 
     public static function isRtl($code)
     {
-        if (static::getOrientation($code) === 'rtl') {
-            return true;
-        }
-        return false;
+        return static::getOrientation($code) === 'rtl';
     }
 
     public static function getNames(array $keys)
@@ -195,7 +194,7 @@ class LanguageCodes
         return $results;
     }
 
-    protected static function get($code, $type)
+    public static function get($code, $type)
     {
         if (isset(static::$codes[$code][$type])) {
             return static::$codes[$code][$type];
