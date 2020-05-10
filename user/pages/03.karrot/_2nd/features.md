@@ -37,7 +37,7 @@ These are just some of the benefits you'll experience when deciding to use Karro
 - **Open source**<br>
   Everything is transparent and possibly changeable. We encourage groups to host their own instances of the platform, if they have the ability to do so. Still, we also provide access to a hosted version on karrot.world.
 - **Responsive team**<br>
-  You can easily talk to the people developing Karrot and progressing foodsaving worldwide: Either on our [forum](https://community.foodsaving.world), on [Github](https://github.com/yunity/karrot-frontend) on our [team chat](https://slackin.yunity.org) (join the channel #foodsaving-worldwide or #karrot-dev to reach the right people immediately), or in real-time in our [weekly calls](https://community.foodsaving.world/t/weekly-call-about-karrot-development) (go to the newest post to find out the next time).
+  You can easily talk to the people developing Karrot and progressing foodsaving worldwide: Either on our [forum](https://community.foodsaving.world), on [Github](https://github.com/yunity/karrot-frontend) on our [team chat](https://chat.foodsaving.world) (join the channel #karrot-dev to reach the right people immediately), or in real-time in our [weekly calls](https://community.foodsaving.world/t/weekly-call-about-karrot-development) (go to the newest post to find out the next time).
 
 <div align="center">
     <a href="https://karrot.world" target="_blank" class="button">Check out Karrot now!</a>

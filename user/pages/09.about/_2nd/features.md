@@ -4,7 +4,7 @@ title: About
 
 ## Contact
 
-Please [join the yunity.org slack](https://slackin.yunity.org) and enter the [#foodsaving-worldwide](https://yunity.slack.com/messages/C15TDP2NM/) channel.
+Please [join our team chat](https://chat.foodsaving.world).
 
 You can also contact us via [e-mail](mailto:info@foodsaving.world), but we might take a while to respond.
 
