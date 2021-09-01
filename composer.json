@@ -53,7 +53,7 @@
         "willdurand/negotiation": "2.x-dev"
     },
     "require-dev": {
-        "codeception/codeception": "^2.4",
+        "codeception/codeception": "^3.1",
         "phpstan/phpstan": "^0.11",
         "phpstan/phpstan-deprecation-rules": "^0.11.0",
         "phpunit/php-code-coverage": "~6.0",
