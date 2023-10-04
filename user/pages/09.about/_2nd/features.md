@@ -4,9 +4,7 @@ title: About
 
 ## Contact
 
-Please [join our team chat](https://chat.foodsaving.world).
-
-You can also contact us via [e-mail](mailto:info@foodsaving.world), but we might take a while to respond.
+You can reach out on the Karrot community forum. Introduce yourself here: [All About Fodsaving](https://community.karrot.world/c/foodsaving/30)
 
 As we are a global and distributed community, we don't have an office. If you need to reach us, please use electronic communication. The following postal address is only listed here for legal reasons.
 
