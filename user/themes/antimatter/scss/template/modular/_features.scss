@@ -2,9 +2,7 @@
 .modular {
     .features {
         padding: 6rem 0;
-        text-align: left;
-        max-width: 1000px;
-        margin: auto;
+        text-align: center;
         @include clearfix;
 
         h2 {
@@ -14,6 +12,7 @@
 
         p {
             margin: 1rem 0;
+            font-size: $core-font-size + 0.2rem;
             @include breakpoint(mobile-only) {
                 font-size: $core-font-size;
             }
@@ -78,8 +77,6 @@
 
             .feature-content {
                 padding-right: 2rem;
-                text-align: left;
-                max-width: 350px;
 
                 &.icon-offset {
                     margin-left: 5rem;

@@ -1,6 +1,6 @@
 {% set theme_config = attribute(config.themes, config.system.pages.theme) %}
 <!DOCTYPE html>
-<html lang="{{ grav.language.getLanguage ?: 'en' }}">
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
 <head>
 {% block head %}
     <meta charset="utf-8" />
@@ -12,7 +12,6 @@
 
     {% block stylesheets %}
         {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css', 103) %}
-        {% do assets.addCss('theme://css/pure-0.5.0/grids-responsive-min.css', 103) %}
         {% do assets.addCss('theme://css-compiled/nucleus.css', 102) %}
         {% do assets.addCss('theme://css-compiled/template.css', 101) %}
         {% do assets.addCss('theme://css/custom.css', 100) %}
@@ -27,7 +26,6 @@
             {% do assets.addJs('theme://js/html5shiv-printshiv.min.js') %}
         {% endif %}
     {% endblock %}
-    {{ assets.css() }}
 
     {% block javascripts %}
         {% do assets.addJs('jquery', 101) %}
@@ -35,7 +33,11 @@
         {% do assets.addJs('theme://js/antimatter.js') %}
         {% do assets.addJs('theme://js/slidebars.min.js') %}
     {% endblock %}
-    {{ assets.js() }}
+
+    {% block assets deferred %}
+        {{ assets.css()|raw }}
+        {{ assets.js()|raw }}
+    {% endblock %}
 
 {% endblock head %}
 </head>
@@ -72,7 +74,7 @@
             <div class="totop">
                 <span><a href="#" id="toTop"><i class="fa fa-arrow-up"></i></a></span>
             </div>
-            <p>Brought to you with <i class="fa fa-heart"></i> by <a href="https://yunity.org">yunity</a>.</p>
+            <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.rockettheme.com">RocketTheme</a>.</p>
         </footer>
         {% endblock %}
     </div>
@@ -84,8 +86,7 @@
         </div>
     {% endblock %}
     {% block bottom %}
-        {{ assets.js('bottom') }}
-        <script>
+         <script>
         $(function () {
             $(document).ready(function() {
               $.slidebars({
@@ -95,6 +96,7 @@
             });
         });
         </script>
+        {{ assets.js('bottom')|raw }}
     {% endblock %}
 </body>
 </html>

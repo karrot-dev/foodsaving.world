@@ -1,3 +1,33 @@
+# v1.8.0
+## 09/07/2021
+
+1. [](#new)
+    * Require **Grav 1.7.0**
+    * Added support for `{% throw 404 'Not Found' %}` from twig template to show the error page
+1. [](#improved)
+    * Do not cache 404 error pages by default
+
+# v1.7.1
+## 10/08/2020
+
+1. [](#bugfix)
+    * Fixed error page being cached, fixes issue with non-existing resources which later become available
+
+# v1.7.0
+## 07/01/2020
+
+1. [](#new)
+    * Require Grav v1.6
+1. [](#bugfix)
+    * Added translated title programmatically [#40](https://github.com/getgrav/grav-plugin-error/pull/40)
+    
+# v1.6.2
+## 05/09/2019
+
+1. [](#new)
+    * Fixed a few issues found by phpstan
+    * Added `ru` and `uk` translations [#36](https://github.com/getgrav/grav-plugin-error/pull/36)
+
 # v1.6.1
 ## 03/09/2018
 
