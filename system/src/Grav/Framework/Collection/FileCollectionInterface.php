@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Framework\Collection
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -15,6 +15,10 @@ use Doctrine\Common\Collections\Selectable;
  * Collection of objects stored into a filesystem.
  *
  * @package Grav\Framework\Collection
+ * @template TKey of array-key
+ * @template T
+ * @extends CollectionInterface<TKey,T>
+ * @extends Selectable<TKey,T>
  */
 interface FileCollectionInterface extends CollectionInterface, Selectable
 {

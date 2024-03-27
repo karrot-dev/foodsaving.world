@@ -39,14 +39,16 @@ form:
             .command:
               type: text
               label: PLUGIN_ADMIN.COMMAND
-              placeholder: 'cd ~;ls -lah;'
+              placeholder: 'ls'
               validate:
                   required: true
             .args:
               type: text
               label: PLUGIN_ADMIN.EXTRA_ARGUMENTS
+              placeholder: '-lah'
             .at:
-              type: cron
+              type: text
+              wrapper_classes: cron-selector
               label: PLUGIN_ADMIN.SCHEDULER_RUNAT
               help: PLUGIN_ADMIN.SCHEDULER_RUNAT_HELP
               placeholder: '* * * * *'

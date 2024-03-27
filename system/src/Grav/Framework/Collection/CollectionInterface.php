@@ -3,32 +3,38 @@
 /**
  * @package    Grav\Framework\Collection
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Framework\Collection;
 
 use Doctrine\Common\Collections\Collection;
+use JsonSerializable;
 
 /**
  * Collection Interface.
  *
  * @package Grav\Framework\Collection
+ * @template TKey of array-key
+ * @template T
+ * @extends Collection<TKey,T>
  */
-interface CollectionInterface extends Collection, \JsonSerializable
+interface CollectionInterface extends Collection, JsonSerializable
 {
     /**
      * Reverse the order of the items.
      *
-     * @return static
+     * @return CollectionInterface
+     * @phpstan-return static<TKey,T>
      */
     public function reverse();
 
     /**
      * Shuffle items.
      *
-     * @return static
+     * @return CollectionInterface
+     * @phpstan-return static<TKey,T>
      */
     public function shuffle();
 
@@ -37,6 +43,7 @@ interface CollectionInterface extends Collection, \JsonSerializable
      *
      * @param int $size     Size of each chunk.
      * @return array
+     * @phpstan-return array<array<TKey,T>>
      */
     public function chunk($size);
 
@@ -45,16 +52,18 @@ interface CollectionInterface extends Collection, \JsonSerializable
      *
      * Collection is returned in the order of $keys given to the function.
      *
-     * @param array $keys
-     * @return static
+     * @param array<int|string> $keys
+     * @return CollectionInterface
+     * @phpstan-return static<TKey,T>
      */
     public function select(array $keys);
 
     /**
      * Un-select items from collection.
      *
-     * @param array $keys
-     * @return static
+     * @param array<int|string> $keys
+     * @return CollectionInterface
+     * @phpstan-return static<TKey,T>
      */
     public function unselect(array $keys);
 }

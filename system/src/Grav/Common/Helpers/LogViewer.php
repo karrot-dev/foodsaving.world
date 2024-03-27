@@ -3,15 +3,25 @@
 /**
  * @package    Grav\Common\Helpers
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Common\Helpers;
 
+use DateTime;
+use function array_slice;
+use function is_array;
+use function is_string;
+
+/**
+ * Class LogViewer
+ * @package Grav\Common\Helpers
+ */
 class LogViewer
 {
-    protected $pattern = '/\[(?P<date>.*)\] (?P<logger>\w+).(?P<level>\w+): (?P<message>.*[^ ]+) (?P<context>[^ ]+) (?P<extra>[^ ]+)/';
+    /** @var string */
+    protected $pattern = '/\[(?P<date>.*?)\] (?P<logger>\w+)\.(?P<level>\w+): (?P<message>.*[^ ]+) (?P<context>[^ ]+) (?P<extra>[^ ]+)/';
 
     /**
      * Get the objects of a tailed file
@@ -24,7 +34,7 @@ class LogViewer
     public function objectTail($filepath, $lines = 1, $desc = true)
     {
         $data = $this->tail($filepath, $lines);
-        $tailed_log = explode(PHP_EOL, $data);
+        $tailed_log = $data ? explode(PHP_EOL, $data) : [];
         $line_objects = [];
 
         foreach ($tailed_log as $line) {
@@ -39,21 +49,24 @@ class LogViewer
      *
      * @param string $filepath
      * @param int $lines
-     * @return bool|string
+     * @return string|false
      */
-    public function tail($filepath, $lines = 1) {
+    public function tail($filepath, $lines = 1)
+    {
+        $f = $filepath ? @fopen($filepath, 'rb') : false;
+        if ($f === false) {
+            return false;
+        }
 
-        $f = @fopen($filepath, "rb");
-        if ($f === false) return false;
-
-        else $buffer = ($lines < 2 ? 64 : ($lines < 10 ? 512 : 4096));
+        $buffer = ($lines < 2 ? 64 : ($lines < 10 ? 512 : 4096));
 
         fseek($f, -1, SEEK_END);
-        if (fread($f, 1) != "\n") $lines -= 1;
+        if (fread($f, 1) !== "\n") {
+            --$lines;
+        }
 
         // Start reading
         $output = '';
-        $chunk = '';
         // While we would like more
         while (ftell($f) > 0 && $lines >= 0) {
             // Figure out how far back we should jump
@@ -61,7 +74,11 @@ class LogViewer
             // Do the jump (backwards, relative to where we are)
             fseek($f, -$seek, SEEK_CUR);
             // Read a chunk and prepend it to our output
-            $output = ($chunk = fread($f, $seek)) . $output;
+            $chunk = fread($f, $seek);
+            if ($chunk === false) {
+                throw new \RuntimeException('Cannot read file');
+            }
+            $output = $chunk . $output;
             // Jump back to where we started reading
             fseek($f, -mb_strlen($chunk, '8bit'), SEEK_CUR);
             // Decrease our line counter
@@ -83,7 +100,7 @@ class LogViewer
      * Helper class to get level color
      *
      * @param string $level
-     * @return mixed|string
+     * @return string
      */
     public static function levelColor($level)
     {
@@ -108,12 +125,13 @@ class LogViewer
      */
     public function parse($line)
     {
-        if( !is_string($line) || strlen($line) === 0) {
-            return array();
+        if (!is_string($line) || $line === '') {
+            return [];
         }
+
         preg_match($this->pattern, $line, $data);
         if (!isset($data['date'])) {
-            return array();
+            return [];
         }
 
         preg_match('/(.*)- Trace:(.*)/', $data['message'], $matches);
@@ -122,15 +140,15 @@ class LogViewer
             $data['trace'] = trim($matches[2]);
         }
 
-        return array(
-            'date' => \DateTime::createFromFormat('Y-m-d H:i:s', $data['date']),
+        return [
+            'date' => DateTime::createFromFormat('Y-m-d H:i:s', $data['date']),
             'logger' => $data['logger'],
             'level' => $data['level'],
             'message' => $data['message'],
-            'trace' => isset($data['trace']) ? $this->parseTrace($data['trace']) : null,
+            'trace' => isset($data['trace']) ? self::parseTrace($data['trace']) : null,
             'context' => json_decode($data['context'], true),
             'extra' => json_decode($data['extra'], true)
-        );
+        ];
     }
 
     /**
@@ -143,7 +161,7 @@ class LogViewer
     public static function parseTrace($trace, $rows = 10)
     {
         $lines = array_filter(preg_split('/#\d*/m', $trace));
+
         return array_slice($lines, 0, $rows);
     }
-
 }

@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Common\Processors
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -11,16 +11,28 @@ namespace Grav\Common\Processors;
 
 use Grav\Common\Processors\Events\RequestHandlerEvent;
 use Grav\Common\Uri;
+use Grav\Common\Utils;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 
+/**
+ * Class RequestProcessor
+ * @package Grav\Common\Processors
+ */
 class RequestProcessor extends ProcessorBase
 {
+    /** @var string */
     public $id = 'request';
+    /** @var string */
     public $title = 'Request';
 
-    public function process(ServerRequestInterface $request, RequestHandlerInterface $handler) : ResponseInterface
+    /**
+     * @param ServerRequestInterface $request
+     * @param RequestHandlerInterface $handler
+     * @return ResponseInterface
+     */
+    public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
         $this->startTimer();
 
@@ -31,7 +43,7 @@ class RequestProcessor extends ProcessorBase
         }
 
         $uri = $request->getUri();
-        $ext = mb_strtolower(pathinfo($uri->getPath(), PATHINFO_EXTENSION));
+        $ext = mb_strtolower(Utils::pathinfo($uri->getPath(), PATHINFO_EXTENSION));
 
         $request = $request
             ->withAttribute('grav', $this->container)

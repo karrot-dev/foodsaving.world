@@ -3,11 +3,15 @@
 /**
  * @package    Grav\Framework\ContentBlock
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Framework\ContentBlock;
+
+use RuntimeException;
+use function is_array;
+use function is_string;
 
 /**
  * HtmlBlock
@@ -16,10 +20,17 @@ namespace Grav\Framework\ContentBlock;
  */
 class HtmlBlock extends ContentBlock implements HtmlBlockInterface
 {
+    /** @var int */
     protected $version = 1;
+    /** @var array */
     protected $frameworks = [];
+    /** @var array */
     protected $styles = [];
+    /** @var array */
     protected $scripts = [];
+    /** @var array */
+    protected $links = [];
+    /** @var array */
     protected $html = [];
 
     /**
@@ -31,6 +42,7 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
 
         $this->sortAssets($assets['styles']);
         $this->sortAssets($assets['scripts']);
+        $this->sortAssets($assets['links']);
         $this->sortAssets($assets['html']);
 
         return $assets;
@@ -68,13 +80,22 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
      * @param string $location
      * @return array
      */
+    public function getLinks($location = 'head')
+    {
+        return $this->getAssetsInLocation('links', $location);
+    }
+
+    /**
+     * @param string $location
+     * @return array
+     */
     public function getHtml($location = 'bottom')
     {
         return $this->getAssetsInLocation('html', $location);
     }
 
     /**
-     * @return array[]
+     * @return array
      */
     public function toArray()
     {
@@ -89,6 +110,9 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
         if ($this->scripts) {
             $array['scripts'] = $this->scripts;
         }
+        if ($this->links) {
+            $array['links'] = $this->links;
+        }
         if ($this->html) {
             $array['html'] = $this->html;
         }
@@ -98,7 +122,8 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
 
     /**
      * @param array $serialized
-     * @throws \RuntimeException
+     * @return void
+     * @throws RuntimeException
      */
     public function build(array $serialized)
     {
@@ -107,6 +132,7 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
         $this->frameworks = isset($serialized['frameworks']) ? (array) $serialized['frameworks'] : [];
         $this->styles = isset($serialized['styles']) ? (array) $serialized['styles'] : [];
         $this->scripts = isset($serialized['scripts']) ? (array) $serialized['scripts'] : [];
+        $this->links = isset($serialized['links']) ? (array) $serialized['links'] : [];
         $this->html = isset($serialized['html']) ? (array) $serialized['html'] : [];
     }
 
@@ -132,7 +158,7 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
      */
     public function addStyle($element, $priority = 0, $location = 'head')
     {
-        if (!\is_array($element)) {
+        if (!is_array($element)) {
             $element = ['href' => (string) $element];
         }
         if (empty($element['href'])) {
@@ -176,7 +202,7 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
      */
     public function addInlineStyle($element, $priority = 0, $location = 'head')
     {
-        if (!\is_array($element)) {
+        if (!is_array($element)) {
             $element = ['content' => (string) $element];
         }
         if (empty($element['content'])) {
@@ -189,11 +215,14 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
         $content = (string) $element['content'];
         $type = !empty($element['type']) ? (string) $element['type'] : 'text/css';
 
+        unset($element['content'], $element['type']);
+
         $this->styles[$location][md5($content) . sha1($content)] = [
             ':type' => 'inline',
             ':priority' => (int) $priority,
             'content' => $content,
-            'type' => $type
+            'type' => $type,
+            'element' => $element
         ];
 
         return true;
@@ -207,7 +236,7 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
      */
     public function addScript($element, $priority = 0, $location = 'head')
     {
-        if (!\is_array($element)) {
+        if (!is_array($element)) {
             $element = ['src' => (string) $element];
         }
         if (empty($element['src'])) {
@@ -219,18 +248,23 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
 
         $src = $element['src'];
         $type = !empty($element['type']) ? (string) $element['type'] : 'text/javascript';
-        $defer = isset($element['defer']) ? true : false;
-        $async = isset($element['async']) ? true : false;
+        $loading = !empty($element['loading']) ? (string) $element['loading'] : null;
+        $defer = !empty($element['defer']);
+        $async = !empty($element['async']);
         $handle = !empty($element['handle']) ? (string) $element['handle'] : '';
+
+        unset($element['src'], $element['type'], $element['loading'], $element['defer'], $element['async'], $element['handle']);
 
         $this->scripts[$location][md5($src) . sha1($src)] = [
             ':type' => 'file',
             ':priority' => (int) $priority,
             'src' => $src,
             'type' => $type,
+            'loading' => $loading,
             'defer' => $defer,
             'async' => $async,
-            'handle' => $handle
+            'handle' => $handle,
+            'element' => $element
         ];
 
         return true;
@@ -244,7 +278,7 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
      */
     public function addInlineScript($element, $priority = 0, $location = 'head')
     {
-        if (!\is_array($element)) {
+        if (!is_array($element)) {
             $element = ['content' => (string) $element];
         }
         if (empty($element['content'])) {
@@ -256,12 +290,83 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
 
         $content = (string) $element['content'];
         $type = !empty($element['type']) ? (string) $element['type'] : 'text/javascript';
+        $loading = !empty($element['loading']) ? (string) $element['loading'] : null;
+
+        unset($element['content'], $element['type'], $element['loading']);
 
         $this->scripts[$location][md5($content) . sha1($content)] = [
             ':type' => 'inline',
             ':priority' => (int) $priority,
             'content' => $content,
-            'type' => $type
+            'type' => $type,
+            'loading' => $loading,
+            'element' => $element
+        ];
+
+        return true;
+    }
+
+    /**
+     * @param string|array $element
+     * @param int $priority
+     * @param string $location
+     * @return bool
+     */
+    public function addModule($element, $priority = 0, $location = 'head')
+    {
+        if (!is_array($element)) {
+            $element = ['src' => (string) $element];
+        }
+
+        $element['type'] = 'module';
+
+        return $this->addScript($element, $priority, $location);
+    }
+
+    /**
+     * @param string|array $element
+     * @param int $priority
+     * @param string $location
+     * @return bool
+     */
+    public function addInlineModule($element, $priority = 0, $location = 'head')
+    {
+        if (!is_array($element)) {
+            $element = ['content' => (string) $element];
+        }
+
+        $element['type'] = 'module';
+
+        return $this->addInlineScript($element, $priority, $location);
+    }
+
+    /**
+     * @param array $element
+     * @param int $priority
+     * @param string $location
+     * @return bool
+     */
+    public function addLink($element, $priority = 0, $location = 'head')
+    {
+        if (!is_array($element) || empty($element['rel']) || empty($element['href'])) {
+            return false;
+        }
+
+        if (!isset($this->links[$location])) {
+            $this->links[$location] = [];
+        }
+
+        $rel = (string) $element['rel'];
+        $href = (string) $element['href'];
+
+        unset($element['rel'], $element['href']);
+
+        $this->links[$location][md5($href) . sha1($href)] = [
+            ':type' => 'file',
+            ':priority' => (int) $priority,
+            'href' => $href,
+            'rel' => $rel,
+            'element' => $element,
         ];
 
         return true;
@@ -275,7 +380,7 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
      */
     public function addHtml($html, $priority = 0, $location = 'bottom')
     {
-        if (empty($html) || !\is_string($html)) {
+        if (empty($html) || !is_string($html)) {
             return false;
         }
         if (!isset($this->html[$location])) {
@@ -299,6 +404,7 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
             'frameworks' => $this->frameworks,
             'styles' => $this->styles,
             'scripts' => $this->scripts,
+            'links' => $this->links,
             'html' => $this->html
         ];
 
@@ -320,6 +426,14 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
                         $assets['scripts'][$location] = $scripts;
                     } elseif ($scripts) {
                         $assets['scripts'][$location] += $scripts;
+                    }
+                }
+
+                foreach ($blockAssets['links'] as $location => $links) {
+                    if (!isset($assets['links'][$location])) {
+                        $assets['links'][$location] = $links;
+                    } elseif ($links) {
+                        $assets['links'][$location] += $links;
                     }
                 }
 
@@ -357,6 +471,7 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
 
     /**
      * @param array $items
+     * @return void
      */
     protected function sortAssetsInLocation(array &$items)
     {
@@ -368,19 +483,19 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
 
         uasort(
             $items,
-            function ($a, $b) {
-                return ($a[':priority'] === $b[':priority'])
-                    ? $a[':order'] - $b[':order'] : $a[':priority'] - $b[':priority'];
+            static function ($a, $b) {
+                return $a[':priority'] <=> $b[':priority'] ?: $a[':order'] <=> $b[':order'];
             }
         );
     }
 
     /**
      * @param array $array
+     * @return void
      */
     protected function sortAssets(array &$array)
     {
-        foreach ($array as $location => &$items) {
+        foreach ($array as &$items) {
             $this->sortAssetsInLocation($items);
         }
     }

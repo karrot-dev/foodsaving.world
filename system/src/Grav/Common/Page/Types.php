@@ -3,38 +3,53 @@
 /**
  * @package    Grav\Common\Page
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Common\Page;
 
+use Grav\Common\Data\Blueprint;
 use Grav\Common\Filesystem\Folder;
 use Grav\Common\Grav;
+use Grav\Common\Utils;
+use InvalidArgumentException;
 use RocketTheme\Toolbox\ArrayTraits\ArrayAccess;
 use RocketTheme\Toolbox\ArrayTraits\Constructor;
 use RocketTheme\Toolbox\ArrayTraits\Countable;
 use RocketTheme\Toolbox\ArrayTraits\Export;
 use RocketTheme\Toolbox\ArrayTraits\Iterator;
 use RocketTheme\Toolbox\ResourceLocator\UniformResourceLocator;
+use function is_string;
 
+/**
+ * Class Types
+ * @package Grav\Common\Page
+ */
 class Types implements \ArrayAccess, \Iterator, \Countable
 {
     use ArrayAccess, Constructor, Iterator, Countable, Export;
 
+    /** @var array */
     protected $items;
-    protected $systemBlueprints;
+    /** @var array */
+    protected $systemBlueprints = [];
 
+    /**
+     * @param string $type
+     * @param Blueprint|null $blueprint
+     * @return void
+     */
     public function register($type, $blueprint = null)
     {
         if (!isset($this->items[$type])) {
             $this->items[$type] = [];
-        } elseif (!$blueprint) {
+        } elseif (null === $blueprint) {
             return;
         }
 
-        if (!$blueprint && $this->systemBlueprints) {
-            $blueprint = $this->systemBlueprints[$type] ?? $this->systemBlueprints['default'];
+        if (null === $blueprint) {
+            $blueprint = $this->systemBlueprints[$type] ?? $this->systemBlueprints['default'] ?? null;
         }
 
         if ($blueprint) {
@@ -42,19 +57,28 @@ class Types implements \ArrayAccess, \Iterator, \Countable
         }
     }
 
+    /**
+     * @return void
+     */
+    public function init()
+    {
+        if (empty($this->systemBlueprints)) {
+            // Register all blueprints from the blueprints stream.
+            $this->systemBlueprints = $this->findBlueprints('blueprints://pages');
+            foreach ($this->systemBlueprints as $type => $blueprint) {
+                $this->register($type);
+            }
+        }
+    }
+
+    /**
+     * @param string $uri
+     * @return void
+     */
     public function scanBlueprints($uri)
     {
-        if (!\is_string($uri)) {
-            throw new \InvalidArgumentException('First parameter must be URI');
-        }
-
-        if (!$this->systemBlueprints) {
-            $this->systemBlueprints = $this->findBlueprints('blueprints://pages');
-
-            // Register default by default.
-            $this->register('default');
-
-            $this->register('external');
+        if (!is_string($uri)) {
+            throw new InvalidArgumentException('First parameter must be URI');
         }
 
         foreach ($this->findBlueprints($uri) as $type => $blueprint) {
@@ -62,10 +86,14 @@ class Types implements \ArrayAccess, \Iterator, \Countable
         }
     }
 
+    /**
+     * @param string $uri
+     * @return void
+     */
     public function scanTemplates($uri)
     {
-        if (!\is_string($uri)) {
-            throw new \InvalidArgumentException('First parameter must be URI');
+        if (!is_string($uri)) {
+            throw new InvalidArgumentException('First parameter must be URI');
         }
 
         $options = [
@@ -90,6 +118,9 @@ class Types implements \ArrayAccess, \Iterator, \Countable
         }
     }
 
+    /**
+     * @return array
+     */
     public function pageSelect()
     {
         $list = [];
@@ -104,6 +135,9 @@ class Types implements \ArrayAccess, \Iterator, \Countable
         return $list;
     }
 
+    /**
+     * @return array
+     */
     public function modularSelect()
     {
         $list = [];
@@ -111,13 +145,17 @@ class Types implements \ArrayAccess, \Iterator, \Countable
             if (strpos($name, 'modular/') !== 0) {
                 continue;
             }
-            $list[$name] = ucfirst(trim(str_replace('_', ' ', basename($name))));
+            $list[$name] = ucfirst(trim(str_replace('_', ' ', Utils::basename($name))));
         }
         ksort($list);
 
         return $list;
     }
 
+    /**
+     * @param string $uri
+     * @return array
+     */
     private function findBlueprints($uri)
     {
         $options = [

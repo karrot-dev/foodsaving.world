@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Framework\RequestHandler
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -16,17 +16,22 @@ use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
+use function call_user_func;
 
+/**
+ * Trait RequestHandlerTrait
+ * @package Grav\Framework\RequestHandler\Traits
+ */
 trait RequestHandlerTrait
 {
-    /** @var array<string|MiddlewareInterface> */
+    /** @var array<int,string|MiddlewareInterface> */
     protected $middleware;
 
     /** @var callable */
-    private $handler;
+    protected $handler;
 
     /** @var ContainerInterface|null */
-    private $container;
+    protected $container;
 
     /**
      * {@inheritdoc}
@@ -38,7 +43,7 @@ trait RequestHandlerTrait
 
         // Use default callable if there is no middleware.
         if ($middleware === null) {
-            return \call_user_func($this->handler, $request);
+            return call_user_func($this->handler, $request);
         }
 
         if ($middleware instanceof MiddlewareInterface) {

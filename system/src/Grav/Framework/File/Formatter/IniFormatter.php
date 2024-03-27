@@ -5,14 +5,19 @@ declare(strict_types=1);
 /**
  * @package    Grav\Framework\File\Formatter
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Framework\File\Formatter;
 
 use Grav\Framework\File\Interfaces\FileFormatterInterface;
+use RuntimeException;
 
+/**
+ * Class IniFormatter
+ * @package Grav\Framework\File\Formatter
+ */
 class IniFormatter extends AbstractFormatter
 {
     /**
@@ -37,10 +42,10 @@ class IniFormatter extends AbstractFormatter
         $string = '';
         foreach ($data as $key => $value) {
             $string .= $key . '="' .  preg_replace(
-                    ['/"/', '/\\\/', "/\t/", "/\n/", "/\r/"],
-                    ['\"',  '\\\\', '\t',   '\n',   '\r'],
-                    $value
-                ) . "\"\n";
+                ['/"/', '/\\\/', "/\t/", "/\n/", "/\r/"],
+                ['\"',  '\\\\', '\t',   '\n',   '\r'],
+                $value
+            ) . "\"\n";
         }
 
         return $string;
@@ -55,7 +60,7 @@ class IniFormatter extends AbstractFormatter
         $decoded = @parse_ini_string($data);
 
         if ($decoded === false) {
-            throw new \RuntimeException('Decoding INI failed');
+            throw new RuntimeException('Decoding INI failed');
         }
 
         return $decoded;

@@ -5,7 +5,7 @@ declare(strict_types=1);
 /**
  * @package    Grav\Framework\Psr7
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -15,6 +15,7 @@ use Grav\Framework\Psr7\Traits\ResponseDecoratorTrait;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
 use RuntimeException;
+use function in_array;
 
 /**
  * Class Response
@@ -24,9 +25,7 @@ class Response implements ResponseInterface
 {
     use ResponseDecoratorTrait;
 
-    /**
-     * @var string EOL characters used for HTTP response.
-     */
+    /** @var string EOL characters used for HTTP response. */
     private const EOL = "\r\n";
 
     /**
@@ -50,10 +49,11 @@ class Response implements ResponseInterface
      * response to the client.
      *
      * @param  mixed  $data   The data
-     * @param  int    $status The HTTP status code.
+     * @param  int|null $status The HTTP status code.
      * @param  int    $options Json encoding options
      * @param  int    $depth Json encoding max depth
      * @return static
+     * @phpstan-param positive-int $depth
      */
     public function withJson($data, int $status = null, int $options = 0, int $depth = 512): ResponseInterface
     {
@@ -112,7 +112,7 @@ class Response implements ResponseInterface
      */
     public function isEmpty(): bool
     {
-        return \in_array($this->getResponse()->getStatusCode(), [204, 205, 304], true);
+        return in_array($this->getResponse()->getStatusCode(), [204, 205, 304], true);
     }
 
 
@@ -137,7 +137,7 @@ class Response implements ResponseInterface
      */
     public function isRedirect(): bool
     {
-        return \in_array($this->getResponse()->getStatusCode(), [301, 302, 303, 307, 308], true);
+        return in_array($this->getResponse()->getStatusCode(), [301, 302, 303, 307, 308], true);
     }
 
     /**
@@ -258,7 +258,7 @@ class Response implements ResponseInterface
         }
 
         $output .= self::EOL;
-        $output .= (string) $response->getBody();
+        $output .= $response->getBody();
 
         return $output;
     }

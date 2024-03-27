@@ -1,6 +1,6 @@
 ---
 GRAV:
-  FRONTMATTER_ERROR_PAGE: "---\ntitle: %1$s\n---\n\n# Chyba: Chybný frontmatter\n\nPath: `%2$s`\n\n**%3$s**\n\n```\n%4$s\n```"
+  FRONTMATTER_ERROR_PAGE: "---\ntitle: %1$s\n---\n\n# Chyba: Chybná hlavička\n\nCesta: `%2$s`\n\n**%3$s**\n\n```\n%4$s\n```"
   INFLECTOR_PLURALS:
     '/(quiz)$/i': '\1zes'
     '/^(ox)$/i': '\1en'
@@ -101,9 +101,10 @@ GRAV:
     YR_PLURAL: r
     DEC_PLURAL: dek
   FORM:
-    VALIDATION_FAIL: <b>Ověření se nezdařilo:</b>
-    INVALID_INPUT: Neplatný vstup v
+    VALIDATION_FAIL: '<b>Ověření se nezdařilo:</b>'
+    INVALID_INPUT: 'Neplatný vstup v'
     MISSING_REQUIRED_FIELD: 'Chybí požadované pole:'
+    XSS_ISSUES: "Byly zjištěny možné problémy XSS v poli '%s'"
   MONTHS_OF_THE_YEAR:
     - 'leden'
     - 'únor'
@@ -125,6 +126,8 @@ GRAV:
     - 'pátek'
     - 'sobota'
     - 'neděle'
+  YES: "Ano"
+  NO: "Ne"
   CRON:
     EVERY: každý
     EVERY_HOUR: každou hodinu

@@ -3,14 +3,19 @@
 /**
  * @package    Grav\Common\Language
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Common\Language;
 
+/**
+ * Class LanguageCodes
+ * @package Grav\Common\Language
+ */
 class LanguageCodes
 {
+    /** @var array */
     protected static $codes = [
         'af'         => [ 'name' => 'Afrikaans',                 'nativeName' => 'Afrikaans' ],
         'ak'         => [ 'name' => 'Akan',                      'nativeName' => 'Akan' ], // unverified native name
@@ -81,13 +86,15 @@ class LanguageCodes
         'ja-JP'      => [ 'name' => 'Japanese',                  'nativeName' => '日本語' ], // not iso-639-1
         'ka'         => [ 'name' => 'Georgian',                  'nativeName' => 'ქართული' ],
         'kk'         => [ 'name' => 'Kazakh',                    'nativeName' => 'Қазақ' ],
+        'km'         => [ 'name' => 'Khmer',                     'nativeName' => 'Khmer' ],
         'kn'         => [ 'name' => 'Kannada',                   'nativeName' => 'ಕನ್ನಡ' ],
         'ko'         => [ 'name' => 'Korean',                    'nativeName' => '한국어' ],
         'ku'         => [ 'name' => 'Kurdish',                   'nativeName' => 'Kurdî' ],
         'la'         => [ 'name' => 'Latin',                     'nativeName' => 'Latina' ],
         'lb'         => [ 'name' => 'Luxembourgish',             'nativeName' => 'Lëtzebuergesch' ],
         'lg'         => [ 'name' => 'Luganda',                   'nativeName' => 'Luganda' ],
-        'lt'         => [ 'name' => 'Lithuanian',                'nativeName' => 'Lietuvių kalba' ],
+        'lo'         => [ 'name' => 'Lao',                       'nativeName' => 'Lao' ],
+        'lt'         => [ 'name' => 'Lithuanian',                'nativeName' => 'Lietuvių' ],
         'lv'         => [ 'name' => 'Latvian',                   'nativeName' => 'Latviešu' ],
         'mai'        => [ 'name' => 'Maithili',                  'nativeName' => 'मैथिली মৈথিলী' ],
         'mg'         => [ 'name' => 'Malagasy',                  'nativeName' => 'Malagasy' ],
@@ -96,6 +103,7 @@ class LanguageCodes
         'ml'         => [ 'name' => 'Malayalam',                 'nativeName' => 'മലയാളം' ],
         'mn'         => [ 'name' => 'Mongolian',                 'nativeName' => 'Монгол' ],
         'mr'         => [ 'name' => 'Marathi',                   'nativeName' => 'मराठी' ],
+        'my'         => [ 'name' => 'Myanmar (Burmese)',         'nativeName' => 'ဗမာी' ],
         'no'         => [ 'name' => 'Norwegian',                 'nativeName' => 'Norsk' ],
         'nb'         => [ 'name' => 'Norwegian',                 'nativeName' => 'Norsk' ],
         'nb-NO'      => [ 'name' => 'Norwegian (Bokmål)',        'nativeName' => 'Norsk bokmål' ],
@@ -127,6 +135,7 @@ class LanguageCodes
         'st'         => [ 'name' => 'Southern Sotho',            'nativeName' => 'Sesotho' ],
         'sv'         => [ 'name' => 'Swedish',                   'nativeName' => 'Svenska' ],
         'sv-SE'      => [ 'name' => 'Swedish',                   'nativeName' => 'Svenska' ],
+        'sw'         => [ 'name' => 'Swahili',                   'nativeName' => 'Swahili' ],
         'ta'         => [ 'name' => 'Tamil',                     'nativeName' => 'தமிழ்' ],
         'ta-IN'      => [ 'name' => 'Tamil (India)',             'nativeName' => 'தமிழ் (இந்தியா)' ],
         'ta-LK'      => [ 'name' => 'Tamil (Sri Lanka)',         'nativeName' => 'தமிழ் (இலங்கை)' ],
@@ -144,17 +153,27 @@ class LanguageCodes
         'vi'         => [ 'name' => 'Vietnamese',                'nativeName' => 'Tiếng Việt' ],
         'wo'         => [ 'name' => 'Wolof',                     'nativeName' => 'Wolof' ],
         'xh'         => [ 'name' => 'Xhosa',                     'nativeName' => 'isiXhosa' ],
+        'yi'         => [ 'name' => 'Yiddish',                   'nativeName' => 'ייִדיש', 'orientation' => 'rtl'  ],
+        'ydd'        => [ 'name' => 'Yiddish',                   'nativeName' => 'ייִדיש', 'orientation' => 'rtl'  ],
         'zh'         => [ 'name' => 'Chinese (Simplified)',      'nativeName' => '中文 (简体)' ],
         'zh-CN'      => [ 'name' => 'Chinese (Simplified)',      'nativeName' => '中文 (简体)' ],
         'zh-TW'      => [ 'name' => 'Chinese (Traditional)',     'nativeName' => '正體中文 (繁體)' ],
         'zu'         => [ 'name' => 'Zulu',                      'nativeName' => 'isiZulu' ]
     ];
 
+    /**
+     * @param string $code
+     * @return string|false
+     */
     public static function getName($code)
     {
         return static::get($code, 'name');
     }
 
+    /**
+     * @param string $code
+     * @return string|false
+     */
     public static function getNativeName($code)
     {
         if (isset(static::$codes[$code])) {
@@ -168,21 +187,28 @@ class LanguageCodes
         return $code;
     }
 
+    /**
+     * @param string $code
+     * @return string
+     */
     public static function getOrientation($code)
     {
-        if (isset(static::$codes[$code])) {
-            if (isset(static::$codes[$code]['orientation'])) {
-                return static::get($code, 'orientation');
-            }
-        }
-        return 'ltr';
+        return static::$codes[$code]['orientation'] ?? 'ltr';
     }
 
+    /**
+     * @param string $code
+     * @return bool
+     */
     public static function isRtl($code)
     {
         return static::getOrientation($code) === 'rtl';
     }
 
+    /**
+     * @param array $keys
+     * @return array
+     */
     public static function getNames(array $keys)
     {
         $results = [];
@@ -194,12 +220,27 @@ class LanguageCodes
         return $results;
     }
 
+    /**
+     * @param string $code
+     * @param string $type
+     * @return string|false
+     */
     public static function get($code, $type)
     {
-        if (isset(static::$codes[$code][$type])) {
-            return static::$codes[$code][$type];
+        return static::$codes[$code][$type] ?? false;
+    }
+
+    /**
+     * @param bool $native
+     * @return array
+     */
+    public static function getList($native = true)
+    {
+        $list = [];
+        foreach (static::$codes as $key => $names) {
+            $list[$key] = $native ? $names['nativeName'] : $names['name'];
         }
 
-        return false;
+        return $list;
     }
 }

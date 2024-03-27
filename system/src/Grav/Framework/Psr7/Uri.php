@@ -5,7 +5,7 @@ declare(strict_types=1);
 /**
  * @package    Grav\Framework\Psr7
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -16,12 +16,13 @@ use Grav\Framework\Uri\UriFactory;
 use GuzzleHttp\Psr7\Uri as GuzzleUri;
 use Psr\Http\Message\UriInterface;
 
+/**
+ * Class Uri
+ * @package Grav\Framework\Psr7
+ */
 class Uri implements UriInterface
 {
     use UriDecorationTrait;
-
-    /** @var array Array of Uri query. */
-    private $queryParams;
 
     public function __construct(string $uri = '')
     {

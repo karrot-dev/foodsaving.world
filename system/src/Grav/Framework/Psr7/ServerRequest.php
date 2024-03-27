@@ -5,7 +5,7 @@ declare(strict_types=1);
 /**
  * @package    Grav\Framework\Psr7
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -15,6 +15,8 @@ use Grav\Framework\Psr7\Traits\ServerRequestDecoratorTrait;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\StreamInterface;
 use Psr\Http\Message\UriInterface;
+use function is_array;
+use function is_object;
 
 /**
  * Class ServerRequest
@@ -96,13 +98,8 @@ class ServerRequest implements ServerRequestInterface
     public function getCookieParam($key, $default = null)
     {
         $cookies = $this->getRequest()->getCookieParams();
-        $result = $default;
 
-        if (isset($cookies[$key])) {
-            $result = $cookies[$key];
-        }
-
-        return $result;
+        return $cookies[$key] ?? $default;
     }
 
     /**
@@ -159,7 +156,7 @@ class ServerRequest implements ServerRequestInterface
      * Note: This method is not part of the PSR-7 standard.
      *
      * @param  string $key The parameter key.
-     * @param  string $default The default value.
+     * @param  string|null $default The default value.
      *
      * @return mixed The parameter value.
      */
@@ -236,13 +233,8 @@ class ServerRequest implements ServerRequestInterface
     public function getQueryParam($key, $default = null)
     {
         $getParams = $this->getQueryParams();
-        $result = $default;
 
-        if (isset($getParams[$key])) {
-            $result = $getParams[$key];
-        }
-
-        return $result;
+        return $getParams[$key] ?? $default;
     }
 
     /**

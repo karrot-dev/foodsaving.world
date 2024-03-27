@@ -3,12 +3,13 @@
 /**
  * @package    Grav\Common\Service
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Common\Service;
 
+use DirectoryIterator;
 use Grav\Common\Config\CompiledBlueprints;
 use Grav\Common\Config\CompiledConfig;
 use Grav\Common\Config\CompiledLanguages;
@@ -16,13 +17,22 @@ use Grav\Common\Config\Config;
 use Grav\Common\Config\ConfigFileFinder;
 use Grav\Common\Config\Setup;
 use Grav\Common\Language\Language;
+use Grav\Framework\Mime\MimeTypes;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 use RocketTheme\Toolbox\File\YamlFile;
 use RocketTheme\Toolbox\ResourceLocator\UniformResourceLocator;
 
+/**
+ * Class ConfigServiceProvider
+ * @package Grav\Common\Service
+ */
 class ConfigServiceProvider implements ServiceProviderInterface
 {
+    /**
+     * @param Container $container
+     * @return void
+     */
     public function register(Container $container)
     {
         $container['setup'] = function ($c) {
@@ -47,6 +57,19 @@ class ConfigServiceProvider implements ServiceProviderInterface
             return $config;
         };
 
+        $container['mime'] = function ($c) {
+            /** @var Config $config */
+            $config = $c['config'];
+            $mimes = $config->get('mime.types', []);
+            foreach ($config->get('media.types', []) as $ext => $media) {
+                if (!empty($media['mime'])) {
+                    $mimes[$ext] = array_unique(array_merge([$media['mime']], $mimes[$ext] ?? []));
+                }
+            }
+
+            return MimeTypes::createFromMimes($mimes);
+        };
+
         $container['languages'] = function ($c) {
             return static::languages($c);
         };
@@ -56,6 +79,10 @@ class ConfigServiceProvider implements ServiceProviderInterface
         };
     }
 
+    /**
+     * @param Container $container
+     * @return mixed
+     */
     public static function blueprints(Container $container)
     {
         /** Setup $setup */
@@ -71,6 +98,8 @@ class ConfigServiceProvider implements ServiceProviderInterface
         $files += (new ConfigFileFinder)->locateFiles($paths);
         $paths = $locator->findResources('plugins://');
         $files += (new ConfigFileFinder)->setBase('plugins')->locateInFolders($paths, 'blueprints');
+        $paths = $locator->findResources('themes://');
+        $files += (new ConfigFileFinder)->setBase('themes')->locateInFolders($paths, 'blueprints');
 
         $blueprints = new CompiledBlueprints($cache, $files, GRAV_ROOT);
 
@@ -96,9 +125,11 @@ class ConfigServiceProvider implements ServiceProviderInterface
         $files += (new ConfigFileFinder)->locateFiles($paths);
         $paths = $locator->findResources('plugins://');
         $files += (new ConfigFileFinder)->setBase('plugins')->locateInFolders($paths);
+        $paths = $locator->findResources('themes://');
+        $files += (new ConfigFileFinder)->setBase('themes')->locateInFolders($paths);
 
         $compiled = new CompiledConfig($cache, $files, GRAV_ROOT);
-        $compiled->setBlueprints(function() use ($container) {
+        $compiled->setBlueprints(function () use ($container) {
             return $container['blueprints'];
         });
 
@@ -108,6 +139,10 @@ class ConfigServiceProvider implements ServiceProviderInterface
         return $config;
     }
 
+    /**
+     * @param Container $container
+     * @return mixed
+     */
     public static function languages(Container $container)
     {
         /** @var Setup $setup */
@@ -144,14 +179,14 @@ class ConfigServiceProvider implements ServiceProviderInterface
      * @param string $folder_path
      * @return array
      */
-    private static function pluginFolderPaths($plugins, $folder_path)
+    protected static function pluginFolderPaths($plugins, $folder_path)
     {
         $paths = [];
 
         foreach ($plugins as $path) {
-            $iterator = new \DirectoryIterator($path);
+            $iterator = new DirectoryIterator($path);
 
-            /** @var \DirectoryIterator $directory */
+            /** @var DirectoryIterator $directory */
             foreach ($iterator as $directory) {
                 if (!$directory->isDir() || $directory->isDot()) {
                     continue;
@@ -168,5 +203,4 @@ class ConfigServiceProvider implements ServiceProviderInterface
         }
         return $paths;
     }
-
 }

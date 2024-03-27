@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Common\Twig
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -13,6 +13,10 @@ use Twig\Compiler;
 use Twig\Node\Node;
 use Twig\Node\NodeOutputInterface;
 
+/**
+ * Class TwigNodeMarkdown
+ * @package Grav\Common\Twig\Node
+ */
 class TwigNodeMarkdown extends Node implements NodeOutputInterface
 {
     /**
@@ -25,12 +29,14 @@ class TwigNodeMarkdown extends Node implements NodeOutputInterface
     {
         parent::__construct(['body' => $body], [], $lineno, $tag);
     }
+
     /**
      * Compiles the node to PHP.
      *
-     * @param Compiler $compiler A Twig_Compiler instance
+     * @param Compiler $compiler A Twig Compiler instance
+     * @return void
      */
-    public function compile(Compiler $compiler)
+    public function compile(Compiler $compiler): void
     {
         $compiler
             ->addDebugInfo($this)
@@ -41,6 +47,6 @@ class TwigNodeMarkdown extends Node implements NodeOutputInterface
             ->write('$lines = explode("\n", $content);' . PHP_EOL)
             ->write('$content = preg_replace(\'/^\' . $matches[0]. \'/\', "", $lines);' . PHP_EOL)
             ->write('$content = join("\n", $content);' . PHP_EOL)
-            ->write('echo $this->env->getExtension(\'Grav\Common\Twig\TwigExtension\')->markdownFunction($context, $content);' . PHP_EOL);
+            ->write('echo $this->env->getExtension(\'Grav\Common\Twig\Extension\GravExtension\')->markdownFunction($context, $content);' . PHP_EOL);
     }
 }

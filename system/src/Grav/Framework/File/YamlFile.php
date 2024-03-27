@@ -5,7 +5,7 @@ declare(strict_types=1);
 /**
  * @package    Grav\Framework\File
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -27,5 +27,14 @@ class YamlFile extends DataFile
     public function __construct($filepath, YamlFormatter $formatter)
     {
         parent::__construct($filepath, $formatter);
+    }
+
+    /**
+     * @return array
+     */
+    public function load(): array
+    {
+        /** @var array */
+        return parent::load();
     }
 }

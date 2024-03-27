@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Core
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -13,13 +13,31 @@ if (PHP_SAPI !== 'cli-server') {
 
 $_SERVER['PHP_CLI_ROUTER'] = true;
 
-if (is_file($_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . $_SERVER['SCRIPT_NAME'])) {
-    return false;
+$root = $_SERVER['DOCUMENT_ROOT'];
+$path = $_SERVER['SCRIPT_NAME'];
+if ($path !== '/index.php' && is_file($root . $path)) {
+    if (!(
+        // Block all direct access to files and folders beginning with a dot
+        strpos($path, '/.') !== false
+        // Block all direct access for these folders
+        || preg_match('`^/(\.git|cache|bin|logs|backup|webserver-configs|tests)/`ui', $path)
+        // Block access to specific file types for these system folders
+        || preg_match('`^/(system|vendor)/(.*)\.(txt|xml|md|html|json|yaml|yml|php|pl|py|cgi|twig|sh|bat)$`ui', $path)
+        // Block access to specific file types for these user folders
+        || preg_match('`^/(user)/(.*)\.(txt|md|json|yaml|yml|php|pl|py|cgi|twig|sh|bat)$`ui', $path)
+        // Block all direct access to .md files
+        || preg_match('`\.md$`ui', $path)
+        // Block access to specific files in the root folder
+        || preg_match('`^/(LICENSE\.txt|composer\.lock|composer\.json|\.htaccess)$`ui', $path)
+    )) {
+        return false;
+    }
 }
 
 $grav_index = 'index.php';
 
 /* Check the GRAV_BASEDIR environment variable and use if set */
+
 $grav_basedir = getenv('GRAV_BASEDIR') ?: '';
 if ($grav_basedir) {
     $grav_index = ltrim($grav_basedir, '/') . DIRECTORY_SEPARATOR . $grav_index;

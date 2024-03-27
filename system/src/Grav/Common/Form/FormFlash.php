@@ -3,15 +3,21 @@
 /**
  * @package    Grav\Common\Form
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Common\Form;
 
 use Grav\Common\Filesystem\Folder;
+use Grav\Common\Utils;
 use Grav\Framework\Form\FormFlash as FrameworkFormFlash;
+use function is_array;
 
+/**
+ * Class FormFlash
+ * @package Grav\Common\Form
+ */
 class FormFlash extends FrameworkFormFlash
 {
     /**
@@ -26,7 +32,7 @@ class FormFlash extends FrameworkFormFlash
                 continue;
             }
             foreach ($files as $file) {
-                if (\is_array($file)) {
+                if (is_array($file)) {
                     $file['tmp_name'] = $this->getTmpDir() . '/' . $file['tmp_name'];
                     $fields[$field][$file['path'] ?? $file['name']] = $file;
                 }
@@ -53,7 +59,7 @@ class FormFlash extends FrameworkFormFlash
         Folder::create($tmp_dir);
 
         $tmp_file = $upload['file']['tmp_name'];
-        $basename = basename($tmp_file);
+        $basename = Utils::basename($tmp_file);
 
         if (!move_uploaded_file($tmp_file, $tmp_dir . '/' . $basename)) {
             return false;
@@ -85,7 +91,7 @@ class FormFlash extends FrameworkFormFlash
         Folder::create($tmp_dir);
 
         $tmp_file = $upload['file']['tmp_name'];
-        $basename = basename($tmp_file);
+        $basename = Utils::basename($tmp_file);
 
         if (!move_uploaded_file($tmp_file, $tmp_dir . '/' . $basename)) {
             return false;

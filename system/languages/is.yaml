@@ -2,14 +2,14 @@
 GRAV:
   FRONTMATTER_ERROR_PAGE: "---\ntitill: %1$s\n---\n\n# Villa: Ógilt efni á forsíðu\n\nSlóð: `%2$s`\n\n**%3$s**\n\n```\n%4$s\n```"
   INFLECTOR_UNCOUNTABLE:
-    - 'equipment'
+    - ''
     - 'upplýsingar'
-    - 'rice'
-    - 'money'
-    - 'species'
-    - 'series'
-    - 'fish'
-    - 'sheep'
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
   NICETIME:
     NO_DATE_PROVIDED: Engin dagsetning gefin
     BAD_DATE: Röng dagsetning
@@ -46,8 +46,8 @@ GRAV:
     YR_PLURAL: árum
     DEC_PLURAL: árat
   FORM:
-    VALIDATION_FAIL: <b>Sannvottun mistókst:</b>
-    INVALID_INPUT: Ógilt inntak í
+    VALIDATION_FAIL: '<b>Sannvottun mistókst:</b>'
+    INVALID_INPUT: 'Ógilt inntak í'
     MISSING_REQUIRED_FIELD: 'Vantar nauðsynlegan reit:'
   MONTHS_OF_THE_YEAR:
     - 'janúar'

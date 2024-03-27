@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Common
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -11,11 +11,19 @@ namespace Grav\Common;
 
 use Grav\Framework\File\Formatter\YamlFormatter;
 
+/**
+ * Class Yaml
+ * @package Grav\Common
+ */
 abstract class Yaml
 {
-    /** @var YamlFormatter */
-    private static $yaml;
+    /** @var YamlFormatter|null */
+    protected static $yaml;
 
+    /**
+     * @param string $data
+     * @return array
+     */
     public static function parse($data)
     {
         if (null === static::$yaml) {
@@ -25,6 +33,12 @@ abstract class Yaml
         return static::$yaml->decode($data);
     }
 
+    /**
+     * @param array $data
+     * @param int|null $inline
+     * @param int|null $indent
+     * @return string
+     */
     public static function dump($data, $inline = null, $indent = null)
     {
         if (null === static::$yaml) {
@@ -34,7 +48,10 @@ abstract class Yaml
         return static::$yaml->encode($data, $inline, $indent);
     }
 
-    private static function init()
+    /**
+     * @return void
+     */
+    protected static function init()
     {
         $config = [
             'inline' => 5,

@@ -3,12 +3,13 @@
 /**
  * @package    Grav\Framework\Cache
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Framework\Cache\Adapter;
 
+use DateInterval;
 use Doctrine\Common\Cache\CacheProvider;
 use Grav\Framework\Cache\AbstractCache;
 use Grav\Framework\Cache\Exception\InvalidArgumentException;
@@ -19,9 +20,7 @@ use Grav\Framework\Cache\Exception\InvalidArgumentException;
  */
 class DoctrineCache extends AbstractCache
 {
-    /**
-     * @var CacheProvider
-     */
+    /** @var CacheProvider */
     protected $driver;
 
     /**
@@ -29,13 +28,17 @@ class DoctrineCache extends AbstractCache
      *
      * @param CacheProvider $doctrineCache
      * @param string $namespace
-     * @param null|int|\DateInterval $defaultLifetime
-     * @throws \Psr\SimpleCache\InvalidArgumentException|InvalidArgumentException
+     * @param null|int|DateInterval $defaultLifetime
+     * @throws InvalidArgumentException
      */
     public function __construct(CacheProvider $doctrineCache, $namespace = '', $defaultLifetime = null)
     {
         // Do not use $namespace or $defaultLifetime directly, store them with constructor and fetch with methods.
-        parent::__construct($namespace, $defaultLifetime);
+        try {
+            parent::__construct($namespace, $defaultLifetime);
+        } catch (\Psr\SimpleCache\InvalidArgumentException $e) {
+            throw new InvalidArgumentException($e->getMessage(), $e->getCode(), $e);
+        }
 
         // Set namespace to Doctrine Cache provider if it was given.
         $namespace = $this->getNamespace();
@@ -99,7 +102,6 @@ class DoctrineCache extends AbstractCache
 
     /**
      * @inheritdoc
-     * @throws \Psr\SimpleCache\InvalidArgumentException|InvalidArgumentException
      */
     public function doDeleteMultiple($keys)
     {

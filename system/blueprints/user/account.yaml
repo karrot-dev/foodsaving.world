@@ -11,9 +11,20 @@ form:
         avatar:
             type: file
             size: large
-            destination: 'user://accounts/avatars'
+            destination: 'account://avatars'
             multiple: false
             random_name: true
+
+        multiavatar_only:
+          type: conditional
+          condition: config.system.accounts.avatar == 'multiavatar'
+          fields:
+            avatar_hash:
+                type: text
+                label: ''
+                placeholder: 'e.g. dceaadcfda491f4e45'
+                description: PLUGIN_ADMIN.AVATAR_HASH
+                size: large
 
         content:
             type: section
@@ -67,6 +78,15 @@ form:
             default: 'en'
             help: PLUGIN_ADMIN.LANGUAGE_HELP
 
+        content_editor:
+            type: select
+            label: PLUGIN_ADMIN.CONTENT_EDITOR
+            size: medium
+            classes: fancy
+            data-options@: 'Grav\Plugin\Admin\Admin::contentEditor'
+            default: 'default'
+            help: PLUGIN_ADMIN.CONTENT_EDITOR_HELP
+
         twofa_check:
             type: conditional
             condition: config.plugins.admin.twofa_enabled
@@ -98,6 +118,14 @@ form:
                     label: PLUGIN_ADMIN.2FA_SECRET
                     sublabel: PLUGIN_ADMIN.2FA_SECRET_HELP
 
+                yubikey_id:
+                    type: text
+                    label: PLUGIN_ADMIN.YUBIKEY_ID
+                    description: PLUGIN_ADMIN.YUBIKEY_HELP
+                    size: small
+                    maxlength: 12
+
+
 
         security:
             security@: admin.super
@@ -121,7 +149,9 @@ form:
                 access:
                     security@: admin.super
                     type: permissions
+                    check_authorize: true
                     label: PLUGIN_ADMIN.PERMISSIONS
                     ignore_empty: true
                     validate:
                         type: array
+                        value_type: bool

@@ -3,42 +3,61 @@
 /**
  * @package    Grav\Common\Page
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Common\Page\Medium;
 
 use Grav\Common\Grav;
+use Grav\Common\Media\Interfaces\MediaObjectInterface;
+use Grav\Common\Utils;
 use RocketTheme\Toolbox\ResourceLocator\UniformResourceLocator;
+use function dirname;
 
+/**
+ * Class GlobalMedia
+ * @package Grav\Common\Page\Medium
+ */
 class GlobalMedia extends AbstractMedia
 {
+    /** @var self */
+    protected static $instance;
+
+    public static function getInstance(): self
+    {
+        if (null === self::$instance) {
+            self::$instance = new self();
+        }
+
+        return self::$instance;
+    }
+
     /**
      * Return media path.
      *
-     * @return null
+     * @return string|null
      */
-    public function getPath()
+    public function getPath(): ?string
     {
         return null;
     }
 
     /**
-     * @param mixed $offset
-     *
+     * @param string $offset
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
         return parent::offsetExists($offset) ?: !empty($this->resolveStream($offset));
     }
 
     /**
-     * @param mixed $offset
-     *
-     * @return mixed
+     * @param string $offset
+     * @return MediaObjectInterface|null
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         return parent::offsetGet($offset) ?: $this->addMedium($offset);
@@ -52,13 +71,16 @@ class GlobalMedia extends AbstractMedia
     {
         /** @var UniformResourceLocator $locator */
         $locator = Grav::instance()['locator'];
+        if (!$locator->isStream($filename)) {
+            return null;
+        }
 
-        return $locator->isStream($filename) ? ($locator->findResource($filename) ?: null) : null;
+        return $locator->findResource($filename) ?: null;
     }
 
     /**
      * @param string $stream
-     * @return Medium|null
+     * @return MediaObjectInterface|null
      */
     protected function addMedium($stream)
     {
@@ -68,10 +90,10 @@ class GlobalMedia extends AbstractMedia
         }
 
         $path = dirname($filename);
-        list($basename, $ext,, $extra) = $this->getFileParts(basename($filename));
+        [$basename, $ext,, $extra] = $this->getFileParts(Utils::basename($filename));
         $medium = MediumFactory::fromFile($filename);
 
-        if (empty($medium)) {
+        if (null === $medium) {
             return null;
         }
 

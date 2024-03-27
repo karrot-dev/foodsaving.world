@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Framework\Object
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -21,6 +21,7 @@ trait NestedArrayAccessTrait
      * @param mixed $offset  An offset to check for.
      * @return bool          Returns TRUE on success or FALSE on failure.
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
         return $this->hasNestedProperty($offset);
@@ -32,6 +33,7 @@ trait NestedArrayAccessTrait
      * @param mixed $offset  The offset to retrieve.
      * @return mixed         Can return all value types.
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         return $this->getNestedProperty($offset);
@@ -42,7 +44,9 @@ trait NestedArrayAccessTrait
      *
      * @param mixed $offset  The offset to assign the value to.
      * @param mixed $value   The value to set.
+     * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
         $this->setNestedProperty($offset, $value);
@@ -52,14 +56,11 @@ trait NestedArrayAccessTrait
      * Unsets an offset.
      *
      * @param mixed $offset  The offset to unset.
+     * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
         $this->unsetNestedProperty($offset);
     }
-
-    abstract public function hasNestedProperty($property, $separator = null);
-    abstract public function getNestedProperty($property, $default = null, $separator = null);
-    abstract public function setNestedProperty($property, $value, $separator = null);
-    abstract public function unsetNestedProperty($property, $separator = null);
 }

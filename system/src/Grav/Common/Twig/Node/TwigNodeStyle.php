@@ -3,19 +3,25 @@
 /**
  * @package    Grav\Common\Twig
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2024 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Common\Twig\Node;
 
+use LogicException;
 use Twig\Compiler;
 use Twig\Node\Expression\AbstractExpression;
 use Twig\Node\Node;
 use Twig\Node\NodeCaptureInterface;
 
+/**
+ * Class TwigNodeStyle
+ * @package Grav\Common\Twig\Node
+ */
 class TwigNodeStyle extends Node implements NodeCaptureInterface
 {
+    /** @var string */
     protected $tagName = 'style';
 
     /**
@@ -28,74 +34,100 @@ class TwigNodeStyle extends Node implements NodeCaptureInterface
      * @param int $lineno
      * @param string|null $tag
      */
-    public function __construct(
-        Node $body = null,
-        AbstractExpression $file = null,
-        AbstractExpression $group = null,
-        AbstractExpression $priority = null,
-        AbstractExpression $attributes = null,
-        $lineno = 0,
-        $tag = null
-    )
+    public function __construct(?Node $body, ?AbstractExpression $file, ?AbstractExpression $group, ?AbstractExpression $priority, ?AbstractExpression $attributes, $lineno = 0, $tag = null)
     {
-        parent::__construct(['body' => $body, 'file' => $file, 'group' => $group, 'priority' => $priority, 'attributes' => $attributes], [], $lineno, $tag);
+        $nodes = ['body' => $body, 'file' => $file, 'group' => $group, 'priority' => $priority, 'attributes' => $attributes];
+        $nodes = array_filter($nodes);
+
+        parent::__construct($nodes, [], $lineno, $tag);
     }
+
     /**
      * Compiles the node to PHP.
      *
-     * @param Compiler $compiler A Twig_Compiler instance
-     * @throws \LogicException
+     * @param Compiler $compiler A Twig Compiler instance
+     * @return void
+     * @throws LogicException
      */
-    public function compile(Compiler $compiler)
+    public function compile(Compiler $compiler): void
     {
         $compiler->addDebugInfo($this);
 
-        $compiler->write("\$assets = \\Grav\\Common\\Grav::instance()['assets'];\n");
-
-        if ($this->getNode('attributes') !== null) {
+        if ($this->hasNode('attributes')) {
             $compiler
                 ->write('$attributes = ')
                 ->subcompile($this->getNode('attributes'))
-                ->raw(";\n")
-                ->write("if (!is_array(\$attributes)) {\n")
+                ->raw(';' . PHP_EOL)
+                ->write('if (!is_array($attributes)) {' . PHP_EOL)
                 ->indent()
-                ->write("throw new UnexpectedValueException('{% {$this->tagName} with x %}: x is not an array');\n")
+                ->write("throw new UnexpectedValueException('{% {$this->tagName} with x %}: x is not an array');" . PHP_EOL)
                 ->outdent()
-                ->write("}\n");
+                ->write('}' . PHP_EOL);
         } else {
-            $compiler->write('$attributes = [];' . "\n");
+            $compiler->write('$attributes = [];' . PHP_EOL);
         }
 
-        if ($this->getNode('group') !== null) {
+        if ($this->hasNode('group')) {
             $compiler
-                ->write("\$attributes['group'] = ")
+                ->write('$group = ')
                 ->subcompile($this->getNode('group'))
-                ->raw(";\n")
-                ->write("if (!is_string(\$attributes['group'])) {\n")
+                ->raw(';' . PHP_EOL)
+                ->write('if (!is_string($group)) {' . PHP_EOL)
                 ->indent()
-                ->write("throw new UnexpectedValueException('{% {$this->tagName} in x %}: x is not a string');\n")
+                ->write("throw new UnexpectedValueException('{% {$this->tagName} in x %}: x is not a string');" . PHP_EOL)
                 ->outdent()
-                ->write("}\n");
-        }
-
-        if ($this->getNode('priority') !== null) {
-            $compiler
-                ->write("\$attributes['priority'] = (int)(")
-                ->subcompile($this->getNode('priority'))
-                ->raw(");\n");
-        }
-
-        if ($this->getNode('file') !== null) {
-            $compiler
-                ->write('$assets->addCss(')
-                ->subcompile($this->getNode('file'))
-                ->raw(", \$attributes);\n");
+                ->write('}' . PHP_EOL);
         } else {
+            $compiler->write('$group = \'head\';' . PHP_EOL);
+        }
+
+        if ($this->hasNode('priority')) {
             $compiler
-                ->write("ob_start();\n")
+                ->write('$priority = (int)(')
+                ->subcompile($this->getNode('priority'))
+                ->raw(');' . PHP_EOL);
+        } else {
+            $compiler->write('$priority = 10;' . PHP_EOL);
+        }
+
+        $compiler->write("\$assets = \\Grav\\Common\\Grav::instance()['assets'];" . PHP_EOL);
+        $compiler->write("\$block = \$context['block'] ?? null;" . PHP_EOL);
+
+        if ($this->hasNode('file')) {
+            // CSS file.
+            $compiler
+                ->write('$file = (string)(')
+                ->subcompile($this->getNode('file'))
+                ->raw(');' . PHP_EOL);
+
+            // Assets support.
+            $compiler->write('$assets->addCss($file, [\'group\' => $group, \'priority\' => $priority] + $attributes);' . PHP_EOL);
+
+            // HtmlBlock support.
+            $compiler
+                ->write('if ($block instanceof \Grav\Framework\ContentBlock\HtmlBlock) {' . PHP_EOL)
+                ->indent()
+                ->write('$block->addStyle([\'href\'=> $file] + $attributes, $priority, $group);' . PHP_EOL)
+                ->outdent()
+                ->write('}' . PHP_EOL);
+
+        } else {
+            // Inline style.
+            $compiler
+                ->write('ob_start();' . PHP_EOL)
                 ->subcompile($this->getNode('body'))
-                ->write('$content = ob_get_clean();' . "\n")
-                ->write("\$assets->addInlineCss(\$content, \$attributes);\n");
+                ->write('$content = ob_get_clean();' . PHP_EOL);
+
+            // Assets support.
+            $compiler->write('$assets->addInlineCss($content, [\'group\' => $group, \'priority\' => $priority] + $attributes);' . PHP_EOL);
+
+            // HtmlBlock support.
+            $compiler
+                ->write('if ($block instanceof \Grav\Framework\ContentBlock\HtmlBlock) {' . PHP_EOL)
+                ->indent()
+                ->write('$block->addInlineStyle([\'content\'=> $content] + $attributes, $priority, $group);' . PHP_EOL)
+                ->outdent()
+                ->write('}' . PHP_EOL);
         }
     }
 }
